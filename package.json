@@ -1,16 +1,16 @@
 {
-    "name": "pythonsnippets",
-    "displayName": "python snippets",
+    "name": "pythonsnippets2",
+    "displayName": "python snippets 2",
     "description": "Code snippets for python",
-    "version": "1.0.2",
-    "publisher": "frhtylcn",
+    "version": "2.0.2",
+    "publisher": "EricSia",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ylcnfrht/vscode-python-snippet-pack"
+        "url": "https://github.com/ericsia/vscode-python-snippet-pack-2.0/"
     },
     "icon": "icon.png",
     "engines": {
-        "vscode": "^1.28.0"
+        "vscode": "^1.62.3"
     },
     "categories": [
         "Snippets"
