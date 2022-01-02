@@ -1,0 +1,24 @@
+{
+    "name": "pythonsnippets2",
+    "displayName": "python snippets 2",
+    "description": "Code snippets for python",
+    "version": "2.0.2",
+    "publisher": "ericsia",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsia/vscode-python-snippet-pack-2.0/"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.62.3"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "python",
+            "path": "./snippets/python_snippets.json"
+        }]
+    }
+}
