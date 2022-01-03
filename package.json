@@ -1,8 +1,8 @@
 {
-    "name": "pythonsnippets2",
-    "displayName": "python snippets 2",
-    "description": "Code snippets for python",
-    "version": "2.0.2",
+    "name": "pythonsnippets3",
+    "displayName": "python snippets 3",
+    "description": "New code snippets for Python",
+    "version": "3.0.2",
     "publisher": "EricSia",
     "repository": {
         "type": "git",

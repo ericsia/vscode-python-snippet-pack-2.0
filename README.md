@@ -37,173 +37,174 @@
 #### For example if you want to use string replace method then only use `.replace` 
 #### But if you dont know how to use replace method then type `string` use str.replace=>
 
-#### old screenshot from (2018) pay tribute to previous developer
+#### old gif from (2018) pay tribute to previous developer available in github
 ![](python.gif)
+![](oldpython.gif)
 
 ## Snippets / Descriptons
 
-| built-in methods code snippets | Description |
-| --- | --- |
-| abs | Returns the absolute value of a number |
-| all | Returns True if all items in an iterable object are true |
-| any | Returns True if any item in an iterable object is true |
-| ascii | Returns a readable version of an object. Replaces none-ascii characters with escape character |
-| bin | Returns the binary version of a number |
-| bool | Returns the boolean value of the specified object |
-| bytearray | Returns an array of bytes |
-| bytes | Returns a bytes object |
-| callable | Returns True if the specified object is callable, otherwise False |
-| chr | Returns a character from the specified Unicode code. |
-| delattr | Deletes the specified attribute (property or method) from the specified object |
-| dict | Returns a dictionary (Array) |
-| dir | Returns a list of the specified object's properties and methods |
-| divmod | Returns the quotient and the remainder when argument1 is divided by argument2 |
-| enumerate | Takes a collection (e.g. a tuple) and returns it as an enumerate object |
-| eval | Evaluates and executes an expression |
-| exec | Executes the specified code (or object) |
-| filter | Use a filter function to exclude items in an iterable object |
-| float | Returns a floating point number |
-| frozenset | Returns a frozenset object |
-| getattr | Returns the value of the specified attribute (property or method) |
-| globals | Returns the current global symbol table as a dictionary |
-| hasattr | Returns True if the specified object has the specified attribute (property/method) |
-| hash | Returns the hash value of a specified object |
-| help | Executes the built-in help system |
-| hex | Converts a number into a hexadecimal value |
-| int | Returns an integer number |
-| id | Returns the id of an object |
-| input | Allowing user input |
-| isinstance | Returns True if a specified object is an instance of a specified object |
-| issubclass | Returns True if a specified class is a subclass of a specified object |
-| iter | Returns an iterator object |
-| len | Returns the length of an object |
-| locals | Returns an updated dictionary of the current local symbol table |
-| map | Returns the specified iterator with the specified function applied to each item |
-| max | Returns the largest item in an iterable |
-| memoryview | Returns a memory view object |
-| min | Returns the smallest item in an iterable |
-| next | Returns the next item in an iterable |
-| object | Returns a new object |
-| oct | Converts a number into an octal |
-| open | Opens a file and returns a file object |
-| ord | Given a string of length one, return an integer representing the Unicode code point of the character when the argument is a unicode object, or the value of the byte when the argument is an 8-bit str. |
-| pow | Return x to the power y |
-| print | Prints to the standard output device |
-| property | Gets, sets, deletes a property |
-| range | Returns a sequence of numbers, starting from 0 and increments by 1 (by default) |
-| repr | Returns a readable version of an object |
-| reversed | Returns a reversed iterator |
-| round | Rounds a numbers |
-| slice | Returns a slice object |
-| sorted | Returns a sorted list |
-| staticmethod | Converts a method into a static method |
-| str | Returns a string object |
-| sum | Sums the items of an iterator |
-| super | Return a proxy object that delegates method calls to a parent or sibling class of type. |
-| type | Returns the type of an object |
-| unichr | Return the Unicode string of one character whose Unicode code is the integer i. |
-| vars | Returns the __dict__ property of an object |
-| zip | Returns an iterator, from two or more iterators |
+| built-in methods code snippets | Description                                                                                                                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| abs                            | Returns the absolute value of a number                                                                                                                                                                  |
+| all                            | Returns True if all items in an iterable object are true                                                                                                                                                |
+| any                            | Returns True if any item in an iterable object is true                                                                                                                                                  |
+| ascii                          | Returns a readable version of an object. Replaces none-ascii characters with escape character                                                                                                           |
+| bin                            | Returns the binary version of a number                                                                                                                                                                  |
+| bool                           | Returns the boolean value of the specified object                                                                                                                                                       |
+| bytearray                      | Returns an array of bytes                                                                                                                                                                               |
+| bytes                          | Returns a bytes object                                                                                                                                                                                  |
+| callable                       | Returns True if the specified object is callable, otherwise False                                                                                                                                       |
+| chr                            | Returns a character from the specified Unicode code.                                                                                                                                                    |
+| delattr                        | Deletes the specified attribute (property or method) from the specified object                                                                                                                          |
+| dict                           | Returns a dictionary (Array)                                                                                                                                                                            |
+| dir                            | Returns a list of the specified object's properties and methods                                                                                                                                         |
+| divmod                         | Returns the quotient and the remainder when argument1 is divided by argument2                                                                                                                           |
+| enumerate                      | Takes a collection (e.g. a tuple) and returns it as an enumerate object                                                                                                                                 |
+| eval                           | Evaluates and executes an expression                                                                                                                                                                    |
+| exec                           | Executes the specified code (or object)                                                                                                                                                                 |
+| filter                         | Use a filter function to exclude items in an iterable object                                                                                                                                            |
+| float                          | Returns a floating point number                                                                                                                                                                         |
+| frozenset                      | Returns a frozenset object                                                                                                                                                                              |
+| getattr                        | Returns the value of the specified attribute (property or method)                                                                                                                                       |
+| globals                        | Returns the current global symbol table as a dictionary                                                                                                                                                 |
+| hasattr                        | Returns True if the specified object has the specified attribute (property/method)                                                                                                                      |
+| hash                           | Returns the hash value of a specified object                                                                                                                                                            |
+| help                           | Executes the built-in help system                                                                                                                                                                       |
+| hex                            | Converts a number into a hexadecimal value                                                                                                                                                              |
+| int                            | Returns an integer number                                                                                                                                                                               |
+| id                             | Returns the id of an object                                                                                                                                                                             |
+| input                          | Allowing user input                                                                                                                                                                                     |
+| isinstance                     | Returns True if a specified object is an instance of a specified object                                                                                                                                 |
+| issubclass                     | Returns True if a specified class is a subclass of a specified object                                                                                                                                   |
+| iter                           | Returns an iterator object                                                                                                                                                                              |
+| len                            | Returns the length of an object                                                                                                                                                                         |
+| locals                         | Returns an updated dictionary of the current local symbol table                                                                                                                                         |
+| map                            | Returns the specified iterator with the specified function applied to each item                                                                                                                         |
+| max                            | Returns the largest item in an iterable                                                                                                                                                                 |
+| memoryview                     | Returns a memory view object                                                                                                                                                                            |
+| min                            | Returns the smallest item in an iterable                                                                                                                                                                |
+| next                           | Returns the next item in an iterable                                                                                                                                                                    |
+| object                         | Returns a new object                                                                                                                                                                                    |
+| oct                            | Converts a number into an octal                                                                                                                                                                         |
+| open                           | Opens a file and returns a file object                                                                                                                                                                  |
+| ord                            | Given a string of length one, return an integer representing the Unicode code point of the character when the argument is a unicode object, or the value of the byte when the argument is an 8-bit str. |
+| pow                            | Return x to the power y                                                                                                                                                                                 |
+| print                          | Prints to the standard output device                                                                                                                                                                    |
+| property                       | Gets, sets, deletes a property                                                                                                                                                                          |
+| range                          | Returns a sequence of numbers, starting from 0 and increments by 1 (by default)                                                                                                                         |
+| repr                           | Returns a readable version of an object                                                                                                                                                                 |
+| reversed                       | Returns a reversed iterator                                                                                                                                                                             |
+| round                          | Rounds a numbers                                                                                                                                                                                        |
+| slice                          | Returns a slice object                                                                                                                                                                                  |
+| sorted                         | Returns a sorted list                                                                                                                                                                                   |
+| staticmethod                   | Converts a method into a static method                                                                                                                                                                  |
+| str                            | Returns a string object                                                                                                                                                                                 |
+| sum                            | Sums the items of an iterator                                                                                                                                                                           |
+| super                          | Return a proxy object that delegates method calls to a parent or sibling class of type.                                                                                                                 |
+| type                           | Returns the type of an object                                                                                                                                                                           |
+| unichr                         | Return the Unicode string of one character whose Unicode code is the integer i.                                                                                                                         |
+| vars                           | Returns the __dict__ property of an object                                                                                                                                                              |
+| zip                            | Returns an iterator, from two or more iterators                                                                                                                                                         |
 
 
 | built-in methods code examples | Description                              |
 |--------------------------------|------------------------------------------|
-|  apply.abs=>int              | An example for using abs method          |
-|  apply.abs=>float            | An example for using abs method          |
-|  apply.abs=>complex          | An example for using abs method          |
-|  apply.all=>list_1           | An example for using all with list       |
-|  apply.all=>list_2           | An example for using all with list       |
-|  apply.all=>tuple            | An example for using all with tuple      |
-|  apply.all=>set              | An example for using all with set        |
-|  apply.all=>dictionary       | An example for using all with dictionary |
-|  apply.any=>list_1           | An example for using all with list       |
-|  apply.ascii=>_list_1        | An example for using ascii               |
-|  apply.bin=>_1               | An example for using ascii               |
-|  apply.bool=>_1              | An example for using bool                |
-|  apply.bytearray=>_1         | An example for using bool                |
-|  apply.bytes=>_1             | An example for using bytes               |
-|  apply.callable=>_1          | An example for using callable            |
-|  apply.callable=>_2          | An example for using bytes               |
-|  apply.chr=>_1               | An example for using bytes               |
-|  apply.compile=>_1           | An example for using compile             |
-|  apply.compile=>_1           | An example for using compile             |
-|  apply.complex=>_1           | An example for using complex             |
-|  apply.complex=>_2           | An example for using complex             |
-|  apply.delattr=>_1           | An example for using delattr             |
-|  apply.dict=>_1              | An example for using dict                |
-|  apply.dir=>                 | An example for using dict                |
-|  apply.divmod=>_1            | An example for using divmod              |
-|  apply.enumerate=>_1         | An example for using enumerate           |
-|  apply.eval=>_1              | An example for using eval                |
-|  apply.exec=>_1              | An example for using exec                |
-|  apply.filter=>_1            | An example for using filter              |
-|  apply.float=>_1             | An example for using float               |
-|  apply.float=>_2             | An example for using float               |
-|  apply.format=>_1            | An example for using format              |
-|  apply.frozenset=>_1         | An example for using frozenset           |
-|  apply.frozenset=>_2         | An example for using frozenset           |
-|  apply.frozenset=>_3         | An example for using frozenset           |
-|  apply.globals=>_1           | An example for using globals             |
-|  apply.globals=>_2           | An example for using globals             |
-|  apply.hasattr=>             | An example for using hasattr             |
-|  apply.hex=>                 | An example for using hasattr             |
-|  apply.int=>_1               | An example for using int                 |
-|  apply.int=>_2               | An example for using int                 |
-|  apply.id=>                  | An example for using id                  |
-|  apply.input=>_1             | An example for using input               |
-|  apply.input=>_2             | An example for using input               |
-|  apply.isinstance=>_1        | An example for using isinstance          |
-|  apply.isinstance=>_2        | An example for using isinstance          |
-|  apply.isinstance=>_3        | An example for using isinstance          |
-|  apply.issubclass=>          | An example for using isinstance          |
-|  apply.iter=>                | An example for using iter                |
-|  apply.len=>_1               | An example for using len                 |
-|  apply.len=>_2               | An example for using len                 |
-|  apply.list=>                | An example for using list                |
-|  apply.locals=>_1            | An example for using locals              |
-|  apply.locals=>_2            | An example for using locals              |
-|  apply.map=>_1               | An example for using map                 |
-|  apply.map=>_2               | An example for using map                 |
-|  apply.max=>_1               | An example for using max                 |
-|  apply.max=>_2               | An example for using max                 |
-|  apply.max=>_3               | An example for using max                 |
-|  apply.memoryview=>          | An example for using memoryview          |
-|  apply.min=>_1               | An example for using min                 |
-|  apply.min=>_2               | An example for using min                 |
-|  apply.min=>_3               | An example for using min                 |
-|  apply.next=>_1              | An example for using next                |
-|  apply.next=>_2              | An example for using next                |
-|  apply.object=>              | An example for using object              |
-|  apply.oct=>                 | An example for using oct                 |
-|  apply.open=>                | An example for using open                |
-|  apply.ord=>                 | An example for using ord                 |
-|  apply.pow=>                 | An example for using pow                 |
-|  apply.print=>_1             | An example for using print               |
-|  apply.print=>_2             | An example for using print               |
-|  apply.print=>_3             | An example for using print               |
-|  apply.property=>            | An example for using property            |
-|  apply.range=>_1             | An example for using range               |
-|  apply.range=>_2             | An example for using range               |
-|  apply.range=>_3             | An example for using range               |
-|  apply.reversed=>            | An example for using reversed            |
-|  apply.round=>_1             | An example for using round               |
-|  apply.round=>_2             | An example for using round               |
-|  apply.set=>                 | An example for using set                 |
-|  apply.setattr=>             | An example for using setattr             |
-|  apply.slice=>_1             | An example for using slice               |
-|  apply.slice=>_2             | An example for using slice               |
-|  apply.slice=>_3             | An example for using slice               |
-|  apply.sorted=>_1            | An example for using sorted              |
-|  apply.sorted=>_2            | An example for using sorted              |
-|  apply.sorted=>_3            | An example for using sorted              |
-|  apply.str=>                 | An example for using str                 |
-|  apply.sum=>_1               | An example for using sum                 |
-|  apply.sum=>_2               | An example for using sum                 |
-|  apply.tuple=>               | An example for using tuple               |
-|  apply.type=>                | An example for using type                |
-|  apply.vars=>                | An example for using vars                |
-|  apply.zip=>_1               | An example for using zip                 |
-|  apply.zip=>_2               | An example for using zip                 |
+| apply.abs=>int                 | An example for using abs method          |
+| apply.abs=>float               | An example for using abs method          |
+| apply.abs=>complex             | An example for using abs method          |
+| apply.all=>list_1              | An example for using all with list       |
+| apply.all=>list_2              | An example for using all with list       |
+| apply.all=>tuple               | An example for using all with tuple      |
+| apply.all=>set                 | An example for using all with set        |
+| apply.all=>dictionary          | An example for using all with dictionary |
+| apply.any=>list_1              | An example for using all with list       |
+| apply.ascii=>_list_1           | An example for using ascii               |
+| apply.bin=>_1                  | An example for using ascii               |
+| apply.bool=>_1                 | An example for using bool                |
+| apply.bytearray=>_1            | An example for using bool                |
+| apply.bytes=>_1                | An example for using bytes               |
+| apply.callable=>_1             | An example for using callable            |
+| apply.callable=>_2             | An example for using bytes               |
+| apply.chr=>_1                  | An example for using bytes               |
+| apply.compile=>_1              | An example for using compile             |
+| apply.compile=>_1              | An example for using compile             |
+| apply.complex=>_1              | An example for using complex             |
+| apply.complex=>_2              | An example for using complex             |
+| apply.delattr=>_1              | An example for using delattr             |
+| apply.dict=>_1                 | An example for using dict                |
+| apply.dir=>                    | An example for using dict                |
+| apply.divmod=>_1               | An example for using divmod              |
+| apply.enumerate=>_1            | An example for using enumerate           |
+| apply.eval=>_1                 | An example for using eval                |
+| apply.exec=>_1                 | An example for using exec                |
+| apply.filter=>_1               | An example for using filter              |
+| apply.float=>_1                | An example for using float               |
+| apply.float=>_2                | An example for using float               |
+| apply.format=>_1               | An example for using format              |
+| apply.frozenset=>_1            | An example for using frozenset           |
+| apply.frozenset=>_2            | An example for using frozenset           |
+| apply.frozenset=>_3            | An example for using frozenset           |
+| apply.globals=>_1              | An example for using globals             |
+| apply.globals=>_2              | An example for using globals             |
+| apply.hasattr=>                | An example for using hasattr             |
+| apply.hex=>                    | An example for using hasattr             |
+| apply.int=>_1                  | An example for using int                 |
+| apply.int=>_2                  | An example for using int                 |
+| apply.id=>                     | An example for using id                  |
+| apply.input=>_1                | An example for using input               |
+| apply.input=>_2                | An example for using input               |
+| apply.isinstance=>_1           | An example for using isinstance          |
+| apply.isinstance=>_2           | An example for using isinstance          |
+| apply.isinstance=>_3           | An example for using isinstance          |
+| apply.issubclass=>             | An example for using isinstance          |
+| apply.iter=>                   | An example for using iter                |
+| apply.len=>_1                  | An example for using len                 |
+| apply.len=>_2                  | An example for using len                 |
+| apply.list=>                   | An example for using list                |
+| apply.locals=>_1               | An example for using locals              |
+| apply.locals=>_2               | An example for using locals              |
+| apply.map=>_1                  | An example for using map                 |
+| apply.map=>_2                  | An example for using map                 |
+| apply.max=>_1                  | An example for using max                 |
+| apply.max=>_2                  | An example for using max                 |
+| apply.max=>_3                  | An example for using max                 |
+| apply.memoryview=>             | An example for using memoryview          |
+| apply.min=>_1                  | An example for using min                 |
+| apply.min=>_2                  | An example for using min                 |
+| apply.min=>_3                  | An example for using min                 |
+| apply.next=>_1                 | An example for using next                |
+| apply.next=>_2                 | An example for using next                |
+| apply.object=>                 | An example for using object              |
+| apply.oct=>                    | An example for using oct                 |
+| apply.open=>                   | An example for using open                |
+| apply.ord=>                    | An example for using ord                 |
+| apply.pow=>                    | An example for using pow                 |
+| apply.print=>_1                | An example for using print               |
+| apply.print=>_2                | An example for using print               |
+| apply.print=>_3                | An example for using print               |
+| apply.property=>               | An example for using property            |
+| apply.range=>_1                | An example for using range               |
+| apply.range=>_2                | An example for using range               |
+| apply.range=>_3                | An example for using range               |
+| apply.reversed=>               | An example for using reversed            |
+| apply.round=>_1                | An example for using round               |
+| apply.round=>_2                | An example for using round               |
+| apply.set=>                    | An example for using set                 |
+| apply.setattr=>                | An example for using setattr             |
+| apply.slice=>_1                | An example for using slice               |
+| apply.slice=>_2                | An example for using slice               |
+| apply.slice=>_3                | An example for using slice               |
+| apply.sorted=>_1               | An example for using sorted              |
+| apply.sorted=>_2               | An example for using sorted              |
+| apply.sorted=>_3               | An example for using sorted              |
+| apply.str=>                    | An example for using str                 |
+| apply.sum=>_1                  | An example for using sum                 |
+| apply.sum=>_2                  | An example for using sum                 |
+| apply.tuple=>                  | An example for using tuple               |
+| apply.type=>                   | An example for using type                |
+| apply.vars=>                   | An example for using vars                |
+| apply.zip=>_1                  | An example for using zip                 |
+| apply.zip=>_2                  | An example for using zip                 |
 
 
 | string methods code snippets | Description                                                                                   |
@@ -391,19 +392,19 @@
 | sets.update=>                      | An example for using update                      |
 
 
-| dictionary methods code snippets | Description |
-| --- | --- |
-| .clear | Removes all the elements from the dictionary |
-| .copy | Returns a copy of the dictionary |
-| .fromkeys | Returns a dictionary with the specified keys and values |
-| .get | Returns the value of the specified key |
-| .items | Returns a list containing the a tuple for each key value pair |
-| .keys | Returns a list containing the dictionary's keys |
-| .pop | Removes the element with the specified key |
-| .popitem | Removes the last inserted key-value pai |
-| .setdefault | Returns the value of the specified key. If the key does not exist: insert the key, with the specified value |
-| .update | Updates the dictionary with the specified key-value pairs |
-| .values | Returns a list of all the values in the dictionary |
+| dictionary methods code snippets | Description                                                                                                 |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------|
+| .clear                           | Removes all the elements from the dictionary                                                                |
+| .copy                            | Returns a copy of the dictionary                                                                            |
+| .fromkeys                        | Returns a dictionary with the specified keys and values                                                     |
+| .get                             | Returns the value of the specified key                                                                      |
+| .items                           | Returns a list containing the a tuple for each key value pair                                               |
+| .keys                            | Returns a list containing the dictionary's keys                                                             |
+| .pop                             | Removes the element with the specified key                                                                  |
+| .popitem                         | Removes the last inserted key-value pai                                                                     |
+| .setdefault                      | Returns the value of the specified key. If the key does not exist: insert the key, with the specified value |
+| .update                          | Updates the dictionary with the specified key-value pairs                                                   |
+| .values                          | Returns a list of all the values in the dictionary                                                          |
  
  
 | dictionary methods code examples | Description                     |
@@ -539,7 +540,7 @@
 
 ### For example
 
-Creating a class
+Creating a class - thanks for snippsat mention f-string
 
 class=>with_attribute_1
 
@@ -547,24 +548,23 @@ class=>with_attribute_1
 class Parrot:
 
 # class attribute
- species = 'bird'
+    species = 'bird'
 
 # instance attribute
- def __init__(self, name, age):
-    self.name = name
-    self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 # instantiate the Parrot class
 blu = Parrot('Blu', 10)
 woo = Parrot('woo', 15)
 
 # access the class attributes
-print('Blu is a {}'.format(blu.__class__.species))
-print('Woo is also a {}'.format(woo.__class__.species))
+print(f'Blu is a {blu.__class__.species}')
+print(f'Woo is also a {woo.__class__.species}')
 # access the instance attributes
-print('{} is {} years old'.format( blu.name, blu.age))
-print('{} is {} years old'.format( woo.name, woo.age))
-
+print(f'{blu.name} is {blu.age} years old')
+print(f'{woo.name} is {woo.age} years old')
 ```
 
   
@@ -598,7 +598,8 @@ Updated README.md
 
 Updated and maintain in year 2022
 
+### 3.0.2
+
+Change .format into f-string
+
 -----------------------------------------------------------------------------------------------------------
-
-
-
