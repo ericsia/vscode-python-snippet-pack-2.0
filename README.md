@@ -1,4 +1,4 @@
-### Python Snippets Pack 2 (2022) for Visual Studio Code (python 3.x)
+### Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
 
 #### A beginner friendly python code snippet pack making you more productive
 #### Please rate this extensions 5 stars and share it, feedback is welcome
@@ -15,7 +15,7 @@
 *  added `for`-loop snippet
 *  added matplotlib template `plt`
 *  added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
-*  new format for easier selection, to see built in example type `apply.` `class.` `random.`
+*  new format for easier selection, to see built in example type `apply.` `random.` `class` 
 *  get example use `<datatype>.` while for available method use `.<datatype>` ex: `.string`
 *  welcome to contribute to add more ideas, make it as complete as possible
 
