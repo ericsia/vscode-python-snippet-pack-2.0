@@ -598,6 +598,10 @@ Updated README.md
 
 Updated and maintain in year 2022
 
+### 3.0.2
+
+Change .format into f-string
+
 -----------------------------------------------------------------------------------------------------------
 
 
