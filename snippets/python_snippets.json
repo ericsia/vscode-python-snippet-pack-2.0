@@ -1070,12 +1070,22 @@
   },
   "print(\"{}\")": {
     "prefix": "print(\"{}\")",
-    "body": "print(\"{${1:}}\".format(${2:value}, ${3:format}))$0",
+    "body": "print(f\"{${1:}}\")$0",
     "description": "Formats a specified value"
   },
   "print(\"{0} {1}\")": {
     "prefix": "print(\"{0} {1}\")",
-    "body": "print(\"{0} {1}\".format(${1:2}, ${2:3}))$0",
+    "body": "print(f\"{${1:}} {${2:}}\")$0",
+    "description": "Formats a specified value"
+  },
+  "print(\"{ a = }\")": {
+    "prefix": "print(\"{ a = }\")",
+    "body": "print(f\"{${1:a} = }\")$0",
+    "description": "Formats a specified value"
+  },
+  "print(\"{ a = } { b = }\")": {
+    "prefix": "print(\"{ a = } { b = }\")",
+    "body": "print(f\"{${1:a} = } {${2:b = }}\")$0",
     "description": "Formats a specified value"
   },
   "print(\"%d %d\")": {
