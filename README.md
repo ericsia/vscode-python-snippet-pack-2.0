@@ -21,6 +21,11 @@
 
 #### Extra
 *  checkout my [site](https://www.medlexo.ml/)
+
+<img src="python.gif"
+     alt="screenshot"
+     height="450" />
+
 #### This snippet pack contains all below python method
 *  all python built-in snippets and contains at least one example `=>` for each method
 *  all python string snippets contains at least one example for each method
@@ -37,9 +42,8 @@
 #### For example if you want to use string replace method then only use `.replace` 
 #### But if you dont know how to use replace method then type `string` use str.replace=>
 
-#### old gif from (2018) pay tribute to previous developer available in github
-![](python.gif)
-![](oldpython.gif)
+#### old gif from (2018) pay tribute to previous developer
+![oldScreenshot](oldpython.gif)
 
 ## Snippets / Descriptons
 
@@ -601,5 +605,9 @@ Updated and maintain in year 2022
 ### 3.0.2
 
 Change .format into f-string
+
+### 3.0.3
+
+Updated README.md
 
 -----------------------------------------------------------------------------------------------------------
