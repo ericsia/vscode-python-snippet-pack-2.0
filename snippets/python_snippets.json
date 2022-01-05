@@ -335,7 +335,7 @@
   },
   "swap": {
     "prefix": "swap",
-    "body": "${1:x}, ${2:y} = ${2:y}, ${1:x}$0",
+    "body": "${1:a}, ${2:b} = ${2:b}, ${1:a}$0",
     "description": "Pause the code before executing next line"
   },
   "abs": {
