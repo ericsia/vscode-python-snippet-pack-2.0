@@ -1,5 +1,5 @@
 ### Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
-
+[![status](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
 #### A beginner friendly python code snippet pack making you more productive
 #### Please rate this extensions 5 stars and share it, feedback is welcome
 #### Tips: uninstall similar snippet extension first. Reopen
