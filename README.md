@@ -1,5 +1,5 @@
 ### Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
-[![status](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![easy](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/easy.svg) ![light](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/lightweight.svg) 
+[![status](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/lightweight.svg) ![easy](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/easy.svg) 
 #### A beginner friendly python code snippet pack making you more productive
 #### Please rate this extensions 5 stars and share it, feedback is welcome
 #### Tips: uninstall similar snippet extension first. Reopen
@@ -42,7 +42,7 @@
 #### But if you dont know how to use replace method then type `string` use str.replace=>
 
 #### old gif from (2018) pay tribute to previous developer
-![oldScreenshot](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/oldpython.gif)
+![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions
 
