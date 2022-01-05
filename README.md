@@ -2,6 +2,7 @@
 
 #### A beginner friendly python code snippet pack making you more productive
 #### Please rate this extensions 5 stars and share it, feedback is welcome
+#### Tips: uninstall similar snippet extension first. Reopen
 *  added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 *  fixes a few unintended typo left by previous developer
 *  use `TAB` to rename field in every method / feature
@@ -606,8 +607,8 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.0.3
+### 3.0.6
 
-Updated README.md
+Updated README.md and remove unecessary files from package
 
 -----------------------------------------------------------------------------------------------------------
