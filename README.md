@@ -1,5 +1,5 @@
 ### Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
-[![status](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
+[![status](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![easy](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/easy.svg) ![light](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/lightweight.svg) 
 #### A beginner friendly python code snippet pack making you more productive
 #### Please rate this extensions 5 stars and share it, feedback is welcome
 #### Tips: uninstall similar snippet extension first. Reopen
@@ -23,9 +23,7 @@
 #### Extra
 *  checkout my [site](https://www.medlexo.ml/)
 
-<img src="python.gif"
-     alt="screenshot"
-     height="450" />
+<img src="https://github.com/ericsia/vscode-python-snippet-pack-2.0/raw/HEAD/python.gif" alt="screenshot" height="450" />
 
 #### This snippet pack contains all below python method
 *  all python built-in snippets and contains at least one example `=>` for each method
@@ -44,9 +42,9 @@
 #### But if you dont know how to use replace method then type `string` use str.replace=>
 
 #### old gif from (2018) pay tribute to previous developer
-![oldScreenshot](oldpython.gif)
+![oldScreenshot](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/oldpython.gif)
 
-## Snippets / Descriptons
+## Snippets | Descriptions
 
 | built-in methods code snippets | Description                                                                                                                                                                                             |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -607,7 +605,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.0.6
+### 3.0.8
 
 Updated README.md and remove unecessary files from package
 
