@@ -1,9 +1,9 @@
 ### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
-[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.svg)
+[![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
-#### Tips: uninstall similar python snippet extension first. Install then Reopen
+#### Tips: uninstall similar python snippet extension first. Then install and Reopen
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
@@ -19,7 +19,7 @@
 * added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
 * new format for easier selection, to see built in example type `apply.` `random.` `class` 
 * get example use `<datatype>.` while for available method use `.<datatype>` ex: `.string`
-* welcome to contribute to add more ideas, make it as complete as possible
+* welcome to contribute through feedback to add more ideas, make it as complete as possible
 
 ### Extra
 * checkout my [site](https://www.medlexo.ml/)
@@ -30,7 +30,7 @@
 #### This extensions not only provide snippets but also is helpful for learning python programming language.
 * all python built-in snippets and with at least one example `=>` for each method
 * For example if you want to use string replace method type `.replace` 
-* But if you dont know how to use replace method then type `str` find str.replace=>
+* But if you don't know how to use replace method then type `str` find str.replace=>
 * Contains a lot of other code snippets (like if:else, for, while, while:else, try:catch, fileIO and oop class snippets examples (polymorphism, encapsulation, inheritance)
 
 
@@ -38,7 +38,7 @@
 ![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
-| There are string/list/tuple/set/dict datatype snippet | E.g. Type out |
+| There are string/list/tuple/set/dict datatype snippet | E.g. Type Out |
 |-------------------------------------------------------|---------------|
 | To get example type `<datatype>`                      | `str`         |
 | To get available method type `.<datatype>`            | `.string`     |
@@ -168,7 +168,7 @@
 | function code snippets  | Description                            |
 |-------------------------|----------------------------------------|
 | def=>                   | Defining Function                      |
-| def=>with_default_value | Defining Function wqith default values |
+| def=>with_default_value | Defining Function with default values |
 | function=>              | Defining Function                      |
 
 
@@ -261,8 +261,8 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.1.1
+### 3.1.2
 
-Updated README.md and remove unecessary files from package
+Updated README.md and remove unnecessary files from package
 
 -----------------------------------------------------------------------------------------------------------
