@@ -1,7 +1,7 @@
-### Best Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
-[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.svg)
+### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
+[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.syg)
 
-#### A beginner friendly Python3 Snippets auto suggestion pack making you more productive
+#### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
 #### Tips: uninstall similar python snippet extension first. Install then Reopen
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
@@ -26,8 +26,8 @@
 
 <img src="https://github.com/ericsia/vscode-python-snippet-pack-2.0/raw/HEAD/python.gif" alt="screenshot" height="450" />
 
-#### Don't worry if you never see that method before, this extension contains a lot of code examples for each python method.
-#### This extensions not only provide snippets but also helpful for learning python programming language.
+#### Don't worry if you never see that method before, this extension provided a lot of code examples for that.
+#### This extensions not only provide snippets but also is helpful for learning python programming language.
 * all python built-in snippets and with at least one example `=>` for each method
 * For example if you want to use string replace method type `.replace` 
 * But if you dont know how to use replace method then type `str` find str.replace=>
@@ -38,13 +38,13 @@
 ![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
-| There are string/list/tuple/set/dict datatype snippet | Type out   |
-|-------------------------------------------------------|------------|
-| To get example type `<datatype>`                      | `str`      |
-| To get available method type `.<datatype>`            | `.string`  |
-| To see available datatype                             | `datatype` |
-| To initialise datatype use the snippet                | `bool`     |
-| To get built-in method type `apply` then scroll down  | `apply`    |
+| There are string/list/tuple/set/dict datatype snippet | E.g. Type out |
+|-------------------------------------------------------|---------------|
+| To get example type `<datatype>`                      | `str`         |
+| To get available method type `.<datatype>`            | `.string`     |
+| To see available datatype                             | `datatype`    |
+| To initialise use the `<datatype> initialise` snippet | `bool`        |
+| To get built-in method type `apply` then scroll down  | `apply`       |
 
 | Built-in methods code snippets | Description                                                                                                                                                                                             |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -203,7 +203,7 @@
 
 ### For example
 
-Creating a class - thanks for `snippsat` mention f-string
+Class Template - thanks for `snippsat` mention f-string
 
 class=>with_attribute_1
 
@@ -261,7 +261,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.1.0
+### 3.1.1
 
 Updated README.md and remove unecessary files from package
 
