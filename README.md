@@ -1,5 +1,5 @@
 ### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
-[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.syg)
+[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
