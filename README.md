@@ -1,9 +1,9 @@
-### Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
-[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](lightweight.svg) ![easy](easy.svg)
+### Best Python Snippets Pack 3 (2022) for Visual Studio Code (python 3.x)
+[![status](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light](light.svg) ![easy](easy.svg)
 
-#### A beginner friendly Python3 code snippet pack making you more productive
+#### A beginner friendly Python3 Snippets auto suggestion pack making you more productive
 #### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
-#### Tips: uninstall similar python snippet extension first. Reopen
+#### Tips: uninstall similar python snippet extension first. Install then Reopen
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
@@ -38,7 +38,7 @@
 ![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
-| There are string/list/tuple/set/dict datatype snippet | type out   |
+| There are string/list/tuple/set/dict datatype snippet | Type out   |
 |-------------------------------------------------------|------------|
 | To get example type `<datatype>`                      | `str`      |
 | To get available method type `.<datatype>`            | `.string`  |
@@ -46,7 +46,7 @@
 | To initialise datatype use the snippet                | `bool`     |
 | To get built-in method type `apply` then scroll down  | `apply`    |
 
-| built-in methods code snippets | Description                                                                                                                                                                                             |
+| Built-in methods code snippets | Description                                                                                                                                                                                             |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abs                            | Returns the absolute value of a number                                                                                                                                                                  |
 | all                            | Returns True if all items in an iterable object are true                                                                                                                                                |
@@ -183,9 +183,9 @@
 | class code snippets | Description           |
 |---------------------|-----------------------|
 | class=>             | python class          |
-| __init__=>          | class __init__ method |
-| __iter__=>          | class __iter__ method |
-| __next__=>          | class __next__ method |
+| `__init__`=>        | class __init__ method |
+| `__iter__`=>        | class __iter__ method |
+| `__next__`=>        | class __next__ method |
  
 
 | class code examples     | Description                  |
@@ -232,7 +232,7 @@ print(f'{woo.name} is {woo.age} years old')
 
 ## Release Notes
 
-This extension aim to cover as many new Python3 method as possible, please help to contribute.
+This extension aim to cover as many new Python3 method make it as complete as possible, please help to contribute from github.
 
 ### For more information
 
@@ -261,7 +261,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.0.9
+### 3.1.0
 
 Updated README.md and remove unecessary files from package
 
