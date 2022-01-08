@@ -35,7 +35,7 @@
 
 
 ## Old gif from (2018) pay tribute to previous developer
-![oldScreenshot](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/oldpython.gif)
+![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
 | There are string/list/tuple/set/dict datatype snippet | E.g. Type Out |
@@ -109,12 +109,48 @@
 | vars                           | Returns the __dict__ property of an object                                                                                                                                                              |
 | zip                            | Returns an iterator, from two or more iterators                                                                                                                                                         |
 
+| import code snippets | Description   |
+|----------------------|---------------|
+| import=>             | import module |
 
+| function code snippets  | Description                           |
+|-------------------------|---------------------------------------|
+| def=>                   | Defining Function                     |
+| def=>with_default_value | Defining Function with default values |
+| function=>              | Defining Function                     |
+
+| file code examples     | Description                           |
+|------------------------|---------------------------------------|
+| file=>openFile         | open a file                           |
+| file=>openFileReadLine | Read one line of the file             |
+| file=>appendFile       | Write to an Existing File             |
+| file=>overwriteFile    | Open a file and overwrite the content |
+| file=>deleteFile       | delete a file                         |
+
+| if/else statement code snippets | Description                |
+|---------------------------------|----------------------------|
+| if                              | if Statements              |
+| ifelif                          | if/else if Statements      |
+| ifelifelse                      | if/else if/else Statements |
+| ifelse                          | if/else Statements         |
+| ifshort                         | ifshort Statements         |
+| else                            | else Statements            |
+
+| match aka switch code snippets | Description      |
+|--------------------------------|------------------|
+| match                          | match Statements |
+| switch                         | match Statements |
+
+| try catch code snippets | Description              |
+|-------------------------|--------------------------|
+| try                     | try:except:              |
+| tryf                    | try:except:finally:      |
+| trye                    | try:except:else:         |
+| tryef                   | try:except:else:finally: |
 
 | for loop code snippets | Description    |
 |------------------------|----------------|
 | for                    | for Statements |
- 
  
 | for loop code examples  |                          |
 |-------------------------|--------------------------|
@@ -127,58 +163,24 @@
 | for=>range_function_3   | An example for using for |
 | for=>for_else           | An example for using for |
 
-
 | while loop code snippets | Description      |
 |--------------------------|------------------|
 | while                    | while Statements |
 | while_else               | while Statements |
- 
- 
+
 | while loop code examples  | Description      |
 |---------------------------|------------------|
 | while=>                   | while Statements |
 | while=>break_statement    | while Statements |
 | while=>continue_statement | while Statements |
 
-
-| if/else statement code snippets | Description                |
-|---------------------------------|----------------------------|
-| if                              | if Statements              |
-| ifelif                          | if/else if Statements      |
-| ifelifelse                      | if/else if/else Statements |
-| ifelse                          | if/else Statements         |
-| ifshort                         | ifshort Statements         |
-| else                            | else Statements            |
-
-| import code snippets | Description   |
-|----------------------|---------------|
-| import=>             | import module |
-
-
 | List Comprehensions code snippets | Description         |
 |-----------------------------------|---------------------|
 | comp=>                            | List Comprehensions |
 
-
 | lambda code examples | Description                                                                           |
 |----------------------|---------------------------------------------------------------------------------------|
 | lambda               | A lambda function can take any number of arguments, but can only have one expression. |
-
-
-| function code snippets  | Description                            |
-|-------------------------|----------------------------------------|
-| def=>                   | Defining Function                      |
-| def=>with_default_value | Defining Function with default values |
-| function=>              | Defining Function                      |
-
-
-| file code examples     | Description                           |
-|------------------------|---------------------------------------|
-| file=>openFile         | open a file                           |
-| file=>openFileReadLine | Read one line of the file             |
-| file=>appendFile       | Write to an Existing File             |
-| file=>overwriteFile    | Open a file and overwrite the content |
-| file=>deleteFile       | delete a file                         |
 
 | class code snippets | Description           |
 |---------------------|-----------------------|
@@ -186,7 +188,6 @@
 | `__init__`=>        | class __init__ method |
 | `__iter__`=>        | class __iter__ method |
 | `__next__`=>        | class __next__ method |
- 
 
 | class code examples     | Description                  |
 |-------------------------|------------------------------|
@@ -261,7 +262,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.1.5
+### 3.1.9
 
 Updated README.md and remove unnecessary files from package
 
