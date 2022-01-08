@@ -45,7 +45,8 @@
 | To see available datatype                             | `datatype`    |
 | To initialise use the `<datatype> initialise` snippet | `bool`        |
 | To get built-in method type `apply` then scroll down  | `apply`       |
-<br/>
+
+<br />
 
 | Built-in methods code snippets | Description                                                                                                                                                                                             |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -109,19 +110,22 @@
 | unichr                         | Return the Unicode string of one character whose Unicode code is the integer i.                                                                                                                         |
 | vars                           | Returns the __dict__ property of an object                                                                                                                                                              |
 | zip                            | Returns an iterator, from two or more iterators                                                                                                                                                         |
-<br/>
+
+<br />
 
 | import code snippets | Description   |
 |----------------------|---------------|
 | import=>             | import module |
-<br/>
+
+<br />
 
 | function code snippets  | Description                           |
 |-------------------------|---------------------------------------|
 | def=>                   | Defining Function                     |
 | def=>with_default_value | Defining Function with default values |
 | function=>              | Defining Function                     |
-<br/>
+
+<br />
 
 | file code examples     | Description                           |
 |------------------------|---------------------------------------|
@@ -130,7 +134,8 @@
 | file=>appendFile       | Write to an Existing File             |
 | file=>overwriteFile    | Open a file and overwrite the content |
 | file=>deleteFile       | delete a file                         |
-<br/>
+
+<br />
 
 | if/else statement code snippets | Description                |
 |---------------------------------|----------------------------|
@@ -140,13 +145,15 @@
 | ifelse                          | if/else Statements         |
 | ifshort                         | ifshort Statements         |
 | else                            | else Statements            |
-<br/>
+
+<br />
 
 | match aka switch code snippets | Description      |
 |--------------------------------|------------------|
 | match                          | match Statements |
 | switch                         | match Statements |
-<br/>
+
+<br />
 
 | try catch code snippets | Description              |
 |-------------------------|--------------------------|
@@ -154,7 +161,8 @@
 | tryf                    | try:except:finally:      |
 | trye                    | try:except:else:         |
 | tryef                   | try:except:else:finally: |
-<br/>
+
+<br />
 
 | for loop code snippets | Description    |
 |------------------------|----------------|
@@ -170,7 +178,8 @@
 | for=>range_function_2   | An example for using for |
 | for=>range_function_3   | An example for using for |
 | for=>for_else           | An example for using for |
-<br/>
+
+<br />
 
 | while loop code snippets | Description      |
 |--------------------------|------------------|
@@ -182,17 +191,20 @@
 | while=>                   | while Statements |
 | while=>break_statement    | while Statements |
 | while=>continue_statement | while Statements |
-<br/>
+
+<br />
 
 | List Comprehensions code snippets | Description         |
 |-----------------------------------|---------------------|
 | comp=>                            | List Comprehensions |
-<br/>
+
+<br />
 
 | lambda code examples | Description                                                                           |
 |----------------------|---------------------------------------------------------------------------------------|
 | lambda               | A lambda function can take any number of arguments, but can only have one expression. |
-<br/>
+
+<br />
 
 | class code snippets | Description           |
 |---------------------|-----------------------|
@@ -274,7 +286,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.2.0
+### 3.2.3
 
 Updated README.md and remove unnecessary files from package
 
