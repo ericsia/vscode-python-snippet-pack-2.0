@@ -176,8 +176,8 @@
 |------------------------|---------------------------------------|
 | file=>openFile         | open a file                           |
 | file=>openFileReadLine | Read one line of the file             |
-| file=>writeExistFile   | Write to an Existing File             |
-| file=>writeOverWrite   | Open a file and overwrite the content |
+| file=>appendFile       | Write to an Existing File             |
+| file=>overwriteFile    | Open a file and overwrite the content |
 | file=>deleteFile       | delete a file                         |
 
 | class code snippets | Description           |
