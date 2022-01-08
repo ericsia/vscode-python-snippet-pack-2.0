@@ -1,5 +1,5 @@
 ### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
-[![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
+[![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg]light.svg) ![easy.svg](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
@@ -35,7 +35,7 @@
 
 
 ## Old gif from (2018) pay tribute to previous developer
-![oldScreenshot](oldpython.gif)
+![oldScreenshot](https://raw.github.com/ericsia/vscode-python-snippet-pack-2.0/master/oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
 | There are string/list/tuple/set/dict datatype snippet | E.g. Type Out |
@@ -261,7 +261,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.1.2
+### 3.1.5
 
 Updated README.md and remove unnecessary files from package
 
