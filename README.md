@@ -2,7 +2,7 @@
 [![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
-#### Please rate this extensions 5 stars and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
+#### Please help to rate this extensions [5 stars](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3&ssr=false#review-details) and share it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)
 #### Tips: uninstall similar python snippet extension first. Then install and Reopen
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
