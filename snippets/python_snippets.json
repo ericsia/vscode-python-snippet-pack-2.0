@@ -16,17 +16,17 @@
   },
   "dp": {
     "prefix": "dp",
-    "body": "print(\"${1:Result is： }{:.${2:2}f}\".format(${3:[number]}))$0",
+    "body": "print(\"${1:Result is： }{:.${2:2}f}\".format(${3:number}))$0",
     "description": "string format in custom decimal place"
   },
   "dp.two": {
     "prefix": "dp.two",
-    "body": "print(\"${1:Result is： }{:.2f}\".format(${2:[numbe]r}))$0",
+    "body": "print(\"${1:Result is： }{:.2f}\".format(${2:number}))$0",
     "description": "string format in 2 decimal place"
   },
   "dp.five": {
     "prefix": "dp.two",
-    "body": "print(\"${1:Result is： }{:.5f}\".format(${2:[number]}))$0",
+    "body": "print(\"${1:Result is： }{:.5f}\".format(${2:number}))$0",
     "description": "string format in 2 decimal place"
   },
   "datatype": {
@@ -111,7 +111,7 @@
   },
   "end": {
     "prefix": "end",
-    "body": "# END ${1:)$0",
+    "body": "# END $0",
     "description": "readability shortcut comment for end"
   },
   "end.def.function": {
