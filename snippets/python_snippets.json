@@ -1,7 +1,7 @@
 {
   "benchmark": {
     "prefix": "benchmark",
-    "body": "import time\n\n#START BENCHMARK\nstart = time.perf_counter()\n#test code here for timing\nend = time.perf_counter()\nprint(\"\\033[93mspent\", end - start, \" ${2:}\\033[0m\")\n# END BENCHMARK$0",
+    "body": "import time\n\n#START BENCHMARK\nstart = time.perf_counter()\n#test code here for timing\nend = time.perf_counter()\nprint(f\"\\033[93mspent {end - start}  ${2:}\\033[0m\")\n# END BENCHMARK$0",
     "description": "datatype of Strings in python"
   },
   "comment": {
@@ -16,17 +16,17 @@
   },
   "dp": {
     "prefix": "dp",
-    "body": "print(\"${1:Result is： }{:.${2:2}f}\".format(${3:number}))$0",
+    "body": "print(f\"${1:Result is： }{${2:number}:.${3:2}f}\")$0",
     "description": "string format in custom decimal place"
   },
   "dp.two": {
     "prefix": "dp.two",
-    "body": "print(\"${1:Result is： }{:.2f}\".format(${2:number}))$0",
+    "body": "print(f\"${1:Result is： }{${2:number}:.2f}\")$0",
     "description": "string format in 2 decimal place"
   },
   "dp.five": {
-    "prefix": "dp.two",
-    "body": "print(\"${1:Result is： }{:.5f}\".format(${2:number}))$0",
+    "prefix": "dp.five",
+    "body": "print(f\"${1:Result is： }{${2:number}:.5f}\")$0",
     "description": "string format in 2 decimal place"
   },
   "datatype": {
@@ -114,6 +114,21 @@
     "body": "# END $0",
     "description": "readability shortcut comment for end"
   },
+  "end.constructor.default": {
+    "prefix": "end.Constructor.Default",
+    "body": "# END DEFAULT CONSTRUCTOR",
+    "description": "readability shortcut comment for end"
+  },
+  "end.constructor.alternate": {
+    "prefix": "end.Constructor.Alternate",
+    "body": "# END ALTERNATE CONSTRUCTOR",
+    "description": "readability shortcut comment for end"
+  },
+  "end.constructor.copy": {
+    "prefix": "end.Constructor.Copy",
+    "body": "# END COPY CONSTRUCTOR",
+    "description": "readability shortcut comment for end"
+  },
   "end.def.function": {
     "prefix": "end.def.function",
     "body": "# END DEF",
@@ -127,6 +142,11 @@
   "end.if": {
     "prefix": "end.if",
     "body": "# END IF",
+    "description": "readability shortcut comment for end"
+  },
+  "end.main": {
+    "prefix": "end.main",
+    "body": "# END MAIN",
     "description": "readability shortcut comment for end"
   },
   "end.match.switch": {
@@ -239,7 +259,7 @@
       "print(\"Dimension: \", np.shape(varExamp__A))",
       "for r in varExamp__A:  # looping through row",
       "\tfor c in r:  # loop through column since array is sequence",
-      "\t\tprint(\"{:2}\".format(c), \" \", end=\"\")",
+      "\t\tprint(f\"{c:2}  \", end=\"\")",
       "\t# END FOR",
       "\tprint()",
       "# END FOR",
