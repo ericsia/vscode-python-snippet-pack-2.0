@@ -45,6 +45,8 @@
 | To see available datatype                             | `datatype`    |
 | To initialise use the `<datatype> initialise` snippet | `bool`        |
 | To get built-in method type `apply` then scroll down  | `apply`       |
+| To use fileIO type `file` then scroll down            | `file`        |
+| To get block comment type `documentation`             | `doc`         |
 
 <br />
 
@@ -115,7 +117,7 @@
 
 | import code snippets | Description   |
 |----------------------|---------------|
-| import=>             | import module |
+| import               | import module |
 
 <br />
 
@@ -257,7 +259,7 @@ print(f'{woo.name} is {woo.age} years old')
 
 ## Release Notes
 
-This extension aim to cover as many new Python3 method make it as complete as possible, please help to contribute from github.
+This extension aim to cover as many new Python3 method make it as complete as possible, please help to contribute from feedback link above.
 
 ### For more information
 
@@ -268,7 +270,7 @@ This extension aim to cover as many new Python3 method make it as complete as po
 * [pythonforbeginners](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python)
 
 
-**Enjoy!**
+**Enjoy! Type less do more**
 
 ### 1.0.0
 
@@ -286,7 +288,7 @@ Updated and maintain in year 2022
 
 Change .format into f-string
 
-### 3.2.6
+### 3.2.8
 
 Updated README.md and remove unnecessary files from package
 
