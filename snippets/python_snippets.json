@@ -10,7 +10,7 @@
     "description": "shortcut for comment"
   },
   "documentation": {
-    "prefix": "documentation",
+    "prefix": "documentation.BlockComment",
     "body": "\"\"\"\n\t$0\n\"\"\"",
     "description": "shortcut for documentation"
   },
