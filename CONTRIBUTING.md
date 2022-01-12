@@ -30,5 +30,5 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. 
 
 ## License
-By contributing, you agree that your contributions will be [licensed](https://github.com/ericsia/vscode-python-snippet-pack-2.0/LICENSE) under its MIT License.
+By contributing, you agree that your contributions will be [licensed](./LICENSE) under its MIT License.
 
