@@ -34,6 +34,66 @@
     "body": "str|bool|dict|int|float|complex|list|tuple|range|bytes|bytearray|memoryview|set|frozenset",
     "description": "datatype of Strings in python"
   },
+  "datatype.is.str": {
+    "prefix": "str datatype",
+    "body": ": str$0",
+    "description": "datatype of Strings in python"
+  },
+  "datatype.is.bool": {
+    "prefix": "bool datatype",
+    "body": ": bool$0",
+    "description": "datatype of bool in python"
+  },
+  "datatype.is.dict": {
+    "prefix": "dict datatype",
+    "body": ": dict$0",
+    "description": "datatype of dict in python"
+  },
+  "datatype.is.int": {
+    "prefix": "int datatype",
+    "body": ": int$0",
+    "description": "datatype of int in python"
+  },
+  "datatype.is.complex": {
+    "prefix": "complex datatype",
+    "body": ": complex$0",
+    "description": "datatype of Complex in python"
+  },
+  "datatype.is.list": {
+    "prefix": "list datatype",
+    "body": ": list$0",
+    "description": "datatype of list in python"
+  },
+  "datatype.is.tuple": {
+    "prefix": "tuple datatype",
+    "body": ": tuple$0",
+    "description": "datatype of tuple in python"
+  },
+  "datatype.is.bytes": {
+    "prefix": "bytes datatype",
+    "body": ": bytes$0",
+    "description": "datatype of bytes in python"
+  },
+  "datatype.is.bytearray": {
+    "prefix": "bytearray datatype",
+    "body": ": bytearray$0",
+    "description": "datatype of bytearray in python"
+  },
+  "datatype.is.memoryview": {
+    "prefix": "memoryview datatype",
+    "body": ": memoryview$0",
+    "description": "datatype of memoryview in python"
+  },
+  "datatype.is.set": {
+    "prefix": "set datatype",
+    "body": ": set$0",
+    "description": "datatype of set in python"
+  },
+  "datatype.is.frozenset": {
+    "prefix": "frozenset datatype",
+    "body": ": frozenset$0",
+    "description": "datatype of frozenset in python"
+  },
   "datatype.str": {
     "prefix": "str initialise",
     "body": "${1:varA}__S: str = \"${2:}\"$0",
@@ -91,7 +151,7 @@
   },
   "datatype.set": {
     "prefix": "set initialise",
-    "body": "${1:varA}__S: set = {${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"}}$0",
+    "body": "${1:varA}__ST: set = {${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"}}$0",
     "description": "datatype of set in python"
   },
   "datatype.frozenset": {
