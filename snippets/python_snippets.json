@@ -16,17 +16,17 @@
   },
   "dp": {
     "prefix": "dp",
-    "body": "print(f\"${1:Result is： }{${2:number}:.${3:2}f}\")$0",
+    "body": "print(f\"${1:Result is: }{${2:number}:.${3:2}f}\")$0",
     "description": "string format in custom decimal place"
   },
   "dp.two": {
     "prefix": "dp.two",
-    "body": "print(f\"${1:Result is： }{${2:number}:.2f}\")$0",
+    "body": "print(f\"${1:Result is: }{${2:number}:.2f}\")$0",
     "description": "string format in 2 decimal place"
   },
   "dp.five": {
     "prefix": "dp.five",
-    "body": "print(f\"${1:Result is： }{${2:number}:.5f}\")$0",
+    "body": "print(f\"${1:Result is: }{${2:number}:.5f}\")$0",
     "description": "string format in 2 decimal place"
   },
   "datatype": {
