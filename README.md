@@ -17,7 +17,7 @@
 * added `for`-loop snippet
 * added matplotlib template `plt`
 * added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
-* new format for easier selection, to see built in example type `apply.` `random.` `class` 
+* new format for easier selection, to see built in example type `apply` `random.` `class` 
 * get example use `<datatype>.` while for available method use `.<datatype>` ex: `.string`
 * welcome to contribute through feedback to add more ideas, make it as complete as possible
 
@@ -286,10 +286,10 @@ Updated and maintain in year 2022
 
 ### 3.0.2
 
-Change .format into f-string
+Change .format into f-string and remove unnecessary files
 
-### 3.3.1
+### 3.3.5
 
-Updated README.md and remove unnecessary files from package
+Updated `apply.` become `apply-`
 
 -----------------------------------------------------------------------------------------------------------
