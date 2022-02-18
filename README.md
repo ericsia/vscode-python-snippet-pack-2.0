@@ -10,15 +10,15 @@
 * added label to method belong to string/list/tuple/set/dict
 * added python `<datatype>` and snippet initialisation, try typing `str`
 * added `match` snippet - python 3.10
-* added `np.init` snippet for numpy array [pip3 install numpy]
+* added `np-init` snippet for numpy array [pip3 install numpy]
 * added `import` snippet
 * added `documentation`, `timeit` snippet
 * added `random` snippet
 * added `for`-loop snippet
 * added matplotlib template `plt`
 * added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
-* new format for easier selection, to see built in example type `apply` `random.` `class` 
-* get example use `<datatype>.` while for available method use `.<datatype>` ex: `.string`
+* new format for easier selection, to see built in example type `apply-`, `random-`, `class` 
+* get example use `<datatype>-` while for available method use `-<datatype>` ex: `-string`
 * welcome to contribute through feedback to add more ideas, make it as complete as possible
 
 ### Extra
@@ -30,7 +30,7 @@
 #### This extensions not only provide snippets but also is helpful for learning python programming language.
 * all python built-in snippets and with at least one example `=>` for each method
 * For example if you want to use string replace method type `.replace` 
-* But if you don't know how to use replace method then type `str` find str.replace=>
+* But if you don't know how to use replace method then type `str` find str-replace=>
 * Contains a lot of other code snippets (like if:else, for, while, while:else, try:catch, fileIO and oop class snippets examples (polymorphism, encapsulation, inheritance)
 
 
@@ -38,15 +38,16 @@
 ![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
-| There are string/list/tuple/set/dict datatype snippet | E.g. Type Out |
-|-------------------------------------------------------|---------------|
-| To get example type `<datatype>`                      | `str`         |
-| To get available method type `.<datatype>`            | `.string`     |
-| To see available datatype                             | `datatype`    |
-| To initialise use the `<datatype> initialise` snippet | `bool`        |
-| To get built-in method type `apply` then scroll down  | `apply`       |
-| To use fileIO type `file` then scroll down            | `file`        |
-| To get block comment type `documentation`             | `doc`         |
+| There are string/list/tuple/set/dict datatype snippet      | E.g. Type Out |
+|------------------------------------------------------------|---------------|
+| To see built-in method example type `apply-` scroll down   | `apply-`      |
+| Tips: to see specific method type `name=`                  | `count=`      |
+| To see datatype method example type `<datatype>-`          | `str-`        |
+| To see datatype method only type `-<datatype>` scroll down | `-string`     |
+| To see python `datatype`                                   | `dtype`       |
+| To initialise type `<datatype> initialise` snippet         | `bool`        |
+| To get fileIO type `file-` then scroll down                | `file-`       |
+| To get block comment type `documentation`                  | `doc`         |
 
 <br />
 
@@ -123,37 +124,37 @@
 
 | function code snippets  | Description                           |
 |-------------------------|---------------------------------------|
-| def=>                   | Defining Function                     |
+| def                     | Defining Function                     |
+| function                | Defining Function                     |
 | def=>with_default_value | Defining Function with default values |
-| function=>              | Defining Function                     |
 
 <br />
 
-| file code examples     | Description                           |
-|------------------------|---------------------------------------|
-| file=>openFile         | open a file                           |
-| file=>openFileReadLine | Read one line of the file             |
-| file=>appendFile       | Write to an Existing File             |
-| file=>overwriteFile    | Open a file and overwrite the content |
-| file=>deleteFile       | delete a file                         |
+| file code examples    | Description                           |
+|-----------------------|---------------------------------------|
+| file-openFile         | open a file                           |
+| file-openFileReadLine | Read one line of the file             |
+| file-appendFile       | Write to an Existing File             |
+| file-overwriteFile    | Open a file and overwrite the content |
+| file-deleteFile       | delete a file                         |
 
 <br />
 
-| if/else statement code snippets | Description                |
-|---------------------------------|----------------------------|
-| if                              | if Statements              |
-| ifelif                          | if/else if Statements      |
-| ifelifelse                      | if/else if/else Statements |
-| ifelse                          | if/else Statements         |
-| ifshort                         | ifshort Statements         |
-| else                            | else Statements            |
+| if/else statement code snippets | Description               |
+|---------------------------------|---------------------------|
+| if                              | if Statement              |
+| ifelif                          | if/else if Statement      |
+| ifelifelse                      | if/else if/else Statement |
+| ifelse                          | if/else Statement         |
+| ifshort                         | ifshort Statement         |
+| else                            | else Statement            |
 
 <br />
 
-| match aka switch code snippets | Description      |
-|--------------------------------|------------------|
-| match                          | match Statements |
-| switch                         | match Statements |
+| match aka switch code snippets | Description     |
+|--------------------------------|-----------------|
+| match                          | match Statement |
+| switch                         | match Statement |
 
 <br />
 
@@ -166,33 +167,34 @@
 
 <br />
 
-| for loop code snippets | Description    |
-|------------------------|----------------|
-| for                    | for Statements |
+| for loop code snippets | Description   |
+|------------------------|---------------|
+| for                    | for Statement |
+| for-                   | for Statement |
 
-| for loop code examples  |                          |
-|-------------------------|--------------------------|
-| for=>                   | An example for using for |
-| for=>through_a_string   | An example for using for |
-| for=>break_statement    | An example for using for |
-| for=>continue_statement | An example for using for |
-| for=>range_function_1   | An example for using for |
-| for=>range_function_2   | An example for using for |
-| for=>range_function_3   | An example for using for |
-| for=>for_else           | An example for using for |
+| for loop code examples  |             |
+|-------------------------|-------------|
+| for=>                   | for example |
+| for=>through_a_string   | for example |
+| for=>break_statement    | for example |
+| for=>continue_statement | for example |
+| for=>range_function_1   | for example |
+| for=>range_function_2   | for example |
+| for=>range_function_3   | for example |
+| for=>for_else           | for example |
 
 <br />
 
-| while loop code snippets | Description      |
-|--------------------------|------------------|
-| while                    | while Statements |
-| while_else               | while Statements |
+| while loop code snippets | Description     |
+|--------------------------|-----------------|
+| while                    | while Statement |
+| while_else               | while Statement |
 
-| while loop code examples  | Description      |
-|---------------------------|------------------|
-| while=>                   | while Statements |
-| while=>break_statement    | while Statements |
-| while=>continue_statement | while Statements |
+| while loop code examples  | Description   |
+|---------------------------|---------------|
+| while=>                   | while example |
+| while=>break_statement    | while example |
+| while=>continue_statement | while example |
 
 <br />
 
@@ -276,7 +278,7 @@ This extension aim to cover as many new Python3 method make it as complete as po
 
 Initial release of python code snippets
 
-### 1.0.2
+### 1.0.2 - future
 
 Updated README.md
 
@@ -290,6 +292,6 @@ Change .format into f-string and remove unnecessary files
 
 ### 3.3.5
 
-Updated `apply.` become `apply-`
+change . become - due to vscode clash ex `apply.` become `apply-`
 
 -----------------------------------------------------------------------------------------------------------
