@@ -1542,7 +1542,7 @@
     "description": "Code snippet to create a for loop structure."
   },
   "for-in enumerate()": {
-    "prefix": "for-enumerate()",
+    "prefix": "for-InEnumerate()",
     "body": "for ${1:i}, ${2:itemIter} in enumerate(${3:iterable}):  # looping through row\n\t# comment: ${4:}\n# END FOR$0",
     "description": "for loop accessing index and element using enumerate"
   },
