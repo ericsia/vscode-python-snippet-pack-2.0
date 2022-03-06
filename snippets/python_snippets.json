@@ -3205,5 +3205,31 @@
       "flying_test(peggy)"
     ],
     "description": "class polymorphism example"
-  }
+  },
+  "Text-Number-Date-Generators":{
+		"prefix": ["text-gen", "date-gen", "number-gen", "gen"],
+		"body":[
+			"import datetime" ,
+			"import random" ,
+			"import string" ,
+			"def text_generator(length=10):" ,
+			"\tx = \"\"" ,
+			"\tfor i in range(length):" ,
+			"\t\tx = x + random.choice(string.ascii_letters)" ,
+			"\treturn x " ,
+			"" ,
+			"def number_generator(digits=5):" ,
+			"\treturn random.randint(0, 10**(digits)-1)" ,     
+			"" ,
+			"def date_generator(start_date, end_date):" ,      
+			"\ttime_between_dates = end_date - start_date" ,   
+			"\tdays_between_dates = time_between_dates.days" ,
+			"\trandom_number_of_days = random.randrange(days_between_dates)" ,
+			"" ,
+			"\trandom_date = start_date + datetime.timedelta(days=random_number_of_days)" ,
+			"" ,
+			"\treturn random_date"
+		],
+		"description": "Python Code For Random Text, Number and Date Generator"
+	}
 }
