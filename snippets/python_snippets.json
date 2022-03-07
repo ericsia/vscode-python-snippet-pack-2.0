@@ -314,8 +314,8 @@
     "body": "np.matrix(${1:arrayVariable}__A)$0",
     "description": "Print an array included 2D-array"
   },
-  "np.example=>": {
-    "prefix": "np-example=>",
+  "np=>": {
+    "prefix": "np=>",
     "body": [
       "import numpy as np\n",
       "varExamp__A = np.array([[1, 2, 3, 4],",
@@ -386,7 +386,7 @@
     "description": "return the next random integer value"
   },
   "random.randrange": {
-    "prefix": "random-int - range",
+    "prefix": "random-int:step",
     "body": "random.randrange(${1:Start}, ${2:ExclusiveEnd}, ${3:Step})$0",
     "description": "return the next random integer value"
   },
@@ -394,6 +394,22 @@
     "prefix": "random-seed",
     "body": "random.seed(1)",
     "description": "when rerun generate same random with a seed value"
+  },
+  "random.TextGenerate": {
+    "prefix": "random-TextGen",
+    "body": ["x = \"\" # import string", "length = 5$0", "for i in range(length):", "\tx = x + random.choice(string.ascii_letters)", "# END FOR", "print(x)"],
+    "description": "generate string base on given length"
+  },
+  "random.DateGenerate": {
+    "prefix": "random-DateGen",
+    "body": [
+      "start_date = datetime.date(2022, 2, 24)  # import random",
+      "end_date = datetime.date(2022, 3, 7)  # import datetime",
+      "random_duration = random.randrange((end_date - start_date).days)",
+      "random_date = start_date + datetime.timedelta(random_duration)",
+      "print(random_date)"
+    ],
+    "description": "Generate a date between 2 given dates"
   },
   "random=>": {
     "prefix": "random=>",
@@ -524,7 +540,7 @@
     "description": "Return an array of bytes"
   },
   "apply.bytearray=>": {
-    "prefix": "apply-bytearray",
+    "prefix": "apply-bytearray=>",
     "body": "bytearray([source[, encoding[, errors]]])",
     "description": "Return an array of bytes"
   },
@@ -539,7 +555,7 @@
     "description": "Return a bytes object"
   },
   "apply.bytes=>": {
-    "prefix": "apply-bytes",
+    "prefix": "apply-bytes=>",
     "body": "bytes(x, encoding, error)",
     "description": "Return a bytes object"
   },
@@ -1437,12 +1453,12 @@
     "description": "Return the type of an object"
   },
   "apply.type": {
-    "prefix": "apply-type",
+    "prefix": "apply-type=>",
     "body": "type(object, bases, dict)",
     "description": "Return the type of an object"
   },
   "apply.type=>": {
-    "prefix": "apply-type=>",
+    "prefix": "apply-type=>1",
     "body": ["a = ('apple', 'banana', 'cherry')", "b = 'Hello World'", "c = 33", "print(type(a))", "print(type(b))", "print(type(c))"],
     "description": "An example for using type"
   },
@@ -1477,22 +1493,22 @@
     "description": "An example for using zip"
   },
   "if": {
-    "prefix": "if",
+    "prefix": "if-",
     "body": "if (${1:}):\n\t# comment: ${2:}\n# END IF$0",
     "description": "if statement"
   },
   "ifelif": {
-    "prefix": "ifelif",
+    "prefix": "if-elif",
     "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: ${4:}\n# END IF$0",
     "description": "if/elif statement"
   },
   "ifelifelse": {
-    "prefix": "ifelifelse",
+    "prefix": "if-elif-else",
     "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: ${4:}\nelse:\n\t# comment: ${5:}\n# END IF$0",
     "description": "if/elif/else statement"
   },
   "ifel": {
-    "prefix": "ifelse",
+    "prefix": "if-else",
     "body": "if (${1:}):\n\t# comment: ${2:}\nelse:\n\t# comment: ${3:}\n# END IF$0",
     "description": "if/else statement"
   },
@@ -1507,7 +1523,7 @@
     "description": "else statement"
   },
   "ifshort": {
-    "prefix": "ifshort",
+    "prefix": "if-short",
     "body": "print('A') if a > b else print('B')",
     "description": "ifshort statement"
   },
@@ -1537,7 +1553,7 @@
     "description": "Using Enums in Python"
   },
   "for": {
-    "prefix": "for",
+    "prefix": "for-",
     "body": "for ${1:value} in ${2:iterable}:\n\t# comment: ${3:}\n# END FOR$0",
     "description": "Code snippet to create a for loop structure."
   },
@@ -1607,12 +1623,12 @@
     "description": "An example for using for"
   },
   "while": {
-    "prefix": "while",
+    "prefix": "while-",
     "body": "while (${1:}):\n\t# comment: ${2:}\n# END WHILE$0",
     "description": "Code snippet to create a while loop structure."
   },
-  "while_else": {
-    "prefix": "while_else",
+  "while-else": {
+    "prefix": "while-else",
     "body": "while (${1:}):\n\t# comment: ${2:}\nelse:\n\t# comment: ${3:}\n# END WHILE$0",
     "description": "while statement"
   },
@@ -1623,7 +1639,7 @@
   },
   "while(notFinished)": {
     "prefix": "while(notFinished)",
-    "body": "${1:notFinished} = ${2:True}\nwhile ${1:notFinished}:\n\t# comment: ${3:}\n\tif ${4:(input(\"Finished? y/n : \") == \"y\")}:\n\t\t${1:notFinished} = ${5:False}\n\t# END IF\n# END WHILE$0",
+    "body": "${1:notFinished} = ${2:True}\nwhile ${1:notFinished}:\n\t# comment: ${3:}\n\tif (${4:input(\"Finished? y/n : \") == \"y\"}):\n\t\t${1:notFinished} = ${5:False}\n\t# END IF\n# END WHILE$0",
     "description": "while statement"
   },
   "while=>break_statement": {
@@ -2885,6 +2901,11 @@
     "body": ["class MyClass:", "\tpass"],
     "description": "python class"
   },
+  "__main__": {
+    "prefix": "def.function(main)",
+    "body": "if __name__ == \"__main__\":\n\t$0\n# END MAIN",
+    "description": "similar to main function"
+  },
   "__init__": {
     "prefix": "__init__=>",
     "body": ["def __init__(self, name, age):", "\tself.name = name", "\tself.age = age"],
@@ -2901,22 +2922,22 @@
     "description": "__next__ method"
   },
   "try:except:": {
-    "prefix": "try",
+    "prefix": "try-",
     "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\n# END TRY$0",
     "description": "Code Snippet for a try and except blocks."
   },
-  "try:except:else:finally": {
-    "prefix": "tryef",
-    "body": "try:\n\t# comment: ${1:}\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: ${6:}\nfinally:\n\t# comment: ${7:}\n# END TRY$0",
-    "description": "Code Snippet for a try/except/finally with else statement."
-  },
   "try:except:else": {
-    "prefix": "trye",
+    "prefix": "try-e",
     "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t# comment: ${5:}\n# END TRY$0",
     "description": "Code Snippet for a try/except with else statement."
   },
+  "try:except:else:finally": {
+    "prefix": "try-e-f",
+    "body": "try:\n\t# comment: ${1:}\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: ${6:}\nfinally:\n\t# comment: ${7:}\n# END TRY$0",
+    "description": "Code Snippet for a try/except/finally with else statement."
+  },
   "try:except:finally": {
-    "prefix": "tryf",
+    "prefix": "try-f",
     "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t# comment: ${5:}\n# END TRY$0",
     "description": "Code Snippet for a try/except/finally."
   },
@@ -3206,30 +3227,34 @@
     ],
     "description": "class polymorphism example"
   },
-  "Text-Number-Date-Generators":{
-		"prefix": ["text-gen", "date-gen", "number-gen", "gen"],
-		"body":[
-			"import datetime" ,
-			"import random" ,
-			"import string" ,
-			"def text_generator(length=10):" ,
-			"\tx = \"\"" ,
-			"\tfor i in range(length):" ,
-			"\t\tx = x + random.choice(string.ascii_letters)" ,
-			"\treturn x " ,
-			"" ,
-			"def number_generator(digits=5):" ,
-			"\treturn random.randint(0, 10**(digits)-1)" ,     
-			"" ,
-			"def date_generator(start_date, end_date):" ,      
-			"\ttime_between_dates = end_date - start_date" ,   
-			"\tdays_between_dates = time_between_dates.days" ,
-			"\trandom_number_of_days = random.randrange(days_between_dates)" ,
-			"" ,
-			"\trandom_date = start_date + datetime.timedelta(days=random_number_of_days)" ,
-			"" ,
-			"\treturn random_date"
-		],
-		"description": "Python Code For Random Text, Number and Date Generator"
-	}
+  "PyMySQL Database Connection": {
+    "scope": "python",
+    "prefix": "pymysql",
+    "body": [
+      "import pymysql",
+      "class Database:\n",
+      "\tdatabase_cred = {",
+      "\t\t\"host\": \"${1:HOST}\",",
+      "\t\t\"user\": \"${2:USER}\",",
+      "\t\t\"password\": \"${3:PASSWORD}\",",
+      "\t\t\"database\": \"${4:DATABASE}\",",
+      "\t\t\"cursorclass\": pymysql.cursors.DictCursor",
+      "\t}\n",
+      "\tdef __init__(self, database_cred: dict = None):",
+      "\t\tif database_cred:",
+      "\t\t\tself.conn = pymysql.connect(**database_cred)",
+      "\t\telse:",
+      "\t\t\tself.conn = pymysql.connect(**self.database_cred)",
+      "\t\t# END IF\n",
+      "\tdef run_qry(self, sql: str):",
+      "\t\twith self.conn.cursor() as cursor:",
+      "\t\t\tcursor.execute(sql)",
+      "\t\t\tself.conn.commit()",
+      "\t\t\tresult = cursor.fetchall()",
+      "\t\t# END WITH\n",
+      "\treturn result",
+      "# END CLASS"
+    ],
+    "description": "PymySQL database connection"
+  }
 }
