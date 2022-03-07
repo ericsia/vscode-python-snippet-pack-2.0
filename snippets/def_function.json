@@ -1,0 +1,27 @@
+{
+    "def.function()": {
+        "prefix": "def.function()",
+        "body": "def ${1:name}():\n\t# comment: ${2:}\n# END DEF$0",
+        "description": "Defining Function"
+    },
+    "def.function(one)": {
+        "prefix": "def.function(one)",
+        "body": "def ${1:name}(${2:arg}):\n\t# comment: ${3:}\n# END DEF$0",
+        "description": "Defining Function with argument"
+    },
+    "def.function(one, two)": {
+        "prefix": "def.function(one, two)",
+        "body": "def ${1:name}(${2:one}, ${2:two}):\n\t# comment: ${3:}\n# END DEF$0",
+        "description": "Defining Function with argument"
+    },
+    "__main__": {
+        "prefix": "def.function(main)",
+        "body": "if __name__ == \"__main__\":\n\t$0\n# END MAIN",
+        "description": "similar to main function"
+    },
+    "def=>with_default_value": {
+        "prefix": "def=>with_default_value",
+        "body": "def ${1:name}(${2:#lastName=\"john\"}):\n\t# comment: ${3:}\n# END DEF$0",
+        "description": "Defining Function wqith default values"
+    }
+}

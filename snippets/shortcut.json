@@ -1,0 +1,202 @@
+{
+    "benchmark": {
+        "prefix": "benchmark",
+        "body": "import time\n\n#START BENCHMARK\nstart = time.perf_counter()\n#test code here for timing\nend = time.perf_counter()\nprint(f\"\\033[93mspent {end - start}  ${2:}\\033[0m\")\n# END BENCHMARK$0",
+        "description": "benchmark snippet"
+    },
+    "comment": {
+        "prefix": "c",
+        "body": "# $0",
+        "description": "shortcut for comment"
+    },
+    "documentation": {
+        "prefix": "documentation.BlockComment",
+        "body": "\"\"\"\n\t$0\n\"\"\"",
+        "description": "shortcut for documentation"
+    },
+    "dp": {
+        "prefix": "dp",
+        "body": "print(f\"${1:Result is: }{${2:number}:.${3:2}f}\")$0",
+        "description": "string format in custom decimal place"
+    },
+    "dp.two": {
+        "prefix": "dp-two",
+        "body": "print(f\"${1:Result is: }{${2:number}:.2f}\")$0",
+        "description": "string format in 2 decimal place"
+    },
+    "dp.five": {
+        "prefix": "dp-five",
+        "body": "print(f\"${1:Result is: }{${2:number}:.5f}\")$0",
+        "description": "string format in 2 decimal place"
+    },
+    "datatype": {
+        "prefix": "datatype.dtype",
+        "body": "str|bool|dict|int|float|complex|list|tuple|range|bytes|bytearray|memoryview|set|frozenset",
+        "description": "datatype of Strings in python"
+    },
+    "datatype.is.str": {
+        "prefix": "str datatype",
+        "body": ": str$0",
+        "description": "datatype of Strings in python"
+    },
+    "datatype.is.bool": {
+        "prefix": "bool datatype",
+        "body": ": bool$0",
+        "description": "datatype of bool in python"
+    },
+    "datatype.is.dict": {
+        "prefix": "dict datatype",
+        "body": ": dict$0",
+        "description": "datatype of dict in python"
+    },
+    "datatype.is.int": {
+        "prefix": "int datatype",
+        "body": ": int$0",
+        "description": "datatype of int in python"
+    },
+    "datatype.is.complex": {
+        "prefix": "complex datatype",
+        "body": ": complex$0",
+        "description": "datatype of Complex in python"
+    },
+    "datatype.is.list": {
+        "prefix": "list datatype",
+        "body": ": list$0",
+        "description": "datatype of list in python"
+    },
+    "datatype.is.tuple": {
+        "prefix": "tuple datatype",
+        "body": ": tuple$0",
+        "description": "datatype of tuple in python"
+    },
+    "datatype.is.bytes": {
+        "prefix": "bytes datatype",
+        "body": ": bytes$0",
+        "description": "datatype of bytes in python"
+    },
+    "datatype.is.bytearray": {
+        "prefix": "bytearray datatype",
+        "body": ": bytearray$0",
+        "description": "datatype of bytearray in python"
+    },
+    "datatype.is.memoryview": {
+        "prefix": "memoryview datatype",
+        "body": ": memoryview$0",
+        "description": "datatype of memoryview in python"
+    },
+    "datatype.is.set": {
+        "prefix": "set datatype",
+        "body": ": set$0",
+        "description": "datatype of set in python"
+    },
+    "datatype.is.frozenset": {
+        "prefix": "frozenset datatype",
+        "body": ": frozenset$0",
+        "description": "datatype of frozenset in python"
+    },
+    "datatype.str": {
+        "prefix": "str initialise",
+        "body": "${1:varA}__S: str = \"${2:}\"$0",
+        "description": "datatype of Strings in python"
+    },
+    "datatype.strmulti": {
+        "prefix": "str multi initialise",
+        "body": "${1:varB}__S: str = \"\"\"${2:text\nhere}\"\"\"$0",
+        "description": "datatype of Strings in python"
+    },
+    "datatype.bool": {
+        "prefix": "bool initialise",
+        "body": "${1:varA}__B: bool = ${2:False}$0",
+        "description": "datatype of bool in python"
+    },
+    "datatype.dict": {
+        "prefix": "dict initialise",
+        "body": "${1:varA}__D: dict = {${2:\"key\"}:${3:value}, ${4:\"name\"}:${5:\"eric\"}, ${6:\"age\"}:${7:24}}$0",
+        "description": "datatype of dict in python"
+    },
+    "datatype.int": {
+        "prefix": "int initialise",
+        "body": "${1:varA}__I: int = ${2:0}$0",
+        "description": "datatype of int in python"
+    },
+    "datatype.complex": {
+        "prefix": "complex initialise",
+        "body": "${1:varA}__C: complex = ${2:1}j$0",
+        "description": "datatype of Complex in python"
+    },
+    "datatype.list": {
+        "prefix": "list initialise",
+        "body": "${1:varA}__L: list = [${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"}]$0",
+        "description": "datatype of list in python"
+    },
+    "datatype.tuple": {
+        "prefix": "tuple initialise",
+        "body": "${1:varA}__T: tuple = (${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"})$0",
+        "description": "datatype of tuple in python"
+    },
+    "datatype.bytes": {
+        "prefix": "bytes initialise",
+        "body": "${1:varA}__B: bytes = b${2:\"meow\"}$0",
+        "description": "datatype of bytes in python"
+    },
+    "datatype.bytearray": {
+        "prefix": "bytearray initialise",
+        "body": "${1:varA}__BA: bytearray = bytearray(${2:number})$0",
+        "description": "datatype of bytearray in python"
+    },
+    "datatype.memoryview": {
+        "prefix": "memoryview initialise",
+        "body": "${1:varA}__M: memoryview = memoryview(${2:bytes-like object})$0",
+        "description": "datatype of memoryview in python"
+    },
+    "datatype.set": {
+        "prefix": "set initialise",
+        "body": "${1:varA}__ST: set = {${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"}}$0",
+        "description": "datatype of set in python"
+    },
+    "datatype.frozenset": {
+        "prefix": "frozenset initialise",
+        "body": "${1:varA}__FS: frozenset = frozenset({${2:\"objectA\"}, ${3:\"objectB\"}, ${4:\"objectC\"}})$0",
+        "description": "datatype of frozenset in python"
+    },
+    "debug.init": {
+        "prefix": "debug.init",
+        "body": "from itertools import count\n\ndebugN = count()",
+        "description": "Initialise count"
+    },
+    "debug.count": {
+        "prefix": "debug.count",
+        "body": "print(\"\\033[93mdebug\", next(debugN), \" $0\\033[0m\")",
+        "description": "starting count"
+    },
+    "env": {
+        "prefix": "env",
+        "body": [
+            "${1/(.*)/${1:/downcase}/} = os.getenv(\"${1/(.*)/${1:/upcase}/}\", None)"
+        ],
+        "description": "Using Environment Variables in Python"
+    },
+    "env - with import": {
+        "prefix": "env - with import",
+        "body": [
+            "import os\n",
+            "${1/(.*)/${1:/downcase}/} = os.getenv(\"${1/(.*)/${1:/upcase}/}\", None)\n"
+        ],
+        "description": "Using Environment Variables in Python"
+    },
+    "self": {
+        "prefix": "self",
+        "body": "self.$0",
+        "description": "Shorten snippet to reference the self property in an object."
+    },
+    "sleep": {
+        "prefix": "sleep",
+        "body": "time.sleep(${1:second})#import time$0",
+        "description": "Pause the code before executing next line"
+    },
+    "swap": {
+        "prefix": "swap",
+        "body": "${1:a}, ${2:b} = ${2:b}, ${1:a}$0",
+        "description": "Pause the code before executing next line"
+    }
+}

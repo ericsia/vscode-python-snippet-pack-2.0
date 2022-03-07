@@ -1,14 +1,4 @@
 {
-    "isprintable": {
-        "prefix": ".isprintable -string",
-        "body": ".isprintable()",
-        "description": "Return True if all characters in the string are printable"
-    },
-    "print()": {
-        "prefix": "print()",
-        "body": "print($0)",
-        "description": "Code snippet for the print statement."
-    },
     "print(\"\")": {
         "prefix": "print(\"\")",
         "body": "print(\"$0\")",
@@ -78,32 +68,5 @@
         "prefix": "print-printClean",
         "body": "print(\"${1:}\", end=\"${2:}\")$0",
         "description": "Instead of default \\n keep it empty to print on same line"
-    },
-    "apply.print=>": {
-        "prefix": "apply-print=>",
-        "body": "print(object(s), sep=separator, end=end, file=file, flush=flush)",
-        "description": "Prints to the standard output device"
-    },
-    "apply.print=>1": {
-        "prefix": "apply-print=>1",
-        "body": [
-            "print('Hello', 'how are you?')"
-        ],
-        "description": "An example for using print"
-    },
-    "apply.print=>2": {
-        "prefix": "apply-print=>2",
-        "body": [
-            "x = ('apple', 'banana', 'cherry')",
-            "print(x)"
-        ],
-        "description": "An example for using print"
-    },
-    "apply.print=>3": {
-        "prefix": "apply-print=>3",
-        "body": [
-            "print('Hello', 'how are you?', sep=' ---')"
-        ],
-        "description": "An example for using print"
     }
 }

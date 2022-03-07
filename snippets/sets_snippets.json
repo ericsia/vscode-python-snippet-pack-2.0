@@ -1,16 +1,8 @@
 {
-    "set=>": {
-        "prefix": "set=>",
-        "body": "set(${1:iterable})$0",
-        "description": "Return a new set object"
-    },
-    "apply.set=>": {
-        "prefix": "apply-set=>",
-        "body": [
-            "x = set(('apple', 'banana', 'cherry'))",
-            "print(x)"
-        ],
-        "description": "An example for using set"
+    "add": {
+        "prefix": ".add -set",
+        "body": ".add(${1:element})$0",
+        "description": "Adds an element to the set"
     },
     "sets.add=>": {
         "prefix": "sets-add=>",
@@ -21,6 +13,11 @@
         ],
         "description": "An example for using add"
     },
+    "clear -sets": {
+        "prefix": ".clear -sets",
+        "body": ".clear()",
+        "description": "Removes all the elements from the set"
+    },
     "sets.clear=>": {
         "prefix": "sets-clear=>",
         "body": [
@@ -30,6 +27,11 @@
         ],
         "description": "An example for using clear"
     },
+    "copy -set": {
+        "prefix": ".copy -set",
+        "body": ".copy()",
+        "description": "Return a copy of the set"
+    },
     "sets.copy=>": {
         "prefix": "sets-copy=>",
         "body": [
@@ -38,6 +40,36 @@
             "print(x)"
         ],
         "description": "An example for using copy"
+    },
+    "difference": {
+        "prefix": ".difference -set",
+        "body": ".difference(${1:set})$0",
+        "description": "Return a set containing the difference between two or more sets"
+    },
+    "sets.difference=>1": {
+        "prefix": "sets-difference=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.difference(y)",
+            "print(z)"
+        ],
+        "description": "An example for using difference"
+    },
+    "sets.difference=>2": {
+        "prefix": "sets-difference=>2",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = y.difference(x) ",
+            "print(z)"
+        ],
+        "description": "An example for using difference"
+    },
+    "difference_update": {
+        "prefix": ".difference_update -set",
+        "body": ".difference_update(${1:set})$0",
+        "description": "Removes the items in this set that are also included in another, specified set"
     },
     "sets.difference_update=>": {
         "prefix": "sets-difference_update=>",
@@ -49,6 +81,11 @@
         ],
         "description": "An example for using difference_update"
     },
+    "discard": {
+        "prefix": ".discard -set",
+        "body": ".discard(${1:item})$0",
+        "description": "Remove the specified item"
+    },
     "sets.discard=>": {
         "prefix": "sets-discard=>",
         "body": [
@@ -57,6 +94,11 @@
             "print(fruits)"
         ],
         "description": "An example for using discard"
+    },
+    "intersection": {
+        "prefix": ".intersection -set",
+        "body": ".intersection(${1:set})$0",
+        "description": "Return a set, that is the intersection of two other sets"
     },
     "sets.intersection=>1": {
         "prefix": "sets-intersection=>1",
@@ -79,6 +121,11 @@
         ],
         "description": "An example for using intersection"
     },
+    "intersection_update": {
+        "prefix": ".intersection_update -set",
+        "body": ".intersection_update(${1:set})$0",
+        "description": "Removes the items in this set that are not present in other, specified set(s)"
+    },
     "sets.intersection_update=>1": {
         "prefix": "sets-intersection_update=>1",
         "body": [
@@ -100,6 +147,11 @@
         ],
         "description": "An example for using intersection_update"
     },
+    "isdisjoint": {
+        "prefix": ".isdisjoint -set",
+        "body": ".isdisjoint(${1:set})$0",
+        "description": "Return whether two sets have a intersection or not"
+    },
     "sets.isdisjoint=>1": {
         "prefix": "sets-isdisjoint=>1",
         "body": [
@@ -119,6 +171,11 @@
             "print(z)"
         ],
         "description": "An example for using isdisjoint"
+    },
+    "issubset": {
+        "prefix": ".issubset -set",
+        "body": ".issubset(${1:set})$0",
+        "description": "Return whether another set contains this set or not"
     },
     "sets.issubset=>1": {
         "prefix": "sets-sets.issubset=>1",
@@ -140,6 +197,11 @@
         ],
         "description": "An example for using issubset"
     },
+    "issuperset": {
+        "prefix": ".issuperset -set",
+        "body": ".issuperset(${1:set})$0",
+        "description": "Return whether this set contains another set or not"
+    },
     "sets.issuperset=>1": {
         "prefix": "sets-issuperset=>1",
         "body": [
@@ -160,6 +222,11 @@
         ],
         "description": "An example for using issuperset"
     },
+    "pop -set": {
+        "prefix": ".pop -set",
+        "body": ".pop()",
+        "description": "Removes the specified element"
+    },
     "sets.pop=>": {
         "prefix": "sets-pop=>",
         "body": [
@@ -169,6 +236,11 @@
         ],
         "description": "An example for using pop"
     },
+    "remove -set": {
+        "prefix": ".remove -set",
+        "body": ".remove(${1:item})$0",
+        "description": "Removes the specified element"
+    },
     "sets.remove=>": {
         "prefix": "sets-remove=>",
         "body": [
@@ -177,6 +249,11 @@
             "print(fruits)"
         ],
         "description": "An example for using remove"
+    },
+    "symmetric_difference": {
+        "prefix": ".symmetric_difference -set",
+        "body": ".symmetric_difference(${1:set})$0",
+        "description": "Return a set with the symmetric differences of two sets"
     },
     "sets.symmetric_difference=>": {
         "prefix": "sets-symmetric_difference=>",
@@ -188,6 +265,11 @@
         ],
         "description": "An example for using symmetric_difference"
     },
+    "symmetric_difference_update": {
+        "prefix": ".symmetric_difference_update -set",
+        "body": ".symmetric_difference_update(${1:set})$0",
+        "description": "inserts the symmetric differences from this set and another"
+    },
     "sets.symmetric_difference_update=>": {
         "prefix": "sets-symmetric_difference_update=>",
         "body": [
@@ -197,6 +279,11 @@
             "print(x)"
         ],
         "description": "An example for using symmetric_difference_update"
+    },
+    "union": {
+        "prefix": ".union -set",
+        "body": ".union(${1:set})$0",
+        "description": "Return a set containing the union of sets"
     },
     "sets.union=>1": {
         "prefix": "sets-union=>1",
@@ -218,6 +305,11 @@
             "print(result)"
         ],
         "description": "An example for using union"
+    },
+    "update -set": {
+        "prefix": ".update -set",
+        "body": ".update(${1:set})$0",
+        "description": "Update the set with the union of this set and others"
     },
     "sets.update=>": {
         "prefix": "sets-update=>",

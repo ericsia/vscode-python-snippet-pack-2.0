@@ -1,0 +1,274 @@
+{
+    "clear -dict": {
+        "prefix": ".clear -dict",
+        "body": ".clear()",
+        "description": "Removes all the elements from the dictionary"
+    },
+    "dict.clear=>": {
+        "prefix": "dict-clear=>",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "car.clear()",
+            "print(car)"
+        ],
+        "description": "An example for using clear"
+    },
+    "copy -dict": {
+        "prefix": ".copy -dict",
+        "body": ".copy()",
+        "description": "Return a copy of the dictionary"
+    },
+    "dict.copy=>": {
+        "prefix": "dict-copy=>",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.copy()",
+            "print(x)"
+        ],
+        "description": "An example for using copy"
+    },
+    "fromkeys": {
+        "prefix": ".fromkeys -dict",
+        "body": ".fromkeys(${1:key}, ${2:value})$0",
+        "description": "Return a dictionary with the specified keys and values"
+    },
+    "dict.fromkeys=>1": {
+        "prefix": "dict-fromkeys=>1",
+        "body": [
+            "x = ('key1', 'key2', 'key3')",
+            "y = 0",
+            "thisdict = dict.fromkeys(x, y)",
+            "print(thisdict)"
+        ],
+        "description": "An example for using fromkeys"
+    },
+    "dict.fromkeys=>2": {
+        "prefix": "dict-fromkeys=>2",
+        "body": [
+            "x = ('key1', 'key2', 'key3')",
+            "thisdict = dict.fromkeys(x)",
+            "print(thisdict)"
+        ],
+        "description": "An example for using fromkeys"
+    },
+    "get": {
+        "prefix": ".get -dict",
+        "body": ".get(${1:key})$0",
+        "description": "Return the value of the specified key"
+    },
+    "dict.get=>1": {
+        "prefix": "dict-get=>1",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.get('model')",
+            "print(x)"
+        ],
+        "description": "An example for using get"
+    },
+    "dict.get=>2": {
+        "prefix": "dict-get=>2",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.get('price', 15000)",
+            "print(x)"
+        ],
+        "description": "An example for using get"
+    },
+    "items": {
+        "prefix": ".items -dict",
+        "body": ".items()",
+        "description": "Return a list containing the a tuple for each key value pair"
+    },
+    "dict.items=>1": {
+        "prefix": "dict-items=>1",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.items()",
+            "print(x)"
+        ],
+        "description": "An example for using items"
+    },
+    "dict.items=>2": {
+        "prefix": "dict-items=>2",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.items()",
+            "car['year'] = 2018",
+            "print(x)"
+        ],
+        "description": "An example for using items"
+    },
+    "keys": {
+        "prefix": ".keys -dict",
+        "body": ".keys()",
+        "description": "Return a list containing the dictionary's keys"
+    },
+    "dict.keys=>1": {
+        "prefix": "dict-keys=>1",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.keys()",
+            "print(x)"
+        ],
+        "description": "An example for using keys"
+    },
+    "dict.keys=>2": {
+        "prefix": "dict-keys=>2",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.keys()",
+            "car['color'] = 'white'",
+            "print(x)"
+        ],
+        "description": "An example for using keys"
+    },
+    "pop -dict": {
+        "prefix": ".pop -dict",
+        "body": ".pop(${1:key})$0",
+        "description": "Removes the element with the specified key"
+    },
+    "dict.pop=>": {
+        "prefix": "dict-pop=>",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "car.pop('model')",
+            "print(car)"
+        ],
+        "description": "An example for using pop"
+    },
+    "popitem": {
+        "prefix": ".popitem -dict",
+        "body": ".popitem()",
+        "description": "Removes the last inserted key-value pai"
+    },
+    "dict.popitem=>": {
+        "prefix": "dict-popitem=>",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "car.popitem()",
+            "print(car)"
+        ],
+        "description": "An example for using popitem"
+    },
+    "setdefault": {
+        "prefix": ".setdefault -dict",
+        "body": ".setdefault(${1:key}, ${2:value})$0",
+        "description": "Return the value of the specified key. If the key does not exist: insert the key, with the specified value"
+    },
+    "dict.setdefault=>1": {
+        "prefix": "dict-setdefault=>1",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.setdefault('model', 'Bronco')",
+            "print(x)"
+        ],
+        "description": "An example for using setdefault"
+    },
+    "dict.setdefault=>2": {
+        "prefix": "dict-setdefault=>2",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.setdefault('color', 'white')",
+            "print(x)"
+        ],
+        "description": "An example for using setdefault"
+    },
+    "update -dict": {
+        "prefix": ".update -dict",
+        "body": ".update(${1:key}, ${2:value})$0",
+        "description": "Updates the dictionary with the specified key-value pairs"
+    },
+    "dict.update=>": {
+        "prefix": "dict-update=>",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "car.update({'color': 'White'})",
+            "print(car)"
+        ],
+        "description": "An example for using update"
+    },
+    "values": {
+        "prefix": ".values -dict",
+        "body": ".values()",
+        "description": "Return a list of all the values in the dictionary"
+    },
+    "dict.values=>1": {
+        "prefix": "dict-values=>1",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.values()",
+            "print(x)"
+        ],
+        "description": "An example for using values"
+    },
+    "dict.values=>2": {
+        "prefix": "dict-values=>2",
+        "body": [
+            "car = {",
+            "\t'brand': 'Ford',",
+            "\t'model': 'Mustang',",
+            "\t'year': 1964",
+            "}",
+            "x = car.values()",
+            "car['year'] = 2018",
+            "print(x)"
+        ],
+        "description": "An example for using values"
+    }
+}

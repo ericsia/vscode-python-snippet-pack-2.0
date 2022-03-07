@@ -1,16 +1,36 @@
 {
+    "enum": {
+        "prefix": "enum",
+        "body": [
+            "from enum import Enum\n",
+            "class ${1:MyEnum}(Enum):",
+            "\t\"\"\"",
+            "\tEnum Description: ",
+            "\t\"\"\"",
+            "\t${2:RED} = \"${3:red}\"",
+            "\t${4:GREEN} = \"${5:green}\"",
+            "\t${6:BLUE} = \"${7:blue}\"\n"
+        ],
+        "description": "Using Enums in Python"
+    },
+    "enum.int": {
+        "prefix": "enum.int",
+        "body": [
+            "from enum import IntEnum\n",
+            "class ${1:MyEnum}(IntEnum):",
+            "\t\"\"\"",
+            "\tEnum Description: ",
+            "\t\"\"\"",
+            "\t${2:RED} = ${3:0}",
+            "\t${4:GREEN} = ${5:1}",
+            "\t${6:BLUE} = ${7:2}\n"
+        ],
+        "description": "Using Enums in Python"
+    },
     "class": {
         "prefix": "class=>",
-        "body": [
-            "class MyClass:",
-            "\tpass"
-        ],
+        "body": ["class MyClass:", "\tpass"],
         "description": "python class"
-    },
-    "classmethod": {
-        "prefix": "classmethod",
-        "body": "classmethod(${1:function})$0",
-        "description": "Converts a method into a class method"
     },
     "class=>1": {
         "prefix": "class=>1",
@@ -275,19 +295,5 @@
             "flying_test(peggy)"
         ],
         "description": "class polymorphism example"
-    },
-    "issubclass": {
-        "prefix": "issubclass",
-        "body": "issubclass(${1:object}, ${2:subclass})$0",
-        "description": "Return True if a specified class is a subclass of a specified object"
-    },
-    "apply.issubclass=>": {
-        "prefix": "apply-issubclass=>",
-        "body": [
-            "class myAge:\n\tage = 36\n",
-            "class myObj(myAge):\n\tname = 'John'\n\tage = myAge\n\n\tx = issubclass(myObj, myAge)\n",
-            "print(x)"
-        ],
-        "description": "An example for using isinstance"
     }
 }
