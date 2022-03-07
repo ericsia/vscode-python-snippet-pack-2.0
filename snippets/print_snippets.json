@@ -1,0 +1,109 @@
+{
+    "isprintable": {
+        "prefix": ".isprintable -string",
+        "body": ".isprintable()",
+        "description": "Return True if all characters in the string are printable"
+    },
+    "print()": {
+        "prefix": "print()",
+        "body": "print($0)",
+        "description": "Code snippet for the print statement."
+    },
+    "print(\"\")": {
+        "prefix": "print(\"\")",
+        "body": "print(\"$0\")",
+        "description": "Code snippet for the print statement."
+    },
+    "print(\"\", object)": {
+        "prefix": "print(\"\", object)",
+        "body": "print(\"${1:}\", ${2:object})$0",
+        "description": "Code snippet for the print statement."
+    },
+    "print(\"{}\")": {
+        "prefix": "print(\"{}\")",
+        "body": "print(f\"{${1:}}\")$0",
+        "description": "Formats a specified value"
+    },
+    "print(\"{0} {1}\")": {
+        "prefix": "print(\"{0} {1}\")",
+        "body": "print(f\"{${1:}} {${2:}}\")$0",
+        "description": "Formats a specified value"
+    },
+    "print(\"{ a = }\")": {
+        "prefix": "print(\"{ a = }\")",
+        "body": "print(f\"{${1:a} = }\")$0",
+        "description": "Formats a specified value"
+    },
+    "print(\"{ a = } { b = }\")": {
+        "prefix": "print(\"{ a = } { b = }\")",
+        "body": "print(f\"{${1:a} = } {${2:b = }}\")$0",
+        "description": "Formats a specified value"
+    },
+    "print(\"%d %d\")": {
+        "prefix": "print(\"%d %d\")",
+        "body": "print(\"${1:%d %d}\" % (${2:4}, ${3:5}))$0",
+        "description": "Formats a specified value"
+    },
+    "print(value, \" \", SameLine)": {
+        "prefix": "print(value, \" \", SameLine)",
+        "body": "print(${1:value}, \"${2: }\", end=\"\")$0",
+        "description": "Formats a specified value"
+    },
+    "print.printLine": {
+        "prefix": "print-printLine",
+        "body": "print(\"$0\\n\")",
+        "description": "Extra \\n for print"
+    },
+    "print.LinePrint": {
+        "prefix": "print-LinePrint",
+        "body": "print(\"\\n$0\")",
+        "description": "Extra \\n in front for print"
+    },
+    "print.LineTabPrint": {
+        "prefix": "print-LineTabPrint",
+        "body": "print(\"\\n\\t$0\")",
+        "description": "Extra \\n\\t in front for print"
+    },
+    "print.LinePrintLine": {
+        "prefix": "print-LinePrintLine",
+        "body": "print(\"\\n$0\\n\")",
+        "description": "Extra \\n in front and back for print"
+    },
+    "print.TabPrint": {
+        "prefix": "print-TabPrint",
+        "body": "print(\"\\t$0\")",
+        "description": "Extra \\t in front for print"
+    },
+    "print.printClean": {
+        "prefix": "print-printClean",
+        "body": "print(\"${1:}\", end=\"${2:}\")$0",
+        "description": "Instead of default \\n keep it empty to print on same line"
+    },
+    "apply.print=>": {
+        "prefix": "apply-print=>",
+        "body": "print(object(s), sep=separator, end=end, file=file, flush=flush)",
+        "description": "Prints to the standard output device"
+    },
+    "apply.print=>1": {
+        "prefix": "apply-print=>1",
+        "body": [
+            "print('Hello', 'how are you?')"
+        ],
+        "description": "An example for using print"
+    },
+    "apply.print=>2": {
+        "prefix": "apply-print=>2",
+        "body": [
+            "x = ('apple', 'banana', 'cherry')",
+            "print(x)"
+        ],
+        "description": "An example for using print"
+    },
+    "apply.print=>3": {
+        "prefix": "apply-print=>3",
+        "body": [
+            "print('Hello', 'how are you?', sep=' ---')"
+        ],
+        "description": "An example for using print"
+    }
+}
