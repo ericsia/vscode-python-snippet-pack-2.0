@@ -15,8 +15,14 @@ We love **[your input](https://github.com/ericsia/vscode-python-snippet-pack-2.0
 - What actually happens
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 
+## Need Help
+Need help for example of the highlighed in picture below, if you have time please help to add them.
+Please avoid taking from python official documentation directly, search for clearer example from google
+![](todo.png)
+
 ## Here is [a tool](https://github.com/ericsia/jsonSnippet/raw/main/Eric's%20Snippet%20Generator.7z) if you want to help 
-Adding new method/function can make it more complete and help everyone!
+Adding new method/function and example can make it more complete and help everyone!
+Note: please avoid spaces and use \t for the snippet
 ![](https://raw.githubusercontent.com/ericsia/jsonSnippet/main/demo.gif)
 
 ## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), update happened through Pull Requests
