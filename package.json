@@ -8,6 +8,15 @@
         "type": "git",
         "url": "https://github.com/ericsia/vscode-python-snippet-pack-2.0/"
     },
+    "keywords": [
+        "python snippetes",
+        "snippets",
+        "python_snippets",
+        "pythonSnippets",
+        "python",
+        "python3",
+        "Python"
+    ],
     "icon": "icon.png",
     "engines": {
         "vscode": "^1.62.3"
