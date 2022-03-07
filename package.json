@@ -25,9 +25,27 @@
         "Snippets"
     ],
     "contributes": {
-        "snippets": [{
-            "language": "python",
-            "path": "./snippets/python_snippets.json"
-        }]
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/class_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/loop_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/print_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/sets_snippets.json"
+            }
+        ]
     }
 }
