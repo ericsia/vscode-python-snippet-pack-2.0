@@ -7,15 +7,17 @@
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
+* added `def.function(main)` as a main method
 * added label to method belong to string/list/tuple/set/dict
 * added python `<datatype>` and snippet initialisation, try typing `str`
 * added `match` snippet - python 3.10
 * added `np-init` snippet for numpy array [pip3 install numpy]
 * added `import` snippet
 * added `documentation`, `timeit` snippet
-* added `random` snippet
+* added `random` snippet try `random-TextGen`
 * added `for`-loop snippet
 * added matplotlib template `plt`
+* added PyMySQL template `PyMySQL`
 * added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
 * new format for easier selection, to see built in example type `apply-`, `random-`, `class` 
 * get example use `<datatype>-` while for available method use `-<datatype>` ex: `-string`
@@ -40,6 +42,7 @@
 ## Snippets | Descriptions (from 2018, new one is at top)
 | There are string/list/tuple/set/dict datatype snippet      | E.g. Type Out |
 |------------------------------------------------------------|---------------|
+| To get `function` template like `__main__` type `def`      | `def`         |
 | To see built-in method example type `apply-` scroll down   | `apply-`      |
 | Tips: to see specific method type `name=`                  | `count=`      |
 | To see datatype method example type `<datatype>-`          | `str-`        |
@@ -79,9 +82,9 @@
 | hash                           | Returns the hash value of a specified object                                                                                                                                                            |
 | help                           | Executes the built-in help system                                                                                                                                                                       |
 | hex                            | Converts a number into a hexadecimal value                                                                                                                                                              |
-| int                            | Returns an integer number                                                                                                                                                                               |
 | id                             | Returns the id of an object                                                                                                                                                                             |
 | input                          | Allowing user input                                                                                                                                                                                     |
+| int                            | Returns an integer number                                                                                                                                                                               |
 | isinstance                     | Returns True if a specified object is an instance of a specified object                                                                                                                                 |
 | issubclass                     | Returns True if a specified class is a subclass of a specified object                                                                                                                                   |
 | iter                           | Returns an iterator object                                                                                                                                                                              |
@@ -132,21 +135,21 @@
 
 | file code examples    | Description                           |
 |-----------------------|---------------------------------------|
-| file-openFile         | open a file                           |
+| file-openFile         | Open a file                           |
 | file-openFileReadLine | Read one line of the file             |
 | file-appendFile       | Write to an Existing File             |
 | file-overwriteFile    | Open a file and overwrite the content |
-| file-deleteFile       | delete a file                         |
+| file-deleteFile       | Delete a file                         |
 
 <br />
 
 | if/else statement code snippets | Description               |
 |---------------------------------|---------------------------|
-| if                              | if Statement              |
-| ifelif                          | if/else if Statement      |
-| ifelifelse                      | if/else if/else Statement |
-| ifelse                          | if/else Statement         |
-| ifshort                         | ifshort Statement         |
+| if-                             | if Statement              |
+| if-elif                         | if/else if Statement      |
+| if-elif-else                    | if/else if/else Statement |
+| if-else                         | if/else Statement         |
+| if-short                        | ifshort Statement         |
 | else                            | else Statement            |
 
 <br />
@@ -160,16 +163,15 @@
 
 | try catch code snippets | Description              |
 |-------------------------|--------------------------|
-| try                     | try:except:              |
-| tryf                    | try:except:finally:      |
-| trye                    | try:except:else:         |
-| tryef                   | try:except:else:finally: |
+| try-                    | try:except:              |
+| try-f                   | try:except:finally:      |
+| try-e                   | try:except:else:         |
+| try-e-f                 | try:except:else:finally: |
 
 <br />
 
 | for loop code snippets | Description   |
 |------------------------|---------------|
-| for                    | for Statement |
 | for-                   | for Statement |
 
 | for loop code examples  |             |
@@ -187,8 +189,8 @@
 
 | while loop code snippets | Description     |
 |--------------------------|-----------------|
-| while                    | while Statement |
-| while_else               | while Statement |
+| while-                   | while Statement |
+| while-else               | while Statement |
 
 | while loop code examples  | Description   |
 |---------------------------|---------------|
@@ -274,13 +276,9 @@ This extension aim to cover as many new Python3 method make it as complete as po
 
 **Enjoy! Type less do more**
 
-### 1.0.0
+### 1.0.2
 
-Initial release of python code snippets
-
-### 1.0.2 - future
-
-Updated README.md
+Initial release and update README.md
 
 ### 2.0.2
 
@@ -293,5 +291,8 @@ Change .format into f-string and remove unnecessary files
 ### 3.3.5
 
 change . become - due to vscode clash ex `apply.` become `apply-`
+
+### 3.3.6
+added PyMySQL and Random snippet by Lakshmikanth
 
 -----------------------------------------------------------------------------------------------------------
