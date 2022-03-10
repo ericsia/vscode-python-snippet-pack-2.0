@@ -7,18 +7,20 @@
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
-* added `def.function(main)` as a main method
+* added `def.function(main-)` as a main method
 * added label to method belong to string/list/tuple/set/dict
 * added python `<datatype>` and snippet initialisation, try typing `str`
 * added `match` snippet - python 3.10
 * added `np-init` snippet for numpy array [pip3 install numpy]
 * added `import` snippet
-* added `documentation`, `timeit` snippet
+* added `documentation` snippet
 * added `random` snippet try `random-TextGen`
 * added `for`-loop snippet
+* added `print-` snippet
 * added matplotlib template `plt`
+* added algorithm template `algo-`
 * added PyMySQL template `PyMySQL`
-* added `dp` decimal place, `end`, `env`, `benchmark`, `self`, `sleep`, `swap` snippet
+* added `dp` decimal place, `end`, `env`, `benchmark`, `timeit`, `self`, `sleep`, `swap` snippet
 * new format for easier selection, to see built in example type `apply-`, `random-`, `class` 
 * get example use `<datatype>-` while for available method use `-<datatype>` ex: `-string`
 * welcome to contribute through feedback to add more ideas, make it as complete as possible
@@ -42,7 +44,7 @@
 ## Snippets | Descriptions (from 2018, new one is at top)
 | There are string/list/tuple/set/dict datatype snippet      | E.g. Type Out |
 |------------------------------------------------------------|---------------|
-| To get `function` template like `__main__` type `def`      | `def`         |
+| To get `__main__` type `def` or `function` or `main-`      | `main-`       |
 | To see built-in method example type `apply-` scroll down   | `apply-`      |
 | Tips: to see specific method type `name=`                  | `count=`      |
 | To see datatype method example type `<datatype>-`          | `str-`        |
@@ -51,6 +53,7 @@
 | To initialise type `<datatype> initialise` snippet         | `bool`        |
 | To get fileIO type `file-` then scroll down                | `file-`       |
 | To get block comment type `documentation`                  | `doc`         |
+| To get algorithm snippet like `is_prime`                   | `algo-`       |
 
 <br />
 
@@ -292,7 +295,7 @@ Change .format into f-string and remove unnecessary files
 
 change . become - due to vscode clash ex `apply.` become `apply-`
 
-### 3.3.6
-added PyMySQL and Random snippet by Lakshmikanth
+### 3.3.8
+added PyMySQL, Algo, Random snippet by Lakshmikanth
 
 -----------------------------------------------------------------------------------------------------------
