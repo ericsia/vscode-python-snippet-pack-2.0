@@ -487,11 +487,6 @@
         "body": "import collection\ns",
         "description": "Import for common module"
     },
-    "import.timeit": {
-        "prefix": "import-timeit",
-        "body": "import timeit\ns",
-        "description": "Import for common module"
-    },
     "import.math": {
         "prefix": "import-math",
         "body": "import math\n",
@@ -1087,11 +1082,6 @@
         "body": "super(${1:type[, object-or-type]})$0",
         "description": "Return a proxy object that delegates method calls to a parent or sibling class of type."
     },
-    "timeit.timeit": {
-        "prefix": "timeit.timeit",
-        "body": "timeit.timeit(\"${1:functionDef}\", number=${2:10000}) # import timeit$0",
-        "description": "Simple way to time small bits of Python code"
-    },
     "tuple=>": {
         "prefix": "tuple=>",
         "body": "tuple(${1:iterable})$0",
@@ -1176,29 +1166,5 @@
         "prefix": "lambda",
         "body": "lambda ${1:arguments}: ${2:expression}$0",
         "description": "A lambda function can take any number of arguments, but can only have one expression."
-    },
-    "__init__": {
-        "prefix": "__init__=>",
-        "body": [
-            "def __init__(self, name, age):",
-            "\tself.name = name",
-            "\tself.age = age"
-        ],
-        "description": "__init__ method"
-    },
-    "__iter__": {
-        "prefix": "__iter__=>",
-        "body": ["def __iter__(self):", "\tself.a = 1", "\treturn self"],
-        "description": "__iter__ method"
-    },
-    "__next__": {
-        "prefix": "__next__=>",
-        "body": [
-            "def __next__(self):",
-            "\tx = self.a",
-            "\tself.a += 1",
-            "\treturn x"
-        ],
-        "description": "__next__ method"
     }
 }

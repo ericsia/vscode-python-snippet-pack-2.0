@@ -1,62 +1,67 @@
 {
     "end": {
         "prefix": "end",
-        "body": "# END $0",
+        "body": "# end $0",
+        "description": "readability shortcut comment for end"
+    },
+    "end.class": {
+        "prefix": "end-class",
+        "body": "# end class",
         "description": "readability shortcut comment for end"
     },
     "end.constructor.default": {
         "prefix": "end-Constructor.Default",
-        "body": "# END DEFAULT CONSTRUCTOR",
+        "body": "# end default constructor",
         "description": "readability shortcut comment for end"
     },
     "end.constructor.alternate": {
         "prefix": "end-Constructor.Alternate",
-        "body": "# END ALTERNATE CONSTRUCTOR",
+        "body": "# end alternate constructor",
         "description": "readability shortcut comment for end"
     },
     "end.constructor.copy": {
         "prefix": "end-Constructor.Copy",
-        "body": "# END COPY CONSTRUCTOR",
+        "body": "# end copy constructor",
         "description": "readability shortcut comment for end"
     },
     "end.file": {
         "prefix": "end-file",
-        "body": "# END FILE",
+        "body": "# end file",
         "description": "readability shortcut comment for end"
     },
     "end.def.function": {
         "prefix": "end-def.function",
-        "body": "# END DEF",
+        "body": "# end def",
         "description": "readability shortcut comment for end"
     },
     "end.for": {
         "prefix": "end-for",
-        "body": "# END FOR",
+        "body": "# end for",
         "description": "readability shortcut comment for end"
     },
     "end.if": {
         "prefix": "end-if",
-        "body": "# END IF",
+        "body": "# end if",
         "description": "readability shortcut comment for end"
     },
     "end.main": {
         "prefix": "end-main",
-        "body": "# END MAIN",
+        "body": "# end main",
         "description": "readability shortcut comment for end"
     },
     "end.match.switch": {
         "prefix": "end-match.switch",
-        "body": "# END MATCH",
+        "body": "# end match",
         "description": "readability shortcut comment for end"
     },
     "end.try": {
         "prefix": "end-try",
-        "body": "# END TRY",
+        "body": "# end try",
         "description": "readability shortcut comment for end"
     },
     "end.while": {
         "prefix": "end-while",
-        "body": "# END WHILE",
+        "body": "# end while",
         "description": "readability shortcut comment for end"
     }
 }

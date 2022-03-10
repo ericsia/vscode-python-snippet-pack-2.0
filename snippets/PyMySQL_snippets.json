@@ -16,15 +16,15 @@
             "\t\t\tself.conn = pymysql.connect(**database_cred)",
             "\t\telse:",
             "\t\t\tself.conn = pymysql.connect(**self.database_cred)",
-            "\t\t# END IF\n",
+            "\t\t# end if\n",
             "\tdef run_qry(self, sql: str):",
             "\t\twith self.conn.cursor() as cursor:",
             "\t\t\tcursor.execute(sql)",
             "\t\t\tself.conn.commit()",
             "\t\t\tresult = cursor.fetchall()",
-            "\t\t# END WITH",
+            "\t\t# end with",
             "\t\treturn result",
-            "# END CLASS"
+            "# end class"
         ],
         "description": "PymySQL database connection"
     }

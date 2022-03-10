@@ -1,29 +1,29 @@
 {
     "file.openFile": {
         "prefix": "file-openFile",
-        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.read())\n# END OPEN FILE$0",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.read())\n# end open file$0",
         "description": "open a file"
     },
     "file.openFileReadLine": {
         "prefix": "file-openFileReadLine",
-        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.readline())\n# END READLINE FILE$0",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.readline())\n# end readline file$0",
         "description": "Read one line of the file"
     },
     "file.appendFile": {
         "prefix": "file-appendFile",
-        "body": "with open('${1:pyfile.txt}', ${2:'a'}) as f:\n\tf.write(${2:\"text here\"})\n# END APPEND FILE$0",
+        "body": "with open('${1:pyfile.txt}', ${2:'a'}) as f:\n\tf.write(${2:\"text here\"})\n# end append file$0",
         "description": "Write to an Existing File"
     },
     "file.overwriteFile": {
         "prefix": "file-overwriteFile - can clear",
-        "body": "with open('${1:pyfile.txt}', ${2:'w'}) as f:\n\tf.write(${2:\"new text\"})\n# END OVERWRITE FILE$0",
+        "body": "with open('${1:pyfile.txt}', ${2:'w'}) as f:\n\tf.write(${2:\"new text\"})\n# end overwrite file$0",
         "description": "Open a file and overwrite the content"
     },
     "file.deleteFile": {
         "prefix": "file-deleteFile - need check exist",
         "body": [
             "#import os",
-            "if os.path.isfile('${1:pyfile.txt}'):\n\tos.remove('${1:pyfile.txt}')\n# END IF DEL_FILE$0"
+            "if os.path.isfile('${1:pyfile.txt}'):\n\tos.remove('${1:pyfile.txt}')\n# end if DEL_FILE$0"
         ],
         "description": "delete a file"
     }

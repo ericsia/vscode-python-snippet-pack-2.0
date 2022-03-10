@@ -1,4 +1,28 @@
 {
+    "__init__": {
+        "prefix": "__init__=>",
+        "body": [
+            "def __init__(self, name, age):",
+            "\tself.name = name",
+            "\tself.age = age"
+        ],
+        "description": "__init__ method"
+    },
+    "__iter__": {
+        "prefix": "__iter__=>",
+        "body": ["def __iter__(self):", "\tself.a = 1", "\treturn self"],
+        "description": "__iter__ method"
+    },
+    "__next__": {
+        "prefix": "__next__=>",
+        "body": [
+            "def __next__(self):",
+            "\tx = self.a",
+            "\tself.a += 1",
+            "\treturn x"
+        ],
+        "description": "__next__ method"
+    },
     "enum": {
         "prefix": "enum",
         "body": [

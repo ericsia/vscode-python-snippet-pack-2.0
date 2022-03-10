@@ -198,5 +198,15 @@
         "prefix": "swap",
         "body": "${1:a}, ${2:b} = ${2:b}, ${1:a}$0",
         "description": "Pause the code before executing next line"
+    },
+    "timeit.timeit": {
+        "prefix": "timeit.timeit",
+        "body": "print(timeit.timeit(\"${1:functionDef}\", number=${2:10000})) #$0 import timeit",
+        "description": "Simple way to time small bits of Python code"
+    },
+    "timeit.timeit.main": {
+        "prefix": "timeit.timeit.main",
+        "body": "print(timeit.timeit(\"${1:functionDef}\", \"from __main__ import ${1:functionDef}\", number=${2:10000})) #$0 import timeit",
+        "description": "Simple way to time small bits of Python code"
     }
 }

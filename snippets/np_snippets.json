@@ -85,9 +85,9 @@
             "for r in varExamp__A:  # looping through row",
             "\tfor c in r:  # loop through column since array is sequence",
             "\t\tprint(f\"{c:2}  \", end=\"\")",
-            "\t# END FOR",
+            "\t# end for",
             "\tprint()",
-            "# END FOR",
+            "# end for",
             "print(\"Print using numpy\\n\", np.matrix(varExamp__A))"
         ],
         "description": "code example for using numpy"

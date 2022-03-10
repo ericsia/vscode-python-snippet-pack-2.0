@@ -1,9 +1,6 @@
 {
     "IsPrime": {
-        "prefix": [
-            "is_prime",
-            "prime"
-        ],
+        "prefix": "algo-is_prime",
         "body": [
             "def is_prime(n: int) -> bool:",
             "\t\"\"\"",
@@ -21,6 +18,6 @@
             "\t\t\t\treturn False",
             "\t\treturn True"
         ],
-        "description": "Python Code to determine whether a number is prime or not"
+        "description": "check whether a number is prime"
     }
 }

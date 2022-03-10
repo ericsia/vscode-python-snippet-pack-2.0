@@ -31,7 +31,7 @@
             "length = 5$0 # import random",
             "for i in range(length):",
             "\tx = x + random.choice(string.ascii_letters)",
-            "# END FOR",
+            "# end for",
             "print(x)"
         ],
         "description": "generate string base on given length"
@@ -58,8 +58,8 @@
             "\t\toutcomes[0] += 1      # add one to current tally",
             "\telse:",
             "\t\toutcomes[1] += 1",
-            "\t# END IF",
-            "# END FOR",
+            "\t# end if",
+            "# end for",
             "print('Heads:', outcomes[0])",
             "print('Tails:', outcomes[1])"
         ],

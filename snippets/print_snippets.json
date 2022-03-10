@@ -1,41 +1,46 @@
 {
     "print(\"\")": {
-        "prefix": "print(\"\")",
+        "prefix": "print-(\"\")",
         "body": "print(\"$0\")",
         "description": "Code snippet for the print statement."
     },
+    "print(debug)": {
+        "prefix": "print-(debug-)",
+        "body": "print(\"debug $0\")",
+        "description": "Code snippet for the print statement."
+    },
     "print(\"\", object)": {
-        "prefix": "print(\"\", object)",
+        "prefix": "print-(\"\", object)",
         "body": "print(\"${1:}\", ${2:object})$0",
         "description": "Code snippet for the print statement."
     },
     "print(\"{}\")": {
-        "prefix": "print(\"{}\")",
+        "prefix": "print-(\"{}\")",
         "body": "print(f\"{${1:}}\")$0",
         "description": "Formats a specified value"
     },
     "print(\"{0} {1}\")": {
-        "prefix": "print(\"{0} {1}\")",
+        "prefix": "print-(\"{0} {1}\")",
         "body": "print(f\"{${1:}} {${2:}}\")$0",
         "description": "Formats a specified value"
     },
     "print(\"{ a = }\")": {
-        "prefix": "print(\"{ a = }\")",
+        "prefix": "print-(\"{ a = }\")",
         "body": "print(f\"{${1:a} = }\")$0",
         "description": "Formats a specified value"
     },
     "print(\"{ a = } { b = }\")": {
-        "prefix": "print(\"{ a = } { b = }\")",
+        "prefix": "print-(\"{ a = } { b = }\")",
         "body": "print(f\"{${1:a} = } {${2:b = }}\")$0",
         "description": "Formats a specified value"
     },
     "print(\"%d %d\")": {
-        "prefix": "print(\"%d %d\")",
+        "prefix": "print-(\"%d %d\")",
         "body": "print(\"${1:%d %d}\" % (${2:4}, ${3:5}))$0",
         "description": "Formats a specified value"
     },
     "print(value, \" \", SameLine)": {
-        "prefix": "print(value, \" \", SameLine)",
+        "prefix": "print-(value, \" \", SameLine)",
         "body": "print(${1:value}, \"${2: }\", end=\"\")$0",
         "description": "Formats a specified value"
     },
