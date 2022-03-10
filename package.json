@@ -72,6 +72,10 @@
             },
             {
                 "language": "python",
+                "path": "./snippets/algo_snippets.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/np_snippets.json"
             },
             {
