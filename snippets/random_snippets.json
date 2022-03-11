@@ -1,0 +1,68 @@
+{
+    "random.choice": {
+        "prefix": "random-choice",
+        "body": "random.choice(${1:sequence})",
+        "description": "return a random element from the non-empty sequence"
+    },
+    "random.random": {
+        "prefix": "random-float",
+        "body": "random.random()",
+        "description": "return the next random floating point value"
+    },
+    "random.randint": {
+        "prefix": "random-int",
+        "body": "random.randint(${1:Start}, ${2:InclusiveEnd})",
+        "description": "return the next random integer value"
+    },
+    "random.randrange": {
+        "prefix": "random-int:step",
+        "body": "random.randrange(${1:Start}, ${2:ExclusiveEnd}, ${3:Step})",
+        "description": "return the next random integer value"
+    },
+    "random.seed": {
+        "prefix": "random-seed",
+        "body": "random.seed(1)",
+        "description": "when rerun generate same random with a seed value"
+    },
+    "random.TextGenerate": {
+        "prefix": "random-TextGen",
+        "body": [
+            "x = \"\" # import string",
+            "length = 5$0 # import random",
+            "for i in range(length):",
+            "\tx = x + random.choice(string.ascii_letters)",
+            "# end for",
+            "print(x)"
+        ],
+        "description": "generate string base on given length"
+    },
+    "random.DateGenerate": {
+        "prefix": "random-DateGen",
+        "body": [
+            "start_date = datetime.date(2022, 2, 24)  # import random",
+            "end_date = datetime.date(2022, 3, 7)  # import datetime",
+            "random_duration = random.randrange((end_date - start_date).days)",
+            "random_date = start_date + datetime.timedelta(random_duration)",
+            "print(random_date)"
+        ],
+        "description": "Generate a date between 2 given dates"
+    },
+    "random=>": {
+        "prefix": "random=>",
+        "body": [
+            "sides = ['heads', 'tails']  # list of string options",
+            "outcomes = [0, 0]           # list of tallies heads/tails\n",
+            "for i in range(10000):",
+            "\ttoss = random.choice(sides)",
+            "\tif toss == \"heads\":",
+            "\t\toutcomes[0] += 1      # add one to current tally",
+            "\telse:",
+            "\t\toutcomes[1] += 1",
+            "\t# end if",
+            "# end for",
+            "print('Heads:', outcomes[0])",
+            "print('Tails:', outcomes[1])"
+        ],
+        "description": "when rerun generate same random with a seed value"
+    }
+}

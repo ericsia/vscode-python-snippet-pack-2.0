@@ -1,0 +1,324 @@
+{
+    "add": {
+        "prefix": ".add -set",
+        "body": ".add(${1:element})",
+        "description": "Adds an element to the set"
+    },
+    "sets.add=>": {
+        "prefix": "sets-add=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "fruits.add('orange') ",
+            "print(fruits)"
+        ],
+        "description": "An example for using add"
+    },
+    "clear -sets": {
+        "prefix": ".clear -sets",
+        "body": ".clear()",
+        "description": "Removes all the elements from the set"
+    },
+    "sets.clear=>": {
+        "prefix": "sets-clear=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "fruits.clear()",
+            "print(fruits)"
+        ],
+        "description": "An example for using clear"
+    },
+    "copy -set": {
+        "prefix": ".copy -set",
+        "body": ".copy()",
+        "description": "Return a copy of the set"
+    },
+    "sets.copy=>": {
+        "prefix": "sets-copy=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "x = fruits.copy()",
+            "print(x)"
+        ],
+        "description": "An example for using copy"
+    },
+    "difference": {
+        "prefix": ".difference -set",
+        "body": ".difference(${1:set})",
+        "description": "Return a set containing the difference between two or more sets"
+    },
+    "sets.difference=>1": {
+        "prefix": "sets-difference=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.difference(y)",
+            "print(z)"
+        ],
+        "description": "An example for using difference"
+    },
+    "sets.difference=>2": {
+        "prefix": "sets-difference=>2",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = y.difference(x) ",
+            "print(z)"
+        ],
+        "description": "An example for using difference"
+    },
+    "difference_update": {
+        "prefix": ".difference_update -set",
+        "body": ".difference_update(${1:set})",
+        "description": "Removes the items in this set that are also included in another, specified set"
+    },
+    "sets.difference_update=>": {
+        "prefix": "sets-difference_update=>",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "x.difference_update(y)",
+            "print(x)"
+        ],
+        "description": "An example for using difference_update"
+    },
+    "discard": {
+        "prefix": ".discard -set",
+        "body": ".discard(${1:item})",
+        "description": "Remove the specified item"
+    },
+    "sets.discard=>": {
+        "prefix": "sets-discard=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "fruits.discard('banana') ",
+            "print(fruits)"
+        ],
+        "description": "An example for using discard"
+    },
+    "intersection": {
+        "prefix": ".intersection -set",
+        "body": ".intersection(${1:set})",
+        "description": "Return a set, that is the intersection of two other sets"
+    },
+    "sets.intersection=>1": {
+        "prefix": "sets-intersection=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.intersection(y)",
+            "print(z)"
+        ],
+        "description": "An example for using intersection"
+    },
+    "sets.intersection=>2": {
+        "prefix": "sets-intersection=>2",
+        "body": [
+            "x = {'a', 'b', 'c'}",
+            "y = {'c', 'd', 'e'}",
+            "z = {'f', 'g', 'c'}",
+            "result = x.intersection(y, z)",
+            "print(result)"
+        ],
+        "description": "An example for using intersection"
+    },
+    "intersection_update": {
+        "prefix": ".intersection_update -set",
+        "body": ".intersection_update(${1:set})",
+        "description": "Removes the items in this set that are not present in other, specified set(s)"
+    },
+    "sets.intersection_update=>1": {
+        "prefix": "sets-intersection_update=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "x.intersection_update(y)",
+            "print(x)"
+        ],
+        "description": "An example for using intersection_update"
+    },
+    "sets.intersection_update=>2": {
+        "prefix": "sets-intersection_update=>2",
+        "body": [
+            "x = {'a', 'b', 'c'}",
+            "y = {'c', 'd', 'e'}",
+            "z = {'f', 'g', 'c'}",
+            "x.intersection_update(y, z)",
+            "print(x)"
+        ],
+        "description": "An example for using intersection_update"
+    },
+    "isdisjoint": {
+        "prefix": ".isdisjoint -set",
+        "body": ".isdisjoint(${1:set})",
+        "description": "Return whether two sets have a intersection or not"
+    },
+    "sets.isdisjoint=>1": {
+        "prefix": "sets-isdisjoint=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'facebook'}",
+            "z = ",
+            "print(z)"
+        ],
+        "description": "An example for using isdisjoint"
+    },
+    "sets.isdisjoint=>2": {
+        "prefix": "sets-isdisjoint=>2",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.isdisjoint(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using isdisjoint"
+    },
+    "issubset": {
+        "prefix": ".issubset -set",
+        "body": ".issubset(${1:set})",
+        "description": "Return whether another set contains this set or not"
+    },
+    "sets.issubset=>1": {
+        "prefix": "sets-sets.issubset=>1",
+        "body": [
+            "x = {'a', 'b', 'c'}",
+            "y = {'f', 'e', 'd', 'c', 'b', 'a'}",
+            "z = x.issubset(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using issubset"
+    },
+    "sets.issubset=>2": {
+        "prefix": "sets-issubset=>2",
+        "body": [
+            "x = {'a', 'b', 'c'}",
+            "y = {'f', 'e', 'd', 'c', 'b'}",
+            "z = x.issubset(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using issubset"
+    },
+    "issuperset": {
+        "prefix": ".issuperset -set",
+        "body": ".issuperset(${1:set})",
+        "description": "Return whether this set contains another set or not"
+    },
+    "sets.issuperset=>1": {
+        "prefix": "sets-issuperset=>1",
+        "body": [
+            "x = {'f', 'e', 'd', 'c', 'b', 'a'}",
+            "y = {'a', 'b', 'c'}",
+            "z = x.issuperset(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using issuperset"
+    },
+    "sets.issuperset=>2": {
+        "prefix": "sets-issuperset=>2",
+        "body": [
+            "x = {'f', 'e', 'd', 'c', 'b'}",
+            "y = {'a', 'b', 'c'}",
+            "z = x.issuperset(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using issuperset"
+    },
+    "pop -set": {
+        "prefix": ".pop -set",
+        "body": ".pop()",
+        "description": "Removes the specified element"
+    },
+    "sets.pop=>": {
+        "prefix": "sets-pop=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "fruits.pop() ",
+            "print(fruits)"
+        ],
+        "description": "An example for using pop"
+    },
+    "remove -set": {
+        "prefix": ".remove -set",
+        "body": ".remove(${1:item})",
+        "description": "Removes the specified element"
+    },
+    "sets.remove=>": {
+        "prefix": "sets-remove=>",
+        "body": [
+            "fruits = {'apple', 'banana', 'cherry'}",
+            "fruits.remove('banana') ",
+            "print(fruits)"
+        ],
+        "description": "An example for using remove"
+    },
+    "symmetric_difference": {
+        "prefix": ".symmetric_difference -set",
+        "body": ".symmetric_difference(${1:set})",
+        "description": "Return a set with the symmetric differences of two sets"
+    },
+    "sets.symmetric_difference=>": {
+        "prefix": "sets-symmetric_difference=>",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.symmetric_difference(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using symmetric_difference"
+    },
+    "symmetric_difference_update": {
+        "prefix": ".symmetric_difference_update -set",
+        "body": ".symmetric_difference_update(${1:set})",
+        "description": "inserts the symmetric differences from this set and another"
+    },
+    "sets.symmetric_difference_update=>": {
+        "prefix": "sets-symmetric_difference_update=>",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "x.symmetric_difference_update(y) ",
+            "print(x)"
+        ],
+        "description": "An example for using symmetric_difference_update"
+    },
+    "union": {
+        "prefix": ".union -set",
+        "body": ".union(${1:set})",
+        "description": "Return a set containing the union of sets"
+    },
+    "sets.union=>1": {
+        "prefix": "sets-union=>1",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "z = x.union(y) ",
+            "print(z)"
+        ],
+        "description": "An example for using union"
+    },
+    "sets.union=>2": {
+        "prefix": "sets-union=>2",
+        "body": [
+            "x = {'a', 'b', 'c'}",
+            "y = {'f', 'd', 'a'}",
+            "z = {'c', 'd', 'e'}",
+            "result = x.union(y, z) ",
+            "print(result)"
+        ],
+        "description": "An example for using union"
+    },
+    "update -set": {
+        "prefix": ".update -set",
+        "body": ".update(${1:set})",
+        "description": "Update the set with the union of this set and others"
+    },
+    "sets.update=>": {
+        "prefix": "sets-update=>",
+        "body": [
+            "x = {'apple', 'banana', 'cherry'}",
+            "y = {'google', 'microsoft', 'apple'}",
+            "x.update(y) ",
+            "print(x)"
+        ],
+        "description": "An example for using update"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "plt.linestyle": {
+        "prefix": "plt-linestyle",
+        "body": [
+            "linestyle_str:",
+            "'solid'      # Same as (0, ()) or '-'",
+            "'dotted'     # Same as (0, (1, 1)) or ':'",
+            "'dashed'     # Same as '--'",
+            "'dashdot'    # Same as '-.'\n",
+            "linestyle_tuple:",
+            "'loosely dotted'        (0, (1, 10))",
+            "'dotted'                (0, (1, 1))",
+            "'densely dotted'        (0, (1, 1))\n",
+            "'loosely dashed'        (0, (5, 10))",
+            "'dashed'                (0, (5, 5))",
+            "'densely dashed'        (0, (5, 1))\n",
+            "'loosely dashdotted'    (0, (3, 10, 1, 10))",
+            "'dashdotted'            (0, (3, 5, 1, 5))",
+            "'densely dashdotted'    (0, (3, 1, 1, 1))\n",
+            "'dashdotdotted'         (0, (3, 5, 1, 5, 1, 5))",
+            "'loosely dashdotdotted' (0, (3, 10, 1, 10, 1, 10))",
+            "'densely dashdotdotted' (0, (3, 1, 1, 1, 1, 1))\n",
+            "color:",
+            "'b'  # blue",
+            "'g'  # green",
+            "'r'  # red",
+            "'c'  # cyan",
+            "'m'  # magenta",
+            "'y'  # yellow",
+            "'k'  # black",
+            "'w'  # white"
+        ],
+        "description": "linestyle option for matplotlib"
+    },
+    "plt.template": {
+        "prefix": "plt-template",
+        "body": [
+            "import matplotlib.pyplot as plt\n",
+            "plt.plot(${1:xData}, ${2:yData}, linestyle=\"${3:plt.linestyle}\")",
+            "plt.title(\"${4:}\")",
+            "plt.ylabel(\"${5:}\")",
+            "plt.xlabel(\"${6:}\")",
+            "plt.show()"
+        ],
+        "description": "template for matplotlib.pyplot, no need remove import manually"
+    }
+}

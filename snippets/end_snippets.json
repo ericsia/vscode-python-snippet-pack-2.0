@@ -1,0 +1,67 @@
+{
+    "end": {
+        "prefix": "end",
+        "body": "# end ",
+        "description": "readability shortcut comment for end"
+    },
+    "end.class": {
+        "prefix": "end-class",
+        "body": "# end class",
+        "description": "readability shortcut comment for end"
+    },
+    "end.constructor.default": {
+        "prefix": "end-Constructor.Default",
+        "body": "# end default constructor",
+        "description": "readability shortcut comment for end"
+    },
+    "end.constructor.alternate": {
+        "prefix": "end-Constructor.Alternate",
+        "body": "# end alternate constructor",
+        "description": "readability shortcut comment for end"
+    },
+    "end.constructor.copy": {
+        "prefix": "end-Constructor.Copy",
+        "body": "# end copy constructor",
+        "description": "readability shortcut comment for end"
+    },
+    "end.file": {
+        "prefix": "end-file",
+        "body": "# end file",
+        "description": "readability shortcut comment for end"
+    },
+    "end.def.function": {
+        "prefix": "end-def.function",
+        "body": "# end def",
+        "description": "readability shortcut comment for end"
+    },
+    "end.for": {
+        "prefix": "end-for",
+        "body": "# end for",
+        "description": "readability shortcut comment for end"
+    },
+    "end.if": {
+        "prefix": "end-if",
+        "body": "# end if",
+        "description": "readability shortcut comment for end"
+    },
+    "end.main": {
+        "prefix": "end-main",
+        "body": "# end main",
+        "description": "readability shortcut comment for end"
+    },
+    "end.match.switch": {
+        "prefix": "end-match.switch",
+        "body": "# end match",
+        "description": "readability shortcut comment for end"
+    },
+    "end.try": {
+        "prefix": "end-try",
+        "body": "# end try",
+        "description": "readability shortcut comment for end"
+    },
+    "end.while": {
+        "prefix": "end-while",
+        "body": "# end while",
+        "description": "readability shortcut comment for end"
+    }
+}

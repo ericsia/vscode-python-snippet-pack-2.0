@@ -1,0 +1,95 @@
+{
+    "np.size.rowcol": {
+        "prefix": "np-init(row, col)",
+        "body": "(${1:row}, ${2:col})",
+        "description": "for the size parameter as 2D-Array, use tuple"
+    },
+    "np.array.zeros": {
+        "prefix": "np-init.zeros(size)",
+        "body": "${1:varA}__A = np.zeros(${2:size})  # import numpy as np",
+        "description": "size of array using numpy set to 0, [pip3 install numpy]"
+    },
+    "np.array.ones": {
+        "prefix": "np-init.ones(size)",
+        "body": "${1:varB}__A = np.ones(${2:size}, dtype=${3:int})  # import numpy as np",
+        "description": "size of array using numpy set to 1, [pip3 install numpy]"
+    },
+    "np.array.fill": {
+        "prefix": "np-init.ownvalue(size)",
+        "body": "${1:varC}__A = np.fill(${2:size}, dtype=${3:int})  # import numpy as np",
+        "description": "size of array using numpy set to custom, [pip3 install numpy]"
+    },
+    "np.array.random": {
+        "prefix": "np-init.random(size))",
+        "body": "${1:varD}__A = np.random.random(${2:size}, dtype=${3:int})  # import numpy as np",
+        "description": "size of array using numpy set to random, [pip3 install numpy]"
+    },
+    "np.array.initialise": {
+        "prefix": "np-init({})",
+        "body": "${1:varE}__A = np.array([${2:1, 2, 3}])  # import numpy as np",
+        "description": "array using numpy, [pip3 install numpy]"
+    },
+    "np.array": {
+        "prefix": "np-init(list)",
+        "body": "${1:varF}__A = np.array(${2:list}, dtype=${3:int})  # import numpy as np",
+        "description": "array using numpy, [pip3 install numpy]"
+    },
+    "np.array.arange": {
+        "prefix": "np-init.range(start,end,step)",
+        "body": "${1:varG}__A = np.arange(${2:Start}, ${3:ExclusiveEnd}, ${4:Step}, dtype=${5:int})  # import numpy as np",
+        "description": "array element range using numpy set to 0, [pip3 install numpy]"
+    },
+    "np.array.linspace": {
+        "prefix": "np-init.fill(start,end,size)",
+        "body": "${1:varH}__A = np.linspace(${2:Start}, ${3:InclusiveEnd}, ${4:Size}, dtype=${5:int})  # import numpy as np",
+        "description": "array total with start and ending using numpy set to 0, [pip3 install numpy]"
+    },
+    "np.array.length.row": {
+        "prefix": "np-len.row()",
+        "body": "len(${1:arrayVariable}__A)",
+        "description": "Get the total row of an array"
+    },
+    "np.array.length.col": {
+        "prefix": "np-len.col()",
+        "body": "len(${1:arrayVariable}__A[0])",
+        "description": "Get the total col of an array"
+    },
+    "np.array.size": {
+        "prefix": "np-size.length()",
+        "body": "np.size(${1:arrayVariable}__A)",
+        "description": "Get the total elements count of an array"
+    },
+    "np.array.shape": {
+        "prefix": "np-shape.dimension()",
+        "body": "np.shape(${1:arrayVariable}__A)",
+        "description": "Get the dimension of an array"
+    },
+    "np.array.reshape": {
+        "prefix": "np-reshape.changeDimension()",
+        "body": "${1:varI}__A = ${2:varJ}__A.reshape(${3:rowNum}, ${4:colNum})",
+        "description": "change the dimension of an array, will not make a copy"
+    },
+    "np.array.matrix": {
+        "prefix": "np-matrix.display()",
+        "body": "np.matrix(${1:arrayVariable}__A)",
+        "description": "Print an array included 2D-array"
+    },
+    "np=>": {
+        "prefix": "np=>",
+        "body": [
+            "import numpy as np\n",
+            "varExamp__A = np.array([[1, 2, 3, 4],",
+            "\t\t\t\t\t\t[5, 6, 7, 8],",
+            "\t\t\t\t\t\t[9, 10, 11, 12]])",
+            "print(\"Dimension: \", np.shape(varExamp__A))",
+            "for r in varExamp__A:  # looping through row",
+            "\tfor c in r:  # loop through column since array is sequence",
+            "\t\tprint(f\"{c:2}  \", end=\"\")",
+            "\t# end for",
+            "\tprint()",
+            "# end for",
+            "print(\"Print using numpy\\n\", np.matrix(varExamp__A))"
+        ],
+        "description": "code example for using numpy"
+    }
+}

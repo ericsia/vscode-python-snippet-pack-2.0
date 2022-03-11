@@ -1,0 +1,31 @@
+{
+    "PyMySQL Database Connection": {
+        "prefix": "pymysql",
+        "body": [
+            "import pymysql",
+            "class Database:\n",
+            "\tdatabase_cred = {",
+            "\t\t\"host\": \"${1:HOST}\",",
+            "\t\t\"user\": \"${2:USER}\",",
+            "\t\t\"password\": \"${3:PASSWORD}\",",
+            "\t\t\"database\": \"${4:DATABASE}\",",
+            "\t\t\"cursorclass\": pymysql.cursors.DictCursor",
+            "\t}\n",
+            "\tdef __init__(self, database_cred: dict = None):",
+            "\t\tif database_cred:",
+            "\t\t\tself.conn = pymysql.connect(**database_cred)",
+            "\t\telse:",
+            "\t\t\tself.conn = pymysql.connect(**self.database_cred)",
+            "\t\t# end if\n",
+            "\tdef run_qry(self, sql: str):",
+            "\t\twith self.conn.cursor() as cursor:",
+            "\t\t\tcursor.execute(sql)",
+            "\t\t\tself.conn.commit()",
+            "\t\t\tresult = cursor.fetchall()",
+            "\t\t# end with",
+            "\t\treturn result",
+            "# end class"
+        ],
+        "description": "PymySQL database connection"
+    }
+}

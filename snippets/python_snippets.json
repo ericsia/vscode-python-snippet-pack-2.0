@@ -1,0 +1,1170 @@
+{
+    "abs": {
+        "prefix": "abs",
+        "body": "abs(${1:number})",
+        "description": "Return the absolute value of a number"
+    },
+    "apply.abs=>int": {
+        "prefix": "apply-abs=>int",
+        "body": ["x = abs(-7.25)", "print(x)"],
+        "description": "An example for using abs method"
+    },
+    "apply.abs=>float": {
+        "prefix": "apply-abs=>float",
+        "body": ["x = abs(-20)", "print(x)"],
+        "description": "An example for using abs method"
+    },
+    "apply.abs=>complex": {
+        "prefix": "apply-abs=>complex",
+        "body": ["x = abs((3 - 4j))", "print(x)"],
+        "description": "An example for using abs method"
+    },
+    "all": {
+        "prefix": "all",
+        "body": "all(${1:iterable})",
+        "description": "Return True if all items in an iterable object are true"
+    },
+    "apply.all=>list1": {
+        "prefix": "apply-all=>list1",
+        "body": [
+            "mylist = [True, True, True]",
+            "x = all(mylist)",
+            "print(x)\n",
+            "# Return True"
+        ],
+        "description": "An example for using all with list"
+    },
+    "apply.all=>list2": {
+        "prefix": "apply-all=>list2",
+        "body": [
+            "mylist = [0, 1, 1]",
+            "x = all(mylist)",
+            "print(x)\n",
+            "# Return False because 0 is the same as False"
+        ],
+        "description": "An example for using all with list"
+    },
+    "apply.all=>tuple": {
+        "prefix": "apply-all=>tuple",
+        "body": [
+            "mytuple = (0, True, False)",
+            "x = all(mytuple)",
+            "print(x)\n",
+            "# Return False because both the first and the third items are False"
+        ],
+        "description": "An example for using all with tuple"
+    },
+    "apply.all=>set": {
+        "prefix": "apply-all=>set",
+        "body": [
+            "myset = {0, 1, 0}",
+            "x = all(myset)",
+            "print(x)\n",
+            "# Return False because both the first and the third items are False"
+        ],
+        "description": "An example for using all with set"
+    },
+    "apply.all=>dictionary": {
+        "prefix": "apply-all=>dictionary",
+        "body": [
+            "mydict = {0 : 'Apple', 1 : 'Orange'}",
+            "x = all(mydict)",
+            "print(x)\n",
+            "# Return False because the first key is 0(False).",
+            "# For dictionaries the all() function checks the keys, not the values."
+        ],
+        "description": "An example for using all with dictionary"
+    },
+    "any": {
+        "prefix": "any",
+        "body": "any(${1:iterable})",
+        "description": "Return True if any item in an iterable object is true"
+    },
+    "apply.any=>list1": {
+        "prefix": "apply-any=>list1",
+        "body": [
+            "mylist = [False, True, False]",
+            "x = ant(mylist)",
+            "print(x)\n",
+            "# Return True"
+        ],
+        "description": "An example for using all with list"
+    },
+    "ascii": {
+        "prefix": "ascii",
+        "body": "ascii(${1:object})",
+        "description": "Return a readable version of an object. Replaces none-ascii characters with escape character"
+    },
+    "apply.ascii=>1": {
+        "prefix": "apply-ascii=>_list1",
+        "body": ["x = ascii('My name is MEØW')", "print(x)"],
+        "description": "An example for using ascii"
+    },
+    "bin": {
+        "prefix": "bin",
+        "body": "bin(${1:number})",
+        "description": "Return the binary version of a number"
+    },
+    "apply.bin=>1": {
+        "prefix": "apply-bin=>1",
+        "body": ["x = bin(36)", "print(x)", "# Result : 0b100100"],
+        "description": "An example for using ascii"
+    },
+    "bool=>": {
+        "prefix": "bool=>",
+        "body": "bool(${1:object})",
+        "description": "Return the boolean value of the specified object"
+    },
+    "apply.bool=>1": {
+        "prefix": "apply-bool=>1",
+        "body": ["x = bool(1)", "print(x)", "# Result : True"],
+        "description": "An example for using bool"
+    },
+    "bytearray=>": {
+        "prefix": "bytearray=>",
+        "body": "bytearray(${1:integer|bytes_or_buffer|iterable_of_ints})",
+        "description": "Return an array of bytes"
+    },
+    "apply.bytearray=>": {
+        "prefix": "apply-bytearray=>",
+        "body": "bytearray([source[, encoding[, errors]]])",
+        "description": "Return an array of bytes"
+    },
+    "apply.bytearray=>1": {
+        "prefix": "apply-bytearray=>1",
+        "body": ["x = bytearray(4)", "print(x)"],
+        "description": "An example for using bool"
+    },
+    "bytes=>": {
+        "prefix": "bytes=>",
+        "body": "bytes(${1:integer|bytes_or_buffer|iterable_of_ints})",
+        "description": "Return a bytes object"
+    },
+    "apply.bytes=>": {
+        "prefix": "apply-bytes=>",
+        "body": "bytes(x, encoding, error)",
+        "description": "Return a bytes object"
+    },
+    "apply.bytes=>1": {
+        "prefix": "apply-bytes=>1",
+        "body": ["x = x = bytes(4)", "print(x)"],
+        "description": "An example for using bytes"
+    },
+    "callable": {
+        "prefix": "callable",
+        "body": "callable(${1:object})",
+        "description": "Return True if the specified object is callable, otherwise False"
+    },
+    "apply.callable=>1": {
+        "prefix": "apply-callable=>1",
+        "body": ["def x():", "a = 5\n", "print(callable(x))"],
+        "description": "An example for using callable"
+    },
+    "apply.callable=>2": {
+        "prefix": "apply-callable=>2",
+        "body": ["x = 5\n", "print(callable(x))"],
+        "description": "An example for using bytes"
+    },
+    "chr": {
+        "prefix": "chr",
+        "body": "chr(${1:ascii_value})",
+        "description": "Return a character from the specified Unicode code."
+    },
+    "apply.chr=>1": {
+        "prefix": "apply-chr=>1",
+        "body": ["x = chr(97)\n", "print(x)"],
+        "description": "An example for using bytes"
+    },
+    "classmethod": {
+        "prefix": "classmethod",
+        "body": "classmethod(${1:function})",
+        "description": "Converts a method into a class method"
+    },
+    "compile": {
+        "prefix": "compile",
+        "body": "compile(${1:source}, ${2:filename}, ${3:mode}, ${4:flag}, ${5:dont_inherit}, ${6:optimize})",
+        "description": "Return the specified source as an object, ready to be executed"
+    },
+    "apply.compile=>1": {
+        "prefix": "apply-compile=>1",
+        "body": [
+            "mytext = 'print(55)'",
+            "x = compile(mytext, 'test', 'eval')",
+            "exec(x)"
+        ],
+        "description": "An example for using compile"
+    },
+    "complex=>": {
+        "prefix": "complex=>",
+        "body": "complex(${1:real}, ${2:imaginary})",
+        "description": "Return a complex number"
+    },
+    "apply.complex=>1": {
+        "prefix": "apply-complex=>1",
+        "body": ["x = complex(3, 5)", "print(x)"],
+        "description": "An example for using complex"
+    },
+    "apply.complex=>2": {
+        "prefix": "apply-complex=>2",
+        "body": ["x = complex('3+5j')", "print(x)"],
+        "description": "An example for using complex"
+    },
+    "delattr": {
+        "prefix": "delattr",
+        "body": "delattr(${1:object}, ${2:attribute})",
+        "description": "Deletes the specified attribute (property or method) from the specified object"
+    },
+    "apply.delattr=>1": {
+        "prefix": "apply-delattr=>1",
+        "body": [
+            "class Person:\n\tname = 'John'\n\tage = 36\n\tcountry = 'Norway'\n",
+            "delattr(Person, 'age')",
+            "# The Person object will no longer contain an age property"
+        ],
+        "description": "An example for using delattr"
+    },
+    "dict=>": {
+        "prefix": "dict=>",
+        "body": "dict(${1:key}, ${2:value})",
+        "description": "Return a dictionary (Array)"
+    },
+    "apply.dict=>1": {
+        "prefix": "apply-dict=>1",
+        "body": [
+            "x = dict(name = 'John', age = 36, country = 'Norway')",
+            "print(x)"
+        ],
+        "description": "An example for using dict"
+    },
+    "dir": {
+        "prefix": "dir",
+        "body": "dir(${1:object})",
+        "description": "Return a list of the specified object's properties and methods"
+    },
+    "apply.dir=>": {
+        "prefix": "apply-dir=>",
+        "body": [
+            "class Person:\n\tname = 'John'\n\tage = 36\n\tcountry = 'Norway'",
+            "print(dir(Person))"
+        ],
+        "description": "An example for using dict"
+    },
+    "divmod": {
+        "prefix": "divmod",
+        "body": "divmod(${1:divident}, ${2:divisor})",
+        "description": "Return the quotient and the remainder when argument1 is divided by argument2"
+    },
+    "apply.divmod=>1": {
+        "prefix": "apply-divmod=>1",
+        "body": ["x = divmod(5, 2)", "print(x)"],
+        "description": "An example for using divmod"
+    },
+    "enumerate": {
+        "prefix": "enumerate",
+        "body": "enumerate(${1:iterable}, ${2:start})",
+        "description": "Takes a collection (e.g. a tuple) and Return it as an enumerate object"
+    },
+    "apply.enumerate=>1": {
+        "prefix": "apply-enumerate=>1",
+        "body": [
+            "x = ('apple', 'banana', 'cherry')",
+            "y = enumerate(x)\n",
+            "print(list(y))"
+        ],
+        "description": "An example for using enumerate"
+    },
+    "eval": {
+        "prefix": "eval",
+        "body": "eval(${1:expression}, ${2:globals}, ${3:locals})",
+        "description": "Evaluates and executes an expression"
+    },
+    "apply.eval=>1": {
+        "prefix": "apply-eval=>1",
+        "body": ["x = 'print(55)'", "eval(x)"],
+        "description": "An example for using eval"
+    },
+    "exec": {
+        "prefix": "exec",
+        "body": "exec(${1:object}, ${2:globals}, ${3:locals})",
+        "description": "Executes the specified code (or object)"
+    },
+    "apply.exec=>1": {
+        "prefix": "apply-exec=>1",
+        "body": ["x = 'age = 25\nprint(age)'", "exec(x)"],
+        "description": "An example for using exec"
+    },
+    "filter": {
+        "prefix": "filter",
+        "body": "filter(${1:function}, ${2:iterable})",
+        "description": "Use a filter function to exclude items in an iterable object"
+    },
+    "apply.filter=>1": {
+        "prefix": "apply-filter=>1",
+        "body": [
+            "ages = [5, 12, 17, 18, 24, 32]\n",
+            "def myFunc(x):\n\tif x < 18:",
+            "\t\treturn False\n\telse:",
+            "\t\treturn True\n",
+            "adults = filter(myFunc, ages)\n",
+            "for x in adults:\n\tprint(x)"
+        ],
+        "description": "An example for using filter"
+    },
+    "float": {
+        "prefix": "float",
+        "body": "float(${1:string})",
+        "description": "Return a floating point number"
+    },
+    "apply.float=>1": {
+        "prefix": "apply-float=>1",
+        "body": ["x = float(3)", "print(x)"],
+        "description": "An example for using float"
+    },
+    "apply.float=>2": {
+        "prefix": "apply-float=>2",
+        "body": ["x = float('3.500')", "print(x)"],
+        "description": "An example for using float"
+    },
+    "format": {
+        "prefix": "format",
+        "body": "format(${1:value}, ${2:format})",
+        "description": "printf-style Formats a specified value"
+    },
+    "apply.format=>1": {
+        "prefix": "apply-format=>1",
+        "body": ["x = format(0.5, '%')", "print(x)"],
+        "description": "An example for using format"
+    },
+    "apply.format=>2": {
+        "prefix": "apply-format=>2",
+        "body": ["x = format(255, 'x')", "print(x)"],
+        "description": "An example for using format"
+    },
+    "from": {
+        "prefix": "from",
+        "body": "from ${1:package/module} import ${2:part}\n",
+        "description": "Import a package or module"
+    },
+    "from.ndimage.misc": {
+        "prefix": "from.ndimage.misc",
+        "body": "from scipy import ndimage\nfrom scipy import misc\ns",
+        "description": "from for common module"
+    },
+    "frozenset=>": {
+        "prefix": "frozenset=>",
+        "body": "frozenset(${1:iterable})",
+        "description": "Return a frozenset object"
+    },
+    "apply.frozenset=>1": {
+        "prefix": "apply-frozenset=>1",
+        "body": [
+            "mylist = ['apple', 'banana', 'cherry']",
+            "x = frozenset(mylist)",
+            "print(x)"
+        ],
+        "description": "An example for using frozenset"
+    },
+    "apply.frozenset=>2": {
+        "prefix": "apply-frozenset=>2",
+        "body": [
+            "mylist = ['apple', 'banana', 'cherry']",
+            "x = frozenset(mylist)",
+            "x[1] = 'strawberry'",
+            "print(x)"
+        ],
+        "description": "An example for using frozenset"
+    },
+    "getattr": {
+        "prefix": "getattr",
+        "body": "getattr(${1:object}, ${2:attribute}, ${3:default})",
+        "description": "Return the value of the specified attribute (property or method)"
+    },
+    "apply.frozenset=>3": {
+        "prefix": "apply-frozenset=>3",
+        "body": [
+            "class Person:\n\tname = 'John'\n\tage = 36\n\tcountry = 'Norway'\n",
+            "x = getattr(Person, 'age')\n",
+            "print(x)"
+        ],
+        "description": "An example for using frozenset"
+    },
+    "globals": {
+        "prefix": "globals",
+        "body": "globals($0)",
+        "description": "Return the current global symbol table as a dictionary"
+    },
+    "apply.globals=>1": {
+        "prefix": "apply-globals=>1",
+        "body": ["x = globals()", "print(x)"],
+        "description": "An example for using globals"
+    },
+    "apply.globals=>2": {
+        "prefix": "apply-globals=>2",
+        "body": ["x = globals()", "print(x['__file__'])"],
+        "description": "An example for using globals"
+    },
+    "hasattr": {
+        "prefix": "hasattr",
+        "body": "hasattr(${1:object}, ${2:attribute})",
+        "description": "Return True if the specified object has the specified attribute (property/method)"
+    },
+    "apply.hasattr=>": {
+        "prefix": "apply-hasattr=>",
+        "body": [
+            "class Person:\n\tname = 'John'\n\tage = 36\n\tcountry = 'Norway'\n",
+            "x = hasattr(Person, 'age')\n",
+            "print(x)"
+        ],
+        "description": "An example for using hasattr"
+    },
+    "hash": {
+        "prefix": "hash",
+        "body": "hash(${1:object})",
+        "description": "Return the hash value of a specified object"
+    },
+    "help": {
+        "prefix": "help",
+        "body": "help(${1:object})",
+        "description": "Executes the built-in help system"
+    },
+    "hex": {
+        "prefix": "hex",
+        "body": "hex(${1:number})",
+        "description": "Converts a number into a hexadecimal value"
+    },
+    "apply.hex=>": {
+        "prefix": "apply-hex=>",
+        "body": ["x = hex(255)", "print(x)"],
+        "description": "An example for using hasattr"
+    },
+    "int": {
+        "prefix": "int",
+        "body": "int(\"${1:string}\")",
+        "description": "typecast string to integer number"
+    },
+    "int(value, base)": {
+        "prefix": "int(value, base)",
+        "body": "int(\"${1:string}\", \"${2:number})",
+        "description": "Return base 10 of the base number of second arg"
+    },
+    "apply.int=>1": {
+        "prefix": "apply-int=>1",
+        "body": ["x = int(3.5)", "print(x)"],
+        "description": "An example for using int"
+    },
+    "apply.int=>2": {
+        "prefix": "apply-int=>2",
+        "body": ["x = int('12')", "print(x)"],
+        "description": "An example for using int"
+    },
+    "apply.int=>3": {
+        "prefix": "apply-int=>3",
+        "body": ["x = int(\"101\", 2)", "print(x)"],
+        "description": "An example for using int"
+    },
+    "id": {
+        "prefix": "id",
+        "body": "id(${1:object})",
+        "description": "Return the id of an object"
+    },
+    "apply.id=>": {
+        "prefix": "apply-id=>",
+        "body": [
+            "class Foo:",
+            "\tb = 5\n",
+            "dummyFoo = Foo()",
+            "print('id of dummyFoo =',id(dummyFoo))"
+        ],
+        "description": "An example for using id"
+    },
+    "import": {
+        "prefix": "import",
+        "body": "import ${1:package/module}\n",
+        "description": "Import a package or module"
+    },
+    "import.collections": {
+        "prefix": "import-collections",
+        "body": "import collection\ns",
+        "description": "Import for common module"
+    },
+    "import.math": {
+        "prefix": "import-math",
+        "body": "import math\n",
+        "description": "Import for common module"
+    },
+    "import.os": {
+        "prefix": "import-os",
+        "body": "import os\n",
+        "description": "Import for common module"
+    },
+    "import.random": {
+        "prefix": "import-random",
+        "body": "import random\n",
+        "description": "Import for common module"
+    },
+    "import.statistics": {
+        "prefix": "import-statistics",
+        "body": "import statistics\n",
+        "description": "Import for common module"
+    },
+    "import.sys": {
+        "prefix": "import-sys",
+        "body": "import sys\n",
+        "description": "Import for common module"
+    },
+    "import.time": {
+        "prefix": "import-time",
+        "body": "import time\n",
+        "description": "Import for common module"
+    },
+    "import module as newname": {
+        "prefix": "import-as - shortcut",
+        "body": "import ${1:module} as ${2:newname}\n",
+        "description": "shortcut for import as"
+    },
+    "import.matplotlib": {
+        "prefix": "import-matplotlib",
+        "body": "import matplotlib as mpl\n",
+        "description": "shortcut for import matplotlib"
+    },
+    "import.matplotlib.pyplot": {
+        "prefix": "import-matplotlib.pyplot",
+        "body": "import matplotlib.pyplot as plt\n",
+        "description": "shortcut for import matplotlib.pyplot"
+    },
+    "import.numpy": {
+        "prefix": "import-numpy",
+        "body": "import numpy as np\n",
+        "description": "shortcut for import numpy"
+    },
+    "import.pandas": {
+        "prefix": "import-pandas",
+        "body": "import pandas as pd\n",
+        "description": "shortcut for import pandas"
+    },
+    "import.seaborn": {
+        "prefix": "import-seaborn",
+        "body": "import seaborn as sb\n",
+        "description": "shortcut for import seaborn"
+    },
+    "import.statsmodels": {
+        "prefix": "import-statsmodels",
+        "body": "import statsmodels as sm\n",
+        "description": "shortcut for import statsmodels"
+    },
+    "import.tensorflow": {
+        "prefix": "import-tensorflow",
+        "body": "import tensorflow as tf\n",
+        "description": "shortcut for import tensorflow"
+    },
+    "input with variable": {
+        "prefix": "input",
+        "body": "${1:ans} = input(\"${2:Please enter: }\")",
+        "description": "retrieve user input"
+    },
+    "input=>": {
+        "prefix": "input=>",
+        "body": "input(\"${1:Please enter: }\")",
+        "description": "retrieve user input"
+    },
+    "apply.input=>1": {
+        "prefix": "apply-input=>1",
+        "body": ["x = input('Enter your name:')", "print('Hello, ' + x)"],
+        "description": "An example for using input"
+    },
+    "apply.input=>2": {
+        "prefix": "apply-input=>2",
+        "body": [
+            "print('Enter your name:')",
+            "x = input()",
+            "print('Hello, ' + x)"
+        ],
+        "description": "An example for using input"
+    },
+    "isinstance": {
+        "prefix": "isinstance",
+        "body": "isinstance(${1:object}, ${2:type})",
+        "description": "Return True if a specified object is an instance of a specified object"
+    },
+    "apply.isinstance=>1": {
+        "prefix": "apply-isinstance=>1",
+        "body": ["x = isinstance(5, int)\n", "print(x)"],
+        "description": "An example for using isinstance"
+    },
+    "apply.isinstance=>2": {
+        "prefix": "apply-isinstance=>2",
+        "body": [
+            "x = isinstance('Hello', (float, int, str, list, dict, tuple))\n",
+            "print(x)"
+        ],
+        "description": "An example for using isinstance"
+    },
+    "apply.isinstance=>3": {
+        "prefix": "apply-isinstance=>3",
+        "body": [
+            "class myObj:\n\tname = 'John'\n",
+            "y = myObj()\n",
+            "x = isinstance(y, myObj)",
+            "print(x)"
+        ],
+        "description": "An example for using isinstance"
+    },
+    "issubclass": {
+        "prefix": "issubclass",
+        "body": "issubclass(${1:object}, ${2:subclass})",
+        "description": "Return True if a specified class is a subclass of a specified object"
+    },
+    "apply.issubclass=>": {
+        "prefix": "apply-issubclass=>",
+        "body": [
+            "class myAge:\n\tage = 36\n",
+            "class myObj(myAge):\n\tname = 'John'\n\tage = myAge\n\n\tx = issubclass(myObj, myAge)\n",
+            "print(x)"
+        ],
+        "description": "An example for using isinstance"
+    },
+    "iter": {
+        "prefix": "iter",
+        "body": "iter(${1:object}, ${2:subclass})",
+        "description": "Return an iterator object"
+    },
+    "apply.iter=>": {
+        "prefix": "apply-iter=>",
+        "body": [
+            "x = iter(['apple', 'banana', 'cherry'])",
+            "print(next(x))",
+            "print(next(x))",
+            "print(next(x))"
+        ],
+        "description": "An example for using iter"
+    },
+    "len": {
+        "prefix": "len",
+        "body": "len(${1:object})",
+        "description": "Return the length of an object"
+    },
+    "apply.len=>1": {
+        "prefix": "apply-len=>1",
+        "body": ["mylist = ['apple', 'banana', 'cherry']", "x = len(mylist)"],
+        "description": "An example for using len"
+    },
+    "apply.len=>2": {
+        "prefix": "apply-len=>2",
+        "body": ["mylist = 'Hello'", "x = len(mylist)"],
+        "description": "An example for using len"
+    },
+    "list=>": {
+        "prefix": "list=>",
+        "body": "list(${1:iterable})",
+        "description": "Return a list"
+    },
+    "apply.list=>": {
+        "prefix": "apply-list=>",
+        "body": ["x = list(('apple', 'banana', 'cherry'))", "print(x)"],
+        "description": "An example for using list"
+    },
+    "locals": {
+        "prefix": "locals",
+        "body": "locals($0)",
+        "description": "Return an updated dictionary of the current local symbol table"
+    },
+    "apply.locals=>1": {
+        "prefix": "apply-locals=>1",
+        "body": ["x = locals()", "print(x)"],
+        "description": "An example for using locals"
+    },
+    "apply.locals=>2": {
+        "prefix": "apply-locals=>2",
+        "body": ["x = locals()", "print(x['__file__'])"],
+        "description": "An example for using locals"
+    },
+    "map": {
+        "prefix": "map",
+        "body": "map(${1:function}, ${2:iterables})",
+        "description": "Return the specified iterator with the specified function applied to each item"
+    },
+    "apply.map=>1": {
+        "prefix": "apply-map=>1",
+        "body": [
+            "def myfunc(n):\n\treturn len(n)\n",
+            "x = map(myfunc, ('apple', 'banana', 'cherry'))\n",
+            "print(x)"
+        ],
+        "description": "An example for using map"
+    },
+    "apply.map=>2": {
+        "prefix": "apply-map=>2",
+        "body": [
+            "def myfunc(a, b):\n\treturn a + b\n",
+            "x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))\n",
+            "print(x)"
+        ],
+        "description": "An example for using map"
+    },
+    "max": {
+        "prefix": "max",
+        "body": "max(${1:iterable})",
+        "description": "Return the largest item in an iterable"
+    },
+    "apply.max=>1": {
+        "prefix": "apply-max=>1",
+        "body": ["x = max(5, 10)", "print(x)"],
+        "description": "An example for using max"
+    },
+    "apply.max=>2": {
+        "prefix": "apply-max=>2",
+        "body": ["x = max('Mike', 'John', 'Vicky')", "print(x)"],
+        "description": "An example for using max"
+    },
+    "apply.max=>3": {
+        "prefix": "apply-max=>3",
+        "body": ["a = (1, 5, 3, 9)", "x = max(a)", "print(x)"],
+        "description": "An example for using max"
+    },
+    "memoryview=>": {
+        "prefix": "memoryview=>",
+        "body": "memoryview(${1:obj})",
+        "description": "Return a memory view object"
+    },
+    "apply.memoryview=>": {
+        "prefix": "apply-memoryview=>",
+        "body": [
+            "x = memoryview(b'Hello')",
+            "print(x)\n",
+            "#return the Unicode of the first character",
+            "print(x[0])\n",
+            "#return the Unicode of the second character",
+            "print(x[1])"
+        ],
+        "description": "An example for using memoryview"
+    },
+    "min": {
+        "prefix": "min",
+        "body": "min(${1:iterable})",
+        "description": "Return the smallest item in an iterable"
+    },
+    "apply.min=>1": {
+        "prefix": "apply-min=>1",
+        "body": ["x = min(5, 10)", "print(x)"],
+        "description": "An example for using min"
+    },
+    "apply.min=>2": {
+        "prefix": "apply-min=>2",
+        "body": ["x = min('Mike', 'John', 'Vicky')", "print(x)"],
+        "description": "An example for using min"
+    },
+    "apply.min=>3": {
+        "prefix": "apply-min=>3",
+        "body": ["a = (1, 5, 3, 9)", "x = min(a)", "print(x)"],
+        "description": "An example for using min"
+    },
+    "next": {
+        "prefix": "next",
+        "body": "next(${1:iterable}, ${2:default})",
+        "description": "Return the next item in an iterable"
+    },
+    "apply.next=>1": {
+        "prefix": "apply-next=>1",
+        "body": [
+            "mylist = iter(['apple', 'banana', 'cherry'])",
+            "x = next(mylist)",
+            "print(x)",
+            "x = next(mylist)",
+            "print(x)",
+            "x = next(mylist)",
+            "print(x)"
+        ],
+        "description": "An example for using next"
+    },
+    "apply.next=>2": {
+        "prefix": "apply-next=>2",
+        "body": [
+            "mylist = iter(['apple', 'banana', 'cherry'])",
+            "x = next(mylist, 'orange')",
+            "print(x)",
+            "x = next(mylist, 'orange')",
+            "print(x)",
+            "x = next(mylist, 'orange')",
+            "print(x)",
+            "x = next(mylist, 'orange')",
+            "print(x)"
+        ],
+        "description": "An example for using next"
+    },
+    "object": {
+        "prefix": "object",
+        "body": "object($0)",
+        "description": "Return a new object"
+    },
+    "apply.object=>": {
+        "prefix": "apply-object=>",
+        "body": ["x = object()", "print(dir(x))"],
+        "description": "An example for using object"
+    },
+    "oct": {
+        "prefix": "oct",
+        "body": "oct(${1:number})",
+        "description": "Converts a number into an octal"
+    },
+    "apply.oct=>": {
+        "prefix": "apply-oct=>",
+        "body": ["x = oct(12)", "print(x)"],
+        "description": "An example for using oct"
+    },
+    "open with variable": {
+        "prefix": "open",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.read())",
+        "description": "An example for using open"
+    },
+    "open=>": {
+        "prefix": "open=>",
+        "body": "open(\"${1:filename.txt}\", ${2:mode})",
+        "description": "Opens a file and Return a file object"
+    },
+    "ord": {
+        "prefix": "ord",
+        "body": "ord(${1:character})",
+        "description": "Given a string of length one, return an integer representing the Unicode code point of the character when the argument is a unicode object, or the value of the byte when the argument is an 8-bit str."
+    },
+    "apply.ord=>": {
+        "prefix": "apply-ord=>",
+        "body": ["x=ord('a')", "print(x)"],
+        "description": "An example for using ord"
+    },
+    "pow": {
+        "prefix": "pow",
+        "body": "pow(${1:base}, ${2:exponent})",
+        "description": "Return base to the power exponent"
+    },
+    "apply.pow=>": {
+        "prefix": "apply-pow=>",
+        "body": ["x=pow(2,5)", "print(x)"],
+        "description": "An example for using pow"
+    },
+    "print()": {
+        "prefix": "print-()",
+        "body": "print($0)",
+        "description": "Code snippet for the print statement."
+    },
+    "apply.print=>": {
+        "prefix": "apply-print=>",
+        "body": "print(object(s), sep=separator, end=end, file=file, flush=flush)",
+        "description": "Prints to the standard output device"
+    },
+    "apply.print=>1": {
+        "prefix": "apply-print=>1",
+        "body": ["print('Hello', 'how are you?')"],
+        "description": "An example for using print"
+    },
+    "apply.print=>2": {
+        "prefix": "apply-print=>2",
+        "body": ["x = ('apple', 'banana', 'cherry')", "print(x)"],
+        "description": "An example for using print"
+    },
+    "apply.print=>3": {
+        "prefix": "apply-print=>3",
+        "body": ["print('Hello', 'how are you?', sep=' ---')"],
+        "description": "An example for using print"
+    },
+    "property": {
+        "prefix": "property",
+        "body": "property(${1:fget=None}, ${2:fset=None}, ${3:fdel=None}, ${4:doc=None})",
+        "description": "Gets, sets, deletes a property"
+    },
+    "apply.property=>": {
+        "prefix": "apply-property=>",
+        "body": [
+            "class C:",
+            "\tdef __init__(self):",
+            "\t\tself._x = None",
+            "\tdef getx(self):",
+            "\t\treturn self._x",
+            "\tdef setx(self, value):",
+            "\t\tself._x = value",
+            "\tdef delx(self):",
+            "\t\tdel self._x",
+            "\n\tx = property(getx, setx, delx, \"I'm the 'x' property.\")",
+            "# If c is an instance of C, c.x will invoke the getter, ",
+            "# c.x = value will invoke the setter, and del c.x the deleter."
+        ],
+        "description": "An example for using property"
+    },
+    "range(Amount)": {
+        "prefix": "range(Amount)",
+        "body": "range(${1:amount})",
+        "description": "Range is one of the datatype"
+    },
+    "range(start, end)": {
+        "prefix": "range(start, end)",
+        "body": "range(${1:Start}, ${2:ExclusiveEnd})",
+        "description": "Range is one of the datatype"
+    },
+    "range(start, end, step)": {
+        "prefix": "range(IncrementBy)",
+        "body": "range(${1:Start}, ${2:ExclusiveEnd}, ${3:Step})",
+        "description": "Range is one of the datatype"
+    },
+    "repr": {
+        "prefix": "repr",
+        "body": "repr(${1:object})",
+        "description": "Return a readable version of an object"
+    },
+    "reversed": {
+        "prefix": "reversed",
+        "body": "reversed(${1:seq})",
+        "description": "Return a reversed iterator"
+    },
+    "apply.reversed=>": {
+        "prefix": "apply-reversed=>",
+        "body": [
+            "alph = ['a', 'b', 'c', 'd']",
+            "ralph = reversed(alph)",
+            "for x in ralph:",
+            "\tprint(x)"
+        ],
+        "description": "An example for using reversed"
+    },
+    "round": {
+        "prefix": "round",
+        "body": "round(${1:number[}, ${2:[ndigits]]})",
+        "description": "Rounds a numbers"
+    },
+    "apply.round=>1": {
+        "prefix": "apply-round=>1",
+        "body": ["x = round(5.76543, 2)", "print(x)"],
+        "description": "An example for using round"
+    },
+    "apply.round=>2": {
+        "prefix": "apply-round=>2",
+        "body": ["x = round(5.76543)", "print(x)"],
+        "description": "An example for using round"
+    },
+    "set=>": {
+        "prefix": "set=>",
+        "body": "set(${1:iterable})",
+        "description": "Return a new set object"
+    },
+    "apply.set=>": {
+        "prefix": "apply-set=>",
+        "body": ["x = set(('apple', 'banana', 'cherry'))", "print(x)"],
+        "description": "An example for using set"
+    },
+    "setattr": {
+        "prefix": "setattr",
+        "body": "setattr(${1:object}, ${2:name}, ${3:value})",
+        "description": "Sets an attribute (property/method) of an object"
+    },
+    "apply.setattr=>": {
+        "prefix": "apply-setattr=>",
+        "body": [
+            "class Person:",
+            "\tname = 'John'",
+            "\tage = 36",
+            "\tcountry = 'Norway'",
+            "setattr(Person, 'age', 40)",
+            "# The age property will now have the value: 40",
+            "x = getattr(Person, 'age')",
+            "print(x)"
+        ],
+        "description": "An example for using setattr"
+    },
+    "slice": {
+        "prefix": "slice",
+        "body": "slice(${1:start}, ${2:end}, ${3:step})",
+        "description": "Return a slice object"
+    },
+    "apply.slice=>1": {
+        "prefix": "apply-slice=>1",
+        "body": [
+            "a = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')",
+            "x = slice(2)",
+            "print(a[x])"
+        ],
+        "description": "An example for using slice"
+    },
+    "apply.slice=>2": {
+        "prefix": "apply-slice=>2",
+        "body": [
+            "a = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')",
+            "x = slice(3, 5)",
+            "print(a[x])"
+        ],
+        "description": "An example for using slice"
+    },
+    "apply.slice=>3": {
+        "prefix": "apply-slice=>3",
+        "body": [
+            "a = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')",
+            "x = slice(0, 8, 3)",
+            "print(a[x])"
+        ],
+        "description": "An example for using slice"
+    },
+    "sorted": {
+        "prefix": "sorted",
+        "body": "sorted(${1:iterable}, ${2:key=key}, ${3:reverse=reverse})",
+        "description": "Return a sorted list"
+    },
+    "apply.sorted=>1": {
+        "prefix": "apply-sorted=>1",
+        "body": [
+            "a = ('b', 'g', 'a', 'd', 'f', 'c', 'h', 'e')",
+            "x = sorted(a)",
+            "print(x)"
+        ],
+        "description": "An example for using sorted"
+    },
+    "apply.sorted=>2": {
+        "prefix": "apply-sorted=>2",
+        "body": [
+            "a = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')",
+            "x = sorted(a, reverse=True)",
+            "print(x)"
+        ],
+        "description": "An example for using sorted"
+    },
+    "apply.sorted=>3": {
+        "prefix": "apply-sorted=>3",
+        "body": [
+            "a = ('b', 'g', 'a', 'd', 'f', 'c', 'h', 'e')",
+            "x = sorted(a)",
+            "print(x)"
+        ],
+        "description": "An example for using sorted"
+    },
+    "staticmethod": {
+        "prefix": "staticmethod",
+        "body": "staticmethod(${1:function})",
+        "description": "Converts a method into a static method"
+    },
+    "truncate": {
+        "prefix": "trunc",
+        "body": "math.trunc(${1:number})}",
+        "description": "Truncate to integer, can consider int(number) as well"
+    },
+    "floor": {
+        "prefix": "floor",
+        "body": "math.floor(${1:number})}",
+        "description": "get the smallest integer of a number"
+    },
+    "ceil": {
+        "prefix": "ceil",
+        "body": "math.ceil(${1:number})}",
+        "description": "get the greatest integer of a number"
+    },
+    "str=>": {
+        "prefix": "str=>",
+        "body": "str(${1:object}, ${2:encoding=encoding}, ${3:errors=errors})",
+        "description": "Return an object with a string representation"
+    },
+    "apply.str=>": {
+        "prefix": "apply-str=>",
+        "body": ["x = str(3.5)", "print(x)"],
+        "description": "An example for using str"
+    },
+    "sum": {
+        "prefix": "sum",
+        "body": "sum(${1:iterable}, ${2:start})",
+        "description": "Sums the items of an iterator"
+    },
+    "apply.sum=>1": {
+        "prefix": "apply-sum=>1",
+        "body": ["a = (1, 2, 3, 4, 5)", "x = sum(a)", "print(x)"],
+        "description": "An example for using sum"
+    },
+    "apply.sum=>2": {
+        "prefix": "apply-sum=>2",
+        "body": ["a = (1, 2, 3, 4, 5)", "x = sum(a, 7)", "print(x)"],
+        "description": "An example for using sum"
+    },
+    "super": {
+        "prefix": "super",
+        "body": "super(${1:type[, object-or-type]})",
+        "description": "Return a proxy object that delegates method calls to a parent or sibling class of type."
+    },
+    "tuple=>": {
+        "prefix": "tuple=>",
+        "body": "tuple(${1:iterable})",
+        "description": "Return a tuple"
+    },
+    "apply.tuple=>": {
+        "prefix": "apply-tuple=>",
+        "body": ["x = tuple(('apple', 'banana', 'cherry'))", "print(x)"],
+        "description": "An example for using tuple"
+    },
+    "type": {
+        "prefix": "type",
+        "body": "type(${1:object})",
+        "description": "Return the type of an object"
+    },
+    "apply.type": {
+        "prefix": "apply-type=>",
+        "body": "type(object, bases, dict)",
+        "description": "Return the type of an object"
+    },
+    "apply.type=>": {
+        "prefix": "apply-type=>1",
+        "body": [
+            "a = ('apple', 'banana', 'cherry')",
+            "b = 'Hello World'",
+            "c = 33",
+            "print(type(a))",
+            "print(type(b))",
+            "print(type(c))"
+        ],
+        "description": "An example for using type"
+    },
+    "unichr": {
+        "prefix": "unichr",
+        "body": "unichr(${1:ascii_value})",
+        "description": "Return the Unicode string of one character whose Unicode code is the integer i."
+    },
+    "vars": {
+        "prefix": "vars",
+        "body": "vars(${1:object})",
+        "description": "Return the __dict__ property of an object"
+    },
+    "apply.vars=>": {
+        "prefix": "apply-vars=>",
+        "body": [
+            "class Person:",
+            "\tname = 'John'",
+            "\tage = 36",
+            "\tcountry = 'norway'",
+            "x = vars(Person)"
+        ],
+        "description": "An example for using vars"
+    },
+    "zip": {
+        "prefix": "zip",
+        "body": "zip(${1:iterator1, iterqator2, iterator3 ...})",
+        "description": "Return an iterator, from two or more iterators"
+    },
+    "apply.zip=>1": {
+        "prefix": "apply-zip=>1",
+        "body": [
+            "a = ('John', 'Charles', 'Mike')",
+            "b = ('Jenny', 'Christy', 'Monica')",
+            "x = zip(a, b)",
+            "#use the tuple() function to display a readable version of the result:",
+            "print(tuple(x))"
+        ],
+        "description": "An example for using zip"
+    },
+    "apply.zip=>2": {
+        "prefix": "apply-zip=>2",
+        "body": [
+            "a = ('John', 'Charles', 'Mike')",
+            "b = ('Jenny', 'Christy', 'Monica', 'Vicky')",
+            "x = zip(a, b)",
+            "#use the tuple() function to display a readable version of the result:",
+            "print(tuple(x))"
+        ],
+        "description": "An example for using zip"
+    },
+    "lambda": {
+        "prefix": "lambda",
+        "body": "lambda ${1:arguments}: ${2:expression}",
+        "description": "A lambda function can take any number of arguments, but can only have one expression."
+    }
+}

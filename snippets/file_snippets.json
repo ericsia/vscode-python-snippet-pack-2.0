@@ -1,0 +1,35 @@
+{
+    "file.openFile": {
+        "prefix": "file-openFile",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.read())$0\n# end open file",
+        "description": "open a file"
+    },
+    "file.openFileReadLine": {
+        "prefix": "file-openFileReadLine",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tfor line in f:\n\t\t# process each line here, remove \\n using strip\n\t\tline = line.replace(\"    \", \"\\t\").strip()\n\t\tprint(line, end=\",\\n\")$0\n\t# end for\n# end readline file",
+        "description": "Read one line of the file"
+    },
+    "file.openFileReadSingleLine": {
+        "prefix": "file-openFileReadSingleLine",
+        "body": "with open('${1:pyfile.txt}', ${2:'r'}) as f:\n\tprint(f.readline())$0\n# end readline file",
+        "description": "Read one line of the file"
+    },
+    "file.appendFile": {
+        "prefix": "file-appendFile",
+        "body": "with open('${1:pyfile.txt}', ${2:'a'}) as f:\n\tf.write(${2:\"text here\"})$0\n# end append file",
+        "description": "Write to an Existing File"
+    },
+    "file.overwriteFile": {
+        "prefix": "file-overwriteFile - can clear",
+        "body": "with open('${1:pyfile.txt}', ${2:'w'}) as f:\n\tf.write(${2:\"new text\"})$0\n# end overwrite file",
+        "description": "Open a file and overwrite the content"
+    },
+    "file.deleteFile": {
+        "prefix": "file-deleteFile - need check exist",
+        "body": [
+            "#import os",
+            "if os.path.isfile('${1:pyfile.txt}'):\n\tos.remove('${1:pyfile.txt}')$0\n# end if del-file"
+        ],
+        "description": "delete a file"
+    }
+}

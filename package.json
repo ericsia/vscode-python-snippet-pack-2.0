@@ -1,0 +1,103 @@
+{
+    "name": "pythonsnippets3",
+    "displayName": "python snippets 3",
+    "description": "New code snippets for Python",
+    "version": "3.0.7",
+    "publisher": "EricSia",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsia/vscode-python-snippet-pack-2.0/"
+    },
+    "keywords": [
+        "python snippetes",
+        "snippets",
+        "python_snippets",
+        "pythonSnippets",
+        "python",
+        "python3",
+        "Python"
+    ],
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.64.2"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/dict_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/sets_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/str_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/list_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/tuple_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/shortcut.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/def_function.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/end_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/print_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/control_flow.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/algo_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/np_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/plt_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/PyMySQL_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/random_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/file_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/class_snippets.json"
+            }
+        ]
+    }
+}

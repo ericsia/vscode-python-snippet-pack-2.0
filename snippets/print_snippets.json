@@ -1,0 +1,77 @@
+{
+    "print(\"\")": {
+        "prefix": "print-(\"\")",
+        "body": "print(\"$0\")",
+        "description": "Code snippet for the print statement."
+    },
+    "print(debug)": {
+        "prefix": "print-(debug-)",
+        "body": "print(\"debug $0\")",
+        "description": "Code snippet for the print statement."
+    },
+    "print(\"\", object)": {
+        "prefix": "print-(\"\", object)",
+        "body": "print(\"${1:}\", ${2:object})",
+        "description": "Code snippet for the print statement."
+    },
+    "print(\"{}\")": {
+        "prefix": "print-(\"{}\")",
+        "body": "print(f\"{$0}\")",
+        "description": "Formats a specified value"
+    },
+    "print(\"{0} {1}\")": {
+        "prefix": "print-(\"{0} {1}\")",
+        "body": "print(f\"{${1:}} {$0}\")",
+        "description": "Formats a specified value"
+    },
+    "print(\"{ a = }\")": {
+        "prefix": "print-(\"{ a = }\")",
+        "body": "print(f\"{${1:a} = }\")",
+        "description": "Formats a specified value"
+    },
+    "print(\"{ a = } { b = }\")": {
+        "prefix": "print-(\"{ a = } { b = }\")",
+        "body": "print(f\"{${1:a} = } {${2:b = }}\")",
+        "description": "Formats a specified value"
+    },
+    "print(\"%d %d\")": {
+        "prefix": "print-(\"%d %d\")",
+        "body": "print(\"${1:%d %d}\" % (${2:4}, ${3:5}))",
+        "description": "Formats a specified value"
+    },
+    "print(value, \" \", SameLine)": {
+        "prefix": "print-(value, \" \", SameLine)",
+        "body": "print(${1:value}, \"$0\", end=\"\")",
+        "description": "Formats a specified value"
+    },
+    "print.printLine": {
+        "prefix": "print-printLine",
+        "body": "print(\"$0\\n\")",
+        "description": "Extra \\n for print"
+    },
+    "print.LinePrint": {
+        "prefix": "print-LinePrint",
+        "body": "print(\"\\n$0\")",
+        "description": "Extra \\n in front for print"
+    },
+    "print.LineTabPrint": {
+        "prefix": "print-LineTabPrint",
+        "body": "print(\"\\n\\t$0\")",
+        "description": "Extra \\n\\t in front for print"
+    },
+    "print.LinePrintLine": {
+        "prefix": "print-LinePrintLine",
+        "body": "print(\"\\n$0\\n\")",
+        "description": "Extra \\n in front and back for print"
+    },
+    "print.TabPrint": {
+        "prefix": "print-TabPrint",
+        "body": "print(\"\\t$0\")",
+        "description": "Extra \\t in front for print"
+    },
+    "print.printClean": {
+        "prefix": "print-printClean",
+        "body": "print(\"${1:}\", end=\"$0\")",
+        "description": "Instead of default \\n keep it empty to print on same line"
+    }
+}

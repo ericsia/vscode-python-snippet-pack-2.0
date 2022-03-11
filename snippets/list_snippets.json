@@ -1,0 +1,256 @@
+{
+    "append": {
+        "prefix": ".append -list",
+        "body": ".append(${1:item})",
+        "description": "Adds an element at the end of the list"
+    },
+    "list.append=>1": {
+        "prefix": "list-append=>1",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "fruits.append('orange')",
+            "print(fruits)"
+        ],
+        "description": "An example for using append"
+    },
+    "list.append=>2": {
+        "prefix": "list-append=>2",
+        "body": [
+            "a = ['apple', 'banana', 'cherry']",
+            "b = ['Ford', 'BMW', 'Volvo']",
+            "a.append(b)",
+            "print(a)"
+        ],
+        "description": "An example for using append"
+    },
+    "clear -list": {
+        "prefix": ".clear -list",
+        "body": ".clear()",
+        "description": "Removes all the elements from the list"
+    },
+    "list.clear=>": {
+        "prefix": "list-clear=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "fruits.clear()",
+            "print(fruits)"
+        ],
+        "description": "An example for using clear"
+    },
+    "copy -list": {
+        "prefix": ".copy -list",
+        "body": ".copy()",
+        "description": "Return a copy of the list"
+    },
+    "list.copy=>": {
+        "prefix": "list-copy=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "x = fruits.copy()",
+            "print(x)"
+        ],
+        "description": "An example for using copy"
+    },
+    "count -list": {
+        "prefix": ".count -list",
+        "body": ".count()",
+        "description": "Return the number of elements with the specified value"
+    },
+    "list.count=>1": {
+        "prefix": "list-count=>1",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "x = fruits.count('cherry')",
+            "print(x)"
+        ],
+        "description": "An example for using count"
+    },
+    "list.count=>2": {
+        "prefix": "list-count=>2",
+        "body": [
+            "fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]",
+            "x = fruits.count(9)",
+            "print(x)"
+        ],
+        "description": "An example for using count"
+    },
+    "extend": {
+        "prefix": ".extend -list",
+        "body": ".extend(${1:iterable})",
+        "description": "Add the elements of a list (or any iterable), to the end of the current list"
+    },
+    "list.extend=>": {
+        "prefix": "list-extend=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "points = (1, 4, 5, 9)",
+            "fruits.extend(points)",
+            "print(fruits)"
+        ],
+        "description": "An example for using extend"
+    },
+    "index -list": {
+        "prefix": ".index -list",
+        "body": ".index(${1:element})",
+        "description": "Return the index of the first element with the specified value"
+    },
+    "list.index=>1": {
+        "prefix": "list-index=>1",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "x = fruits.index('cherry')",
+            "print(x)"
+        ],
+        "description": "An example for using index"
+    },
+    "list.index=>2": {
+        "prefix": "list-index=>2",
+        "body": [
+            "fruits = [4, 55, 64, 32, 16, 32]",
+            "x = fruits.index(32)",
+            "print(x)"
+        ],
+        "description": "An example for using index"
+    },
+    "insert": {
+        "prefix": ".insert -list",
+        "body": ".insert(${1:element})",
+        "description": "Adds an element at the specified position"
+    },
+    "list.insert=>": {
+        "prefix": "list-insert=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "x = fruits.insert(1, 'orange')",
+            "print(x)"
+        ],
+        "description": "An example for using insert"
+    },
+    "pop -list": {
+        "prefix": ".pop -list",
+        "body": ".pop()",
+        "description": "Removes the element at the specified position"
+    },
+    "list.pop=>": {
+        "prefix": "list-pop=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "fruits.pop(1)",
+            "print(fruits)"
+        ],
+        "description": "An example for using pop"
+    },
+    "remove -list": {
+        "prefix": ".remove -list",
+        "body": ".remove(${1:element})",
+        "description": "Removes the first item with the specified value"
+    },
+    "list.remove=>": {
+        "prefix": "list-remove=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "fruits.remove('banana')",
+            "print(fruits)"
+        ],
+        "description": "An example for using remove"
+    },
+    "reverse": {
+        "prefix": ".reverse -list",
+        "body": ".reverse()",
+        "description": "Reverses the order of the list"
+    },
+    "list.reverse=>": {
+        "prefix": "list-reverse=>",
+        "body": [
+            "fruits = ['apple', 'banana', 'cherry']",
+            "fruits.reverse()",
+            "print(fruits)"
+        ],
+        "description": "An example for using reverse"
+    },
+    "sort": {
+        "prefix": ".sort -list",
+        "body": ".sort()",
+        "description": "Sorts the list"
+    },
+    "list.sort=>1": {
+        "prefix": "list-sort=>1",
+        "body": [
+            "cars = ['Ford', 'BMW', 'Volvo']",
+            "cars.sort()",
+            "print(cars)"
+        ],
+        "description": "An example for using sort"
+    },
+    "list.sort=>2": {
+        "prefix": "list-sort=>2",
+        "body": [
+            "cars = ['Ford', 'BMW', 'Volvo']",
+            "cars.sort(reverse=True)",
+            "print(cars)"
+        ],
+        "description": "An example for using sort"
+    },
+    "list.sort=>3": {
+        "prefix": "list-sort=>3",
+        "body": [
+            "# A function that Return the length of the value:",
+            "def myFunc(e):",
+            "\treturn len(e)",
+            "cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']",
+            "cars.sort(key=myFunc)",
+            "print(cars)"
+        ],
+        "description": "An example for using sort"
+    },
+    "list.sort=>4": {
+        "prefix": "list-sort=>4",
+        "body": [
+            "# A function that Return the length of the value:",
+            "def myFunc(e):",
+            "\treturn len(e)",
+            "cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']",
+            "cars.sort(reverse=True, key=myFunc)",
+            "print(cars)"
+        ],
+        "description": "An example for using sort"
+    },
+    "comprehensions": {
+        "prefix": "comp=> -list",
+        "body": "[ expression for item in list if conditional ]",
+        "description": "List Comprehensions"
+    },
+    "list.comp=>1": {
+        "prefix": "list-comp=>1",
+        "body": ["x = [i for i in range(10)]", "print(x)"],
+        "description": "An example for using list comprehension"
+    },
+    "list.comp=>2": {
+        "prefix": "list-comp=>2",
+        "body": ["x = [x**2 for x in range(10)]", "print(x)"],
+        "description": "An example for using list comprehension"
+    },
+    "list.comp=>3": {
+        "prefix": "list-comp=>3",
+        "body": [
+            "list1 = [3,4,5]",
+            "multiplied = [item*3 for item in list1]",
+            "print(multiplied)"
+        ],
+        "description": "An example for using list comprehension"
+    },
+    "list.comp=>4": {
+        "prefix": "list-comp=>4",
+        "body": [
+            "listOfWords = ['this','is','a','list','of','words']",
+            "items = [ word[0] for word in listOfWords ]",
+            "print(items)"
+        ],
+        "description": "An example for using list comprehension"
+    },
+    "list.comp=>5": {
+        "prefix": "list-comp=>5",
+        "body": ["x = [double(x) for x in range(10) if x%2==0]", "print(x)"],
+        "description": "An example for using list comprehension"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "count -tuple": {
+        "prefix": ".count -tuple",
+        "body": ".count(${1:value})",
+        "description": "Return the number of times a specified value occurs in a tuple"
+    },
+    "tuple.count=>": {
+        "prefix": "tuple.count=>",
+        "body": [
+            "thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)",
+            "x = thistuple.count(5)",
+            "print(x)"
+        ],
+        "description": "An example for using count"
+    },
+    "index -tuple": {
+        "prefix": ".index -tuple",
+        "body": ".index(${1:value})",
+        "description": "Searches the tuple for a specified value and Return the position of where it was found"
+    },
+    "tuple.index=>": {
+        "prefix": "tuple.index=>",
+        "body": [
+            "thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)",
+            "x = thistuple.index(8)",
+            "print(x)"
+        ],
+        "description": "An example for using index"
+    }
+}

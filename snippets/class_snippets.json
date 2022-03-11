@@ -1,0 +1,323 @@
+{
+    "__init__": {
+        "prefix": "__init__=>",
+        "body": [
+            "def __init__(self, name, age):",
+            "\tself.name = name",
+            "\tself.age = age"
+        ],
+        "description": "__init__ method"
+    },
+    "__iter__": {
+        "prefix": "__iter__=>",
+        "body": ["def __iter__(self):", "\tself.a = 1", "\treturn self"],
+        "description": "__iter__ method"
+    },
+    "__next__": {
+        "prefix": "__next__=>",
+        "body": [
+            "def __next__(self):",
+            "\tx = self.a",
+            "\tself.a += 1",
+            "\treturn x"
+        ],
+        "description": "__next__ method"
+    },
+    "enum": {
+        "prefix": "enum",
+        "body": [
+            "from enum import Enum\n",
+            "class ${1:MyEnum}(Enum):",
+            "\t\"\"\"",
+            "\tEnum Description: ",
+            "\t\"\"\"",
+            "\t${2:RED} = \"${3:red}\"",
+            "\t${4:GREEN} = \"${5:green}\"",
+            "\t${6:BLUE} = \"${7:blue}\"\n"
+        ],
+        "description": "Using Enums in Python"
+    },
+    "enum.int": {
+        "prefix": "enum.int",
+        "body": [
+            "from enum import IntEnum\n",
+            "class ${1:MyEnum}(IntEnum):",
+            "\t\"\"\"",
+            "\tEnum Description: ",
+            "\t\"\"\"",
+            "\t${2:RED} = ${3:0}",
+            "\t${4:GREEN} = ${5:1}",
+            "\t${6:BLUE} = ${7:2}\n"
+        ],
+        "description": "Using Enums in Python"
+    },
+    "class": {
+        "prefix": "class=>",
+        "body": ["class MyClass:", "\tpass"],
+        "description": "python class"
+    },
+    "class=>1": {
+        "prefix": "class=>1",
+        "body": [
+            "class Person:",
+            "\tpass  # An empty block",
+            "p = Person()",
+            "print(p)"
+        ],
+        "description": "oop inheritance example"
+    },
+    "class=>inheritance1": {
+        "prefix": "class=>inheritance1",
+        "body": [
+            "class Bird:\n",
+            "\tdef __init__(self):",
+            "\t\tprint('Bird is ready')\n",
+            "\tdef whoisThis(self):",
+            "\t\tprint('Bird')\n",
+            "\tdef swim(self):",
+            "\t\tprint('Swim faster')\n",
+            "# child class",
+            "class Penguin(Bird):\n",
+            "\tdef __init__(self):",
+            "\t\t# call super() function",
+            "\t\tsuper().__init__()",
+            "\t\tprint('Penguin is ready')\n",
+            "\tdef whoisThis(self):",
+            "\t\tprint('Penguin')\n",
+            "\tdef run(self):",
+            "\t\tprint('Run faster')\n",
+            "peggy = Penguin()",
+            "peggy.whoisThis()",
+            "peggy.swim()",
+            "peggy.run()"
+        ],
+        "description": "oop inheritance example"
+    },
+    "class=>inheritance2": {
+        "prefix": "class=>inheritance2",
+        "body": [
+            "class SchoolMember:",
+            "\t'''Represents any school member.'''",
+            "\tdef __init__(self, name, age):",
+            "\t\tself.name = name",
+            "\t\tself.age = age",
+            "\t\tprint(f'(Initialized SchoolMember: {self.name})')",
+            "\tdef tell(self):",
+            "\t\t'''Tell my details.'''",
+            "\t\tprint(f'Name:{self.name} Age:{self.age}', end=' ')",
+            "class Teacher(SchoolMember):",
+            "\t'''Represents a teacher.'''",
+            "\tdef __init__(self, name, age, salary):",
+            "\t\tSchoolMember.__init__(self, name, age)",
+            "\t\tself.salary = salary",
+            "\t\tprint(f'(Initialized Teacher: {self.name})')",
+            "\tdef tell(self):",
+            "\t\tSchoolMember.tell(self)",
+            "\t\tprint(f'Salary: {self.salary}')",
+            "class Student(SchoolMember):",
+            "\t'''Represents a student.'''",
+            "\tdef __init__(self, name, age, marks):",
+            "\t\tSchoolMember.__init__(self, name, age)",
+            "\t\tself.marks = marks",
+            "\t\tprint(f'(Initialized Student: {self.name})')",
+            "\tdef tell(self):",
+            "\t\tSchoolMember.tell(self)",
+            "\t\tprint(f'Marks: {self.marks}')",
+            "t = Teacher('Mrs. Shrividya', 40, 30000)",
+            "s = Student('Swaroop', 25, 75)",
+            "# prints a blank line",
+            "print()",
+            "members = [t, s]",
+            "for member in members:",
+            "\t# Works for both Teachers and Students",
+            "\tmember.tell()"
+        ],
+        "description": "oop inheritance example"
+    },
+    "class=>with_attribute1": {
+        "prefix": "class=>with_attribute1",
+        "body": [
+            "class Parrot:\n",
+            "# class attribute",
+            "\tspecies = 'bird'\n",
+            "# instance attribute",
+            "\tdef __init__(self, name, age):",
+            "\t\tself.name = name",
+            "\t\tself.age = age\n",
+            "# instantiate the Parrot class",
+            "blu = Parrot('Blu', 10)",
+            "woo = Parrot('woo', 15)\n",
+            "# access the class attributes",
+            "print(f'Blu is a {blu.__class__.species}')",
+            "print(f'Woo is also a {woo.__class__.species}')",
+            "# access the instance attributes",
+            "print(f'{blu.name} is {blu.age} years old')",
+            "print(f'{woo.name} is {woo.age} years old')"
+        ],
+        "description": "class with attribute example"
+    },
+    "class=>with_attribute2": {
+        "prefix": "class=>with_attribute2",
+        "body": [
+            "class Person:",
+            "\tdef __init__(self, name):",
+            "\t\tself.name = name",
+            "\tdef say_hi(self):",
+            "\t\tprint('Hello, my name is', self.name)",
+            "p = Person('Swaroop')",
+            "p.say_hi()",
+            "# The previous 2 lines can also be written as",
+            "# Person('Swaroop').say_hi()"
+        ],
+        "description": "class with attribute example"
+    },
+    "class=>with_attribute3": {
+        "prefix": "class=>with_attribute3",
+        "body": [
+            "class Robot:",
+            "\t'''Represents a robot, with a name.'''",
+            "\t# A class variable, counting the number of robots",
+            "\tpopulation = 0",
+            "\tdef __init__(self, name):",
+            "\t\t'''Initializes the data.'''",
+            "\t\tself.name = name",
+            "\t\tprint(f'(Initializing {self.name})')",
+            "\t\t# When this person is created, the robot",
+            "\t\t# adds to the population",
+            "\t\tRobot.population += 1",
+            "\tdef die(self):",
+            "\t\t'''I am dying.'''",
+            "\t\tprint(f'{self.name} is being destroyed!')",
+            "\t\tRobot.population -= 1",
+            "\t\tif Robot.population == 0:",
+            "\t\t\tprint(f'{self.name} was the last one.')",
+            "\t\telse:",
+            "\t\t\tprint(f'There are still {Robot.population} robots working.')",
+            "\tdef say_hi(self):",
+            "\t\t'''Greeting by the robot.",
+            "\t\tYeah, they can do that.'''",
+            "\t\tprint(f'Greetings, my masters call me {self.name}.')",
+            "\t@classmethod",
+            "\tdef how_many(cls):",
+            "\t\t'''Prints the current population.'''",
+            "\t\tprint(f'We have {cls.population} robots.')",
+            "droid1 = Robot('R2-D2')",
+            "droid1.say_hi()",
+            "Robot.how_many()",
+            "droid2 = Robot('C-3PO')",
+            "droid2.say_hi()",
+            "Robot.how_many()",
+            "print('Robots can do some work here.')",
+            "print('Robots have finished their work. So lets destroy them.')",
+            "droid1.die()",
+            "droid2.die()",
+            "Robot.how_many()"
+        ],
+        "description": "class with attribute example"
+    },
+    "class=>with_method1": {
+        "prefix": "class=>with_method1",
+        "body": [
+            "class Parrot:\n",
+            "# instance attributes",
+            "\tdef __init__(self, name, age):",
+            "\t\tself.name = name",
+            "\t\tself.age = age\n",
+            "# instance method",
+            "\tdef sing(self, song):",
+            "\t\treturn f'{self.name} sings {song}'\n",
+            "\tdef dance(self):",
+            "\t\treturn f'{self.name} is now dancing'\n",
+            "# instantiate the object",
+            "blu = Parrot('Blu', 10)",
+            "# call our instance methods",
+            "print(blu.sing('Happy'))",
+            "print(blu.dance())"
+        ],
+        "description": "class with method example"
+    },
+    "class=>with_method2": {
+        "prefix": "class=>with_method2",
+        "body": [
+            "class Person:",
+            "\tdef say_hi(self):",
+            "\t\tprint('Hello, how are you?')",
+            "p = Person()",
+            "p.say_hi()",
+            "# The previous 2 lines can also be written as",
+            "# Person().say_hi()"
+        ],
+        "description": "class with method example"
+    },
+    "class=>encapsulation": {
+        "prefix": "class=>encapsulation",
+        "body": [
+            "class Computer:\n",
+            "\tdef __init__(self):",
+            "\t\tself.__maxprice = 900\n",
+            "\tdef sell(self):",
+            "\t\tprint(f'Selling Price: {self.__maxprice}')\n",
+            "\tdef setMaxPrice(self, price):",
+            "\t\tself.__maxprice = price\n",
+            "c = Computer()",
+            "c.sell()\n",
+            "# change the price",
+            "c.__maxprice = 1000",
+            "c.sell()\n",
+            "# using setter function",
+            "c.setMaxPrice(1000)",
+            "c.sell()"
+        ],
+        "description": "class encapsulation example"
+    },
+    "class=>polymorphism1": {
+        "prefix": "class=>polymorphism1",
+        "body": [
+            "class Parrot:\n",
+            "\tdef fly(self):",
+            "\t\tprint('Parrot can fly')\n",
+            "\tdef swim(self):",
+            "\t\tprint('Parrot can not swim')\n",
+            "class Penguin:\n",
+            "\tdef fly(self):",
+            "\t\tprint('Penguin can not fly')\n",
+            "\tdef swim(self):",
+            "\t\tprint('Penguin can swim')\n",
+            "# common interface",
+            "def flying_test(bird):",
+            "\tbird.fly()\n",
+            "#instantiate objects",
+            "blu = Parrot()",
+            "peggy = Penguin()\n",
+            "# passing the object",
+            "flying_test(blu)",
+            "flying_test(peggy)"
+        ],
+        "description": "class polymorphism example"
+    },
+    "class=>polymorphism2": {
+        "prefix": "class=>polymorphism2",
+        "body": [
+            "class Parrot:\n",
+            "\tdef fly(self):",
+            "\t\tprint('Parrot can fly')\n",
+            "\tdef swim(self):",
+            "\t\tprint('Parrot can not swim')\n",
+            "class Penguin:\n",
+            "\tdef fly(self):",
+            "\t\tprint('Penguin can not fly')\n",
+            "\tdef swim(self):",
+            "\t\tprint('Penguin can swim')\n",
+            "# common interface",
+            "def flying_test(bird):",
+            "\tbird.fly()\n",
+            "#instantiate objects",
+            "blu = Parrot()",
+            "peggy = Penguin()\n",
+            "# passing the object",
+            "flying_test(blu)",
+            "flying_test(peggy)"
+        ],
+        "description": "class polymorphism example"
+    }
+}
