@@ -1,4 +1,3 @@
-from matplotlib.pyplot import cla
 from src.algo import is_prime
 from src.algo import fast_power
 
