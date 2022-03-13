@@ -19,5 +19,31 @@
             "\t\treturn True"
         ],
         "description": "check whether a number is prime"
+    },
+    "BinaryExponentiation": {
+        "prefix": [
+            "algo-binaryExponentiation",
+            "algo-fast_power",
+            "algo-fast_expo"
+        ],
+        "body": [
+            "def fast_power(x: float, y: int) -> int:\n",
+            "\t\"\"\"\n",
+            "\tReturn x^y with O(log(n)) Time Complexity.\n",
+            "\t\"\"\"\n",
+            "\tif y == 0:\n",
+            "\t\treturn 1\n",
+            "\telif y == 1:\n",
+            "\t\treturn x\n",
+            "\telif y == -1:\n",
+            "\t\treturn 1/x\n",
+            "\telse:\n",
+            "\t\tans = fast_power(x, y//2)\n",
+            "\t\tif y % 2 == 0:\n",
+            "\t\t\treturn ans*ans\n",
+            "\t\telse:\n",
+            "\t\t\treturn ans * ans * x\n"
+        ],
+        "description":"peforms a^b operation with O(log(n)) Complexity"
     }
 }
