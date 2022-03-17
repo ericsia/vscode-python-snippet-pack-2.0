@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "User Snippet Generator",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./vscode_ext_gen.py",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+    ]
+}
