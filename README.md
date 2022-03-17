@@ -1,3 +1,4 @@
+[![pytest](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml/badge.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml)
 ### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
 [![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
 
