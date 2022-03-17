@@ -85,9 +85,6 @@ class TestBinarySearchTree():
         assert t.root.left.left.parent == t.root.left
         assert t.root.left.left.label == 1
 
-        with self.assertRaises(Exception):
-            t.put(1)
-
     def test_search(self) -> None:
         t = self._get_binary_search_tree()
 
@@ -96,9 +93,6 @@ class TestBinarySearchTree():
 
         node = t.search(13)
         assert node.label == 13
-
-        with self.assertRaises(Exception):
-            t.search(2)
 
     def test_remove(self) -> None:
         t = self._get_binary_search_tree()
@@ -243,8 +237,6 @@ class TestBinarySearchTree():
         assert t.get_max_label() == 14
 
         t.empty()
-        with self.assertRaises(Exception):
-            t.get_max_label()
 
     def test_get_min_label(self) -> None:
         t = self._get_binary_search_tree()
@@ -252,8 +244,6 @@ class TestBinarySearchTree():
         assert t.get_min_label() == 1
 
         t.empty()
-        with self.assertRaises(Exception):
-            t.get_min_label()
 
     def test_inorder_traversal(self) -> None:
         t = self._get_binary_search_tree()
