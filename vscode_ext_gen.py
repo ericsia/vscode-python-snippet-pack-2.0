@@ -30,7 +30,7 @@ if __name__ == "__main__":
         with open(default_file_path, 'r') as code:
             for line in code:
                 # assume using 4 spaces as tab
-                line = line.replace("    ", "\t").strip()
+                line = line.replace("    ", "\t")
                 line = json.dumps(line)
                 print(line, end=",\n")
     except FileNotFoundError:

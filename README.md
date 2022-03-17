@@ -4,6 +4,7 @@
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please help to rate this extensions [5 stars](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3&ssr=false#review-details) and [share](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3) it, [feedback is welcome](CONTRIBUTING.md)
 #### Tips: uninstall similar python snippet extension first. Then install and Reopen
+### Thanks to [Christian Clauss's Python algorithms ](https://github.com/TheAlgorithms/Python) open source community for providing algorithms for our snippets
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
