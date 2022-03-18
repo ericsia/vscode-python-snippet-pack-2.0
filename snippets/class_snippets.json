@@ -124,7 +124,7 @@
             "\t\tSchoolMember.tell(self)",
             "\t\tprint(f'Marks: {self.marks}')",
             "t = Teacher('Mrs. Shrividya', 40, 30000)",
-            "s = Student('Swaroop', 25, 75)",
+            "s = Student('Meow', 25, 75)",
             "# prints a blank line",
             "print()",
             "members = [t, s]",
@@ -138,9 +138,9 @@
         "prefix": "class=>with_attribute1",
         "body": [
             "class Parrot:\n",
-            "# class attribute",
+            "\t# class attribute",
             "\tspecies = 'bird'\n",
-            "# instance attribute",
+            "\t# instance attribute",
             "\tdef __init__(self, name, age):",
             "\t\tself.name = name",
             "\t\tself.age = age\n",
@@ -164,10 +164,10 @@
             "\t\tself.name = name",
             "\tdef say_hi(self):",
             "\t\tprint('Hello, my name is', self.name)",
-            "p = Person('Swaroop')",
+            "p = Person('Meow')",
             "p.say_hi()",
             "# The previous 2 lines can also be written as",
-            "# Person('Swaroop').say_hi()"
+            "# Person('Meow').say_hi()"
         ],
         "description": "class with attribute example"
     },

@@ -1,27 +1,47 @@
 {
-    "def.function()": {
+    "def()": {
         "prefix": "def.function()",
         "body": "def ${1:name}():\n\t# comment: $0\n# end def",
         "description": "Defining Function"
     },
-    "def.function(one)": {
+    "def(one)": {
         "prefix": "def.function(one)",
         "body": "def ${1:name}(${2:arg}):\n\t# comment: $0\n# end def",
         "description": "Defining Function with argument"
     },
-    "def.function(one, two)": {
+    "def(one, two)": {
         "prefix": "def.function(one, two)",
-        "body": "def ${1:name}(${2:one}, ${2:two}):\n\t# comment: $0\n# end def",
+        "body": "def ${1:name}(${2:one}, ${3:two}):\n\t# comment: $0\n# end def",
         "description": "Defining Function with argument"
     },
+    "def(self-)": {
+        "prefix": "def.function.class-(self-)",
+        "body": "def ${1:name}(self):\n\t# comment: $0\n# end def",
+        "description": "Defining Class Function"
+    },
+    "default constructor": {
+        "prefix": "def.function.class-(init-)",
+        "body": "def __init__(self):\n\t# comment: $0\n# end default constructor",
+        "description": "Default Constructor"
+    },
+    "alternate constructor": {
+        "prefix": "def.function.class-(init- one)",
+        "body": "def __init__(self, in${1:Value}):\n\t# comment: $0\n\tself.${2:value} = in${1:Value}\n# end alternate constructor",
+        "description": "Alternate Constructor"
+    },
+    "alternate constructor, 2": {
+        "prefix": "def.function.class-(init- one, two)",
+        "body": "def __init__(self, in${1:Value}, in${3:Text}):\n\t# comment: $0\n\tself.${2:value} = in${1:Value}\n# end alternate constructor",
+        "description": "Alternate Constructor two arguments"
+    },
     "__main__": {
-        "prefix": "def.function(main-)",
+        "prefix": "def.function.main-()",
         "body": "if __name__ == \"__main__\":\n\t$0\n# end main",
         "description": "similar to main function"
     },
-    "def.function=>with_default_value": {
-        "prefix": "def=>with_default_value",
-        "body": "def ${1:name}(${2:#lastName=\"john\"}):\n\t# comment: $0\n# end def",
+    "def=>with_default_value": {
+        "prefix": "def.function=>with_default_value",
+        "body": "def ${1:name}(${2:lastName=\"john\"}):\n\t# comment: $0\n# end def",
         "description": "Defining Function wqith default values"
     }
 }
