@@ -5,11 +5,11 @@
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
 #### Please help to rate this extensions [5 stars](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3&ssr=false#review-details) and [share](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3) it, [feedback is welcome](CONTRIBUTING.md)
 #### Tips: uninstall similar python snippet extension first. Then install and Reopen
-### Thanks to [Christian Clauss's Python algorithms ](https://github.com/TheAlgorithms/Python) open source community for providing algorithms for our snippets
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
-* added `def.function(main-)` as a main method
+* added `def.function.main-()` as a main method, type `main-`
+* added `def.function.class-(init)` for class, type `class-` or `init-`
 * added label to method belong to string/list/tuple/set/dict
 * added python `<datatype>` and snippet initialisation, try typing `str`
 * added `match` snippet - python 3.10
@@ -17,7 +17,7 @@
 * added `import` snippet
 * added `documentation` snippet
 * added `random` snippet try `random-TextGen`
-* added `for`-loop snippet
+* added `for-`loop snippet
 * added `print-` snippet
 * added matplotlib template `plt`
 * added algorithm template `algo-`
@@ -48,11 +48,11 @@
 |------------------------------------------------------------|---------------|
 | To get `__main__` type `def` or `function` or `main-`      | `main-`       |
 | To see built-in method example type `apply-` scroll down   | `apply-`      |
-| Tips: to see specific method type `name=`                  | `count=`      |
+| Tips: to see specific method type example `name=`          | `count=`      |
 | To see datatype method example type `<datatype>-`          | `str-`        |
 | To see datatype method only type `-<datatype>` scroll down | `-string`     |
 | To see python `datatype`                                   | `dtype`       |
-| To initialise type `<datatype> initialise` snippet         | `bool`        |
+| To initialise type `<datatype> initialise` snippet         | `bool init`   |
 | To get fileIO type `file-` then scroll down                | `file-`       |
 | To get block comment type `documentation`                  | `doc`         |
 | To get algorithm snippet like `is_prime`                   | `algo-`       |
@@ -161,8 +161,7 @@
 
 | match aka switch code snippets | Description     |
 |--------------------------------|-----------------|
-| match                          | match Statement |
-| switch                         | match Statement |
+| switch or match                | match Statement |
 
 <br />
 
@@ -269,13 +268,14 @@ print(f'{woo.name} is {woo.age} years old')
 
 This extension aim to cover as many new Python3 method make it as complete as possible, please help to contribute from feedback link above.
 
-### For more information
+### For more information - Thanks to
 
 * [python documentation](https://docs.python.org/3/tutorial/index.html)
 * [w3schools](https://www.w3schools.com/python/default.asp)
 * [www.programiz](https://www.programiz.com/python-programming)
 * [python.swaroopch](https://python.swaroopch.com/oop.html)
 * [pythonforbeginners](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python)
+* [Christian Clauss's Python Algorithms ](https://github.com/TheAlgorithms/Python) - open source community for providing algorithms for our snippets
 
 
 **Enjoy! Type less do more**
@@ -296,7 +296,5 @@ Change .format into f-string and remove unnecessary files
 
 change . become - due to vscode clash ex `apply.` become `apply-`
 
-### 3.3.10
+### 3.3.11
 added PyMySQL, Algo, Random snippet by Lakshmikanth
-
------------------------------------------------------------------------------------------------------------
