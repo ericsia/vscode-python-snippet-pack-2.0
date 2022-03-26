@@ -1,28 +1,33 @@
 {
     "if": {
-        "prefix": "if.if-",
+        "prefix": "If.if-",
         "body": "if (${1:}):\n\t# comment: $0\n# end if",
         "description": "if statement"
     },
     "if:elif": {
-        "prefix": "ifelif.if-elif",
+        "prefix": "IfElif.if-elif",
         "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: $0\n# end if",
         "description": "if/elif statement"
     },
     "if:elif:else": {
-        "prefix": "ifelifelse.if-elif-else",
+        "prefix": "IfElifElse.if-elif-else",
         "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: ${4:}\nelse:\n\t# comment: $0\n# end if",
         "description": "if/elif/else statement"
     },
     "if:else": {
-        "prefix": "ifelse.if-else",
+        "prefix": "IfElse.if-else",
         "body": "if (${1:}):\n\t# comment: ${2:}\nelse:\n\t# comment: $0\n# end if",
         "description": "if/else statement"
     },
     "ifshort": {
-        "prefix": "ifshort.if-short",
+        "prefix": "IfShort.if-short",
         "body": "print('A') if a > b else print('B')",
         "description": "ifshort statement"
+    },
+    "if:Input": {
+        "prefix": "IfInput.if-Input-",
+        "body": "if (input(\"${1:Finished? y/n : }\") == \"${2:y}\"):\n\t# comment: $0\n# end if",
+        "description": "if input statement"
     },
     "elif": {
         "prefix": "elif",
@@ -45,22 +50,22 @@
         "description": "case is for match aka switch statement"
     },
     "try:except:": {
-        "prefix": "try.try-",
+        "prefix": "Try.try-",
         "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}$0\n# end try",
         "description": "Code Snippet for a try and except blocks."
     },
     "try:except:else": {
-        "prefix": "trye.try-e",
+        "prefix": "TryE.try-e",
         "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except with else statement."
     },
     "try:except:else:finally": {
-        "prefix": "tryef.try-e-f",
+        "prefix": "TryEF.try-e-f",
         "body": "try:\n\t# comment: ${1:}\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: ${6:}\nfinally:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except/finally with else statement."
     },
     "try:except:finally": {
-        "prefix": "tryf.try-f",
+        "prefix": "TryF.try-f",
         "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except/finally."
     },
