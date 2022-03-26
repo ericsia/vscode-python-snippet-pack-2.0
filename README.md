@@ -139,6 +139,8 @@
 
 | file code examples          | Description                           |
 |-----------------------------|---------------------------------------|
+| file-listFile               | List files in that path               |
+| file-listFileWithPath       | List files with path                  |
 | file-openFile               | Open a file                           |
 | file-openFileReadLine       | Read file line by line                |
 | file-openFileReadSingleLine | Read one line of the file             |
@@ -298,3 +300,9 @@ change . become - due to vscode clash ex `apply.` become `apply-`
 
 ### 3.3.11
 added PyMySQL, Algo, Random snippet by Lakshmikanth
+
+### 3.3.12
+remove dot in built-in methods for good, use `-<datatype>` then scroll down.
+Tips, tick in setting: Python › Analysis: Complete Function Parens
+
+-----------------------------------------------------------------------------------------------------------
