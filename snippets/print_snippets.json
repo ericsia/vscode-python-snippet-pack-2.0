@@ -14,6 +14,11 @@
         "body": "print(\"${1:}\", ${2:object})",
         "description": "Code snippet for the print statement."
     },
+    "print(text, end=\",\\n\"))": {
+        "prefix": "print-(end=\",\\n\"))",
+        "body": ["print(${1:text}, end=\",\\n\")"],
+        "description": "Formats a specified value"
+    },
     "print(\"{}\")": {
         "prefix": "print-(\"{}\")",
         "body": "print(f\"{$0}\")",

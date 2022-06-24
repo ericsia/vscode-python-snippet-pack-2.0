@@ -3,7 +3,7 @@ We love **[your input](https://github.com/ericsia/vscode-python-snippet-pack-2.0
 
 - Reporting a typo
 - Providing suggestion
-- Submitting a fix
+- Submitting a fix or help, note: naming `prefix` needs to be meaningful and no multiple
 
 **Great Bug Reports** tend to have:
 
