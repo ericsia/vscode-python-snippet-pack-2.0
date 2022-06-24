@@ -97,6 +97,9 @@
             {
                 "language": "python",
                 "path": "./snippets/class_snippets.json"
+            },
+            {
+                "path":"./snippets/django_snippets.json"
             }
         ]
     }

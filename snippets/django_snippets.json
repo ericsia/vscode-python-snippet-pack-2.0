@@ -1,0 +1,144 @@
+{
+	"Django View": {
+		"scope": "python",
+		"prefix": [
+			"django-view"
+		],
+		"body": [
+			"class $1(View):",
+			"\tdef get(self, request: HttpRequest):",
+			"\t\t$2",
+			"",
+			"\tdef post(self, request: HttpRequest):",
+			"\t\t$3"
+		],
+		"description": "Class based view for django"
+	},
+	"Django Template View": {
+		"scope": "python",
+		"prefix": [
+			"django-template-view"
+		],
+		"body": [
+			"class $1(TemplateView):",
+			"\ttemplate_name = $2",
+			"",
+			"\tdef post(self, request: HttpRequest):",
+			"\t\t$3"
+		]
+	},
+	"Django Auth View": {
+		"scope": "python",
+		"prefix": [
+			"django-auth-view"
+		],
+		"body": [
+			"class $1(LoginRequiredMixin, View):",
+			"\ttemplate_name: str = \"$2\"",
+			"\tlogin_url = ${3|reverse,reverse_lazy|}(\"$4\")"
+		]
+	},
+	"Django Urls Template": {
+		"scope": "python",
+		"prefix": [
+			"django-urls"
+		],
+		"body": [
+			"from django.urls import path",
+			"from . import views",
+			"",
+			"app_name = \"$1\"",
+			"urlpatterns = [",
+			"\t$2",
+			"]"
+		]
+	},
+	"Django Url Path": {
+		"scope": "python",
+		"prefix": [
+			"django-url-path"
+		],
+		"body": [
+			"path(\"$1\", views.$2, name=\"$3\"),"
+		],
+		"description": "Django path in urls.py"
+	},
+	"Django Model": {
+		"scope": "python",
+		"prefix": [
+			"django-model"
+		],
+		"body": [
+			"class $1(model.Model):",
+			"\t$2",
+			"",
+			"\tdef __str__(self):",
+			"\t\t# view of the model in admin pannel",
+			"\t\treturn $3",
+			"",
+			"\tdef save(self, *args, **kwargs):",
+			"\t\t# logic before you save you model object",
+			"\t\t$4",
+			"\t\tsuper().save(*args, **kwargs)",
+			"",
+			"\tclass Meta:",
+			"\t\t# for naming you table",
+			"\t\tdb_table = \"$5\""
+		]
+	},
+	"Django Base Template": {
+		"scope": "django-html,django-txt,html",
+		"prefix": [
+			"django-temp",
+			"django-base"
+		],
+		"body": [
+			"{% load static %}",
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"\t<meta charset=\"UTF-8\" />",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+			"\t<title>$1</title>",
+			"\t{% block headScripts%}{% endblock headScripts %}",
+			"\t<link rel=\"shortcut icon\" href=\"{% static 'svg/logo.svg' %}\" type=\"image/x-icon\">",
+			"\t{% comment %} update css_version upon changes in css files {% endcomment %}",
+			"\t{% with css_version=\"2.1\" %}",
+			"\t\t{% block stylesheet %}{% endblock stylesheet%}",
+			"\t{% endwith %}",
+			"</head>",
+			"<body>",
+			"\t{% block body %}{% endblock body %}",
+			"\t{% comment %} update js_version upon changes in js files {% endcomment %}",
+			"\t{% with js_version=\"2.1\" %}",
+			"\t\t{% block scripts %}{% endblock scripts %}",
+			"\t{% endwith %}",
+			"</body>",
+			"</html>"
+		]
+	},
+	"Django Page Template": {
+		"scope": "django-html,django-txt,html",
+		"prefix": [
+			"django-page",
+			"django-html"
+		],
+		"body": [
+			"{% extends 'head.djt' %}",
+			"{% comment %} Template inherits from head.djt {% endcomment %}",
+			"{% load static %}",
+			"",
+			"{% block stylesheet %}",
+			"\t<link rel=\"stylesheet\" type=\"text/css\" href=\"{% static '$1' %}?version={{css_version}}\">",
+			"{% endblock stylesheet%}",
+			"",
+			"{% block body %}",
+			"{% endblock body %}",
+			"",
+			"{% block scripts %}",
+			"\t<script src=\"{% static '$2'%}?version={{ js_version }}\" type=\"module\"></script>",
+			"{% endblock scripts %}"
+		]
+	}
+}
