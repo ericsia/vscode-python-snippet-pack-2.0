@@ -37,9 +37,9 @@
         "body": [
             "import matplotlib.pyplot as plt\n",
             "plt.plot(${1:xData}, ${2:yData}, linestyle=\"${3:plt.linestyle}\")",
-            "plt.title(\"${4:}\")",
-            "plt.ylabel(\"${5:}\")",
-            "plt.xlabel(\"${6:}\")",
+            "plt.title(\"$4\")",
+            "plt.ylabel(\"$5\")",
+            "plt.xlabel(\"$6\")",
             "plt.show()"
         ],
         "description": "template for matplotlib.pyplot, no need remove import manually"

@@ -1,4 +1,24 @@
 {
+    "slice for string and list": {
+        "prefix": "slice",
+        "body": "[${1:incStart}:${2:exclusiveEnd}]",
+        "description": "Slice"
+    },
+    "slice for string and list=>": {
+        "prefix": "slice=>",
+        "body": [
+            "# +---+---+---+---+---+---+",
+            "# | P | y | t | h | o | n |",
+            "# +---+---+---+---+---+---+",
+            "#   0   1   2   3   4   5",
+            "#  -6  -5  -4  -3  -2  -1",
+            "python=\"Python\"",
+            "print(f\"{python[1:]}\")",
+            "print(f\"{python[:-2]}\")",
+            "print(f\"{python[2:5]}\")"
+        ],
+        "description": "Slice Example"
+    },
     "benchmark": {
         "prefix": "benchmark",
         "body": "import time\n\n#START BENCHMARK\nstart = time.perf_counter()\n#test code here for timing\nend = time.perf_counter()\nprint(f\"\\033[93mspent {end - start}  $0\\033[0m\")\n# END BENCHMARK",
@@ -196,7 +216,7 @@
     },
     "swap": {
         "prefix": "swap",
-        "body": "${1:a}, ${2:b} = ${2:b}, ${1:a}",
+        "body": "${1:a}, ${2:b} = $2, $1",
         "description": "Pause the code before executing next line"
     },
     "timeit.timeit": {

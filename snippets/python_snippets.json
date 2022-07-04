@@ -482,6 +482,11 @@
         "body": "import ${1:package/module}\n",
         "description": "Import a package or module"
     },
+    "import.codecs": {
+        "prefix": "import-codecs",
+        "body": "import codecs\n",
+        "description": "Import for common module"
+    },
     "import.collections": {
         "prefix": "import-collections",
         "body": "import collections\n",
