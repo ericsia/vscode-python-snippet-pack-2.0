@@ -88,6 +88,10 @@
             },
             {
                 "language": "python",
+                "path":"./snippets/django_snippets.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/random_snippets.json"
             },
             {
@@ -97,9 +101,6 @@
             {
                 "language": "python",
                 "path": "./snippets/class_snippets.json"
-            },
-            {
-                "path":"./snippets/django_snippets.json"
             }
         ]
     }
