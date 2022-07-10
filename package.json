@@ -2,7 +2,7 @@
     "name": "pythonsnippets3",
     "displayName": "python snippets 3",
     "description": "New code snippets for Python",
-    "version": "3.0.7",
+    "version": "3.3.14",
     "publisher": "EricSia",
     "repository": {
         "type": "git",
@@ -86,9 +86,17 @@
                 "language": "python",
                 "path": "./snippets/PyMySQL_snippets.json"
             },
-            {
+             {
                 "language": "python",
-                "path":"./snippets/django_snippets.json"
+                "path": "./snippets/django_snippets.json"
+            },
+            {
+                "language": "django-html",
+                "path": "./snippets/django_template.json"
+            },
+            {
+                "language": "django-txt",
+                "path": "./snippets/django_template.json"
             },
             {
                 "language": "python",
