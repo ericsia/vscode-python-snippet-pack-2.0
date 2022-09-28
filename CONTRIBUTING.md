@@ -1,5 +1,5 @@
 # Contributing
-We love **[your input](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)** whether it's:
+We love **[your input (Click Here)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues)** whether it's:
 
 - Reporting a typo
 - Providing suggestion
