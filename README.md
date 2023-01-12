@@ -28,7 +28,7 @@
 * welcome to contribute through feedback to add more ideas, make it as complete as possible
 
 ### Extra
-* checkout my [site](https://www.medlexo.ml/)
+* checkout my [site](https://github.com/MedlexoNews/Update)
 
 <img src="https://github.com/ericsia/vscode-python-snippet-pack-2.0/raw/HEAD/python.gif" alt="screenshot" height="450" />
 
