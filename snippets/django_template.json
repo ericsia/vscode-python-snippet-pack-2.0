@@ -1,0 +1,46 @@
+{
+    "Django Base Template": {
+        "prefix": "django-base-template",
+        "body": [
+            "{% load static %}",
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "\t<meta charset=\"UTF-8\" />",
+            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+            "\t<title>$1</title>",
+            "\t{% block headScripts%}{% endblock headScripts %}",
+            "\t<link rel=\"shortcut icon\" href=\"{% static 'svg/logo.svg' %}\" type=\"image/x-icon\">",
+            "\t{% comment %} update css_version upon changes in css files {% endcomment %}",
+            "\t{% with css_version=\"2.1\" %}",
+            "\t\t{% block stylesheet %}{% endblock stylesheet%}",
+            "\t{% endwith %}",
+            "</head>",
+            "<body>",
+            "\t{% block body %}{% endblock body %}",
+            "\t{% comment %} update js_version upon changes in js files {% endcomment %}",
+            "\t{% with js_version=\"2.1\" %}",
+            "\t\t{% block scripts %}{% endblock scripts %}",
+            "\t{% endwith %}",
+            "</body>",
+            "</html>"
+        ]
+    },
+    "Django Page Template": {
+        "prefix": "django-page-template-html",
+        "body": [
+            "{% extends 'head.djt' %}",
+            "{% comment %} Template inherits from head.djt {% endcomment %}",
+            "{% load static %}\n",
+            "{% block stylesheet %}",
+            "\t<link rel=\"stylesheet\" type=\"text/css\" href=\"{% static '$1' %}?version={{css_version}}\">",
+            "{% endblock stylesheet%}\n",
+            "{% block body %}",
+            "{% endblock body %}\n",
+            "{% block scripts %}",
+            "\t<script src=\"{% static '$2'%}?version={{ js_version }}\" type=\"module\"></script>",
+            "{% endblock scripts %}"
+        ]
+    }
+}

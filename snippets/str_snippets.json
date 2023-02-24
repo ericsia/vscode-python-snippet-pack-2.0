@@ -1,6 +1,6 @@
 {
     "capitalize": {
-        "prefix": ".capitalize -string",
+        "prefix": "capitalize -string",
         "body": ".capitalize()",
         "description": "Converts the first character to upper case"
     },
@@ -23,7 +23,7 @@
         "description": "An example for using capitalize"
     },
     "casefold": {
-        "prefix": ".casefold -string",
+        "prefix": "casefold -string",
         "body": ".casefold()",
         "description": "Converts string into lower case"
     },
@@ -37,7 +37,7 @@
         "description": "An example for using casefold"
     },
     "center": {
-        "prefix": ".center -string",
+        "prefix": "center -string",
         "body": "center(${1:length}, ${2:character})",
         "description": "Return a centered string"
     },
@@ -52,7 +52,7 @@
         "description": "An example for using center"
     },
     "str.count": {
-        "prefix": ".count -string",
+        "prefix": "count -string",
         "body": ".count(${1:string})",
         "description": "Return the number of times a specified value occurs in a string"
     },
@@ -75,7 +75,7 @@
         "description": "An example for using count"
     },
     "encode": {
-        "prefix": ".encode -string",
+        "prefix": "encode -string",
         "body": ".encode()",
         "description": "Return an encoded version of the string"
     },
@@ -98,7 +98,7 @@
         "description": "An example for using encode"
     },
     "endswith": {
-        "prefix": ".endswith -string",
+        "prefix": "endswith -string",
         "body": ".endswith(${1:string})",
         "description": "Return true if the string ends with the specified value"
     },
@@ -121,7 +121,7 @@
         "description": "An example for using endswith"
     },
     "expandtabs": {
-        "prefix": ".expandtabs -string",
+        "prefix": "expandtabs -string",
         "body": ".expandtabs(${1:number})",
         "description": "Sets the tab size of the string"
     },
@@ -147,7 +147,7 @@
         "description": "An example for using expandtabs"
     },
     "find": {
-        "prefix": ".find -string",
+        "prefix": "find -string",
         "body": ".find(${1:string})",
         "description": "Searches the string for a specified value and Return the position of where it was found"
     },
@@ -188,7 +188,7 @@
         "description": "An example for using find"
     },
     "format -string": {
-        "prefix": ".format -string",
+        "prefix": "format -string",
         "body": ".format($0)",
         "description": "Formats specified values in a string"
     },
@@ -207,7 +207,7 @@
         "description": "An example for using format"
     },
     "format_map": {
-        "prefix": ".format_map -string",
+        "prefix": "format_map -string",
         "body": ".format_map($0)",
         "description": "Formats specified values in a string"
     },
@@ -222,7 +222,7 @@
         "description": "An example for using format_map"
     },
     "index -string": {
-        "prefix": ".index -string",
+        "prefix": "index -string",
         "body": ".index(${1:string})",
         "description": "Searches the string for a specified value and Return the position of where it was found"
     },
@@ -263,7 +263,7 @@
         "description": "An example for using index"
     },
     "isalnum": {
-        "prefix": ".isalnum -string",
+        "prefix": "isalnum -string",
         "body": ".isalnum()",
         "description": "Return True if all characters in the string are alphanumeric"
     },
@@ -278,7 +278,7 @@
         "description": "An example for using isalnum"
     },
     "isalpha": {
-        "prefix": ".isalpha -string",
+        "prefix": "isalpha -string",
         "body": ".isalpha()",
         "description": "Return True if all characters in the string are in the alphabet"
     },
@@ -288,12 +288,12 @@
         "description": "An example for using isalpha"
     },
     "isascii": {
-        "prefix": ".isascii -string",
+        "prefix": "isascii -string",
         "body": ".isascii()",
         "description": "Return True if empty or all characters are ASCII - new in python 3.7"
     },
     "isdecimal": {
-        "prefix": ".isdecimal -string",
+        "prefix": "isdecimal -string",
         "body": ".isdecimal()",
         "description": "Return True if all characters in the string are decimals"
     },
@@ -317,7 +317,7 @@
         "description": "An example for using isdecimal"
     },
     "isdigit": {
-        "prefix": ".isdigit -string",
+        "prefix": "isdigit -string",
         "body": ".isdigit()",
         "description": "Return True if all characters in the string are digits"
     },
@@ -337,7 +337,7 @@
         "description": "An example for using isdigit"
     },
     "isidentifier": {
-        "prefix": ".isidentifier -string",
+        "prefix": "isidentifier -string",
         "body": ".isidentifier()",
         "description": "Return True if the string is an identifier"
     },
@@ -361,7 +361,7 @@
         "description": "An example for using isidentifier"
     },
     "islower": {
-        "prefix": ".islower -string",
+        "prefix": "islower -string",
         "body": ".islower()",
         "description": "Return True if all characters in the string are lower case"
     },
@@ -383,7 +383,7 @@
         "description": "An example for using islower"
     },
     "isnumeric": {
-        "prefix": ".isnumeric -string",
+        "prefix": "isnumeric -string",
         "body": ".isnumeric()",
         "description": "Return True if all characters in the string are numeric"
     },
@@ -405,7 +405,7 @@
         "description": "An example for using isnumeric"
     },
     "isprintable": {
-        "prefix": ".isprintable -string",
+        "prefix": "isprintable -string",
         "body": ".isprintable()",
         "description": "Return True if all characters in the string are printable"
     },
@@ -428,7 +428,7 @@
         "description": "An example for using isprintable"
     },
     "isspace": {
-        "prefix": ".isspace -string",
+        "prefix": "isspace -string",
         "body": ".isspace()",
         "description": "Return True if all characters in the string are whitespaces"
     },
@@ -443,7 +443,7 @@
         "description": "An example for using isspace"
     },
     "istitle": {
-        "prefix": ".istitle -string",
+        "prefix": "istitle -string",
         "body": ".istitle()",
         "description": "Return True if the string follows the rules of a title"
     },
@@ -471,7 +471,7 @@
         "description": "An example for using istitle"
     },
     "isUpper": {
-        "prefix": ".isUpper -string",
+        "prefix": "isUpper -string",
         "body": ".isupper()",
         "description": "Return True if all characters in the string are upper case"
     },
@@ -493,7 +493,7 @@
         "description": "An example for using isupper"
     },
     "join": {
-        "prefix": ".join -string",
+        "prefix": "join -string",
         "body": ".join(${1:iterable})",
         "description": "Joins the elements of an iterable to the end of the string"
     },
@@ -517,7 +517,7 @@
         "description": "An example for using join"
     },
     "ljust": {
-        "prefix": ".ljust -string",
+        "prefix": "ljust -string",
         "body": ".ljust(${1:number})",
         "description": "Return a left justified version of the string"
     },
@@ -536,7 +536,7 @@
         "description": "An example for using ljust"
     },
     "lower": {
-        "prefix": ".lower -string",
+        "prefix": "lower -string",
         "body": ".lower()",
         "description": "Converts a string into lower case"
     },
@@ -546,7 +546,7 @@
         "description": "An example for using lower"
     },
     "lstrip": {
-        "prefix": ".lstrip -string",
+        "prefix": "lstrip -string",
         "body": ".lstrip(${1:leading_characters})",
         "description": "Return a left trim version of the string"
     },
@@ -569,7 +569,7 @@
         "description": "An example for using lstrip"
     },
     "maketrans": {
-        "prefix": ".maketrans -string",
+        "prefix": "maketrans -string",
         "body": ".maketrans($0)",
         "description": "Return a translation table to be used in translations"
     },
@@ -594,7 +594,7 @@
         "description": "An example for using maketrans"
     },
     "partition": {
-        "prefix": ".partition -string",
+        "prefix": "partition -string",
         "body": ".partition(${1:string})",
         "description": "Return a tuple where the string is parted into three parts"
     },
@@ -617,17 +617,17 @@
         "description": "An example for using partition"
     },
     "removeprefix": {
-        "prefix": ".removeprefix -string",
+        "prefix": "removeprefix -string",
         "body": ".removeprefix(${1:string})",
-        "description": "Return remaining string when the front value is found\n\"hi is hi\".removeprefix(\"hi\") reult: is hi"
+        "description": "Return remaining string when the front value is found\n\"hi is hi\",removeprefix(\"hi\") reult: is hi"
     },
     "removesuffix": {
-        "prefix": ".removesuffix -string",
+        "prefix": "removesuffix -string",
         "body": ".removesuffix(${1:string})",
-        "description": "Return remaining string when the end value is found\n\"hi is hi\".removesuffix(\"hi\") reult:hi is "
+        "description": "Return remaining string when the end value is found\n\"hi is hi\",removesuffix(\"hi\") reult:hi is "
     },
     "replace": {
-        "prefix": ".replace -string",
+        "prefix": "replace -string",
         "body": ".replace(${1:old}, ${2:new})",
         "description": "Return a string where a specified value is replaced with a specified value"
     },
@@ -659,7 +659,7 @@
         "description": "An example for using replace"
     },
     "rfind": {
-        "prefix": ".rfind -string",
+        "prefix": "rfind -string",
         "body": ".rfind(${1:string})",
         "description": "Searches the string for a specified value and Return the last position of where it was found"
     },
@@ -700,7 +700,7 @@
         "description": "An example for using rfind"
     },
     "rindex": {
-        "prefix": ".rindex -string",
+        "prefix": "rindex -string",
         "body": ".rindex(${1:string})",
         "description": "Searches the string for a specified value and Return the last position of where it was found"
     },
@@ -741,12 +741,12 @@
         "description": "An example for using rindex"
     },
     "rjust": {
-        "prefix": ".rjust -string",
+        "prefix": "rjust -string",
         "body": ".rjust(${1:number})",
         "description": "Return a right justified version of the string"
     },
     "rpartition": {
-        "prefix": ".rpartition -string",
+        "prefix": "rpartition -string",
         "body": ".rpartition(${1:string})",
         "description": "Return a tuple where the string is parted into three parts"
     },
@@ -769,7 +769,7 @@
         "description": "An example for using rpartition"
     },
     "rsplit": {
-        "prefix": ".rsplit -string",
+        "prefix": "rsplit -string",
         "body": "rsplit(${1:separator}, ${2:maxsplit})",
         "description": "Return a right trim version of the string"
     },
@@ -793,7 +793,7 @@
         "description": "An example for using rsplit"
     },
     "rstrip": {
-        "prefix": ".rstrip -string",
+        "prefix": "rstrip -string",
         "body": "rstrip(${1:trailing_characters})",
         "description": "Return a right trim version of the string"
     },
@@ -807,7 +807,7 @@
         "description": "An example for using rsplit"
     },
     "split": {
-        "prefix": ".split -string",
+        "prefix": "split -string",
         "body": "split(${1:separator}, ${2:maxsplit})",
         "description": "Splits the string at the specified separator, and Return a list"
     },
@@ -849,7 +849,7 @@
         "description": "An example for using split"
     },
     "splitlines": {
-        "prefix": ".splitlines -string",
+        "prefix": "splitlines -string",
         "body": ".splitlines()",
         "description": "Splits the string at line breaks and Return a list"
     },
@@ -872,7 +872,7 @@
         "description": "An example for using splitlines"
     },
     "startswith": {
-        "prefix": ".startswith -string",
+        "prefix": "startswith -string",
         "body": ".startswith(${1:string})",
         "description": "Return true if the string starts with the specified value"
     },
@@ -895,12 +895,12 @@
         "description": "An example for using startswith"
     },
     "strip": {
-        "prefix": ".strip -string",
+        "prefix": "strip -string",
         "body": "strip(${1:trailing_characters})",
         "description": "Return a start and end trim version of the string"
     },
     "swapcase": {
-        "prefix": ".swapcase -string",
+        "prefix": "swapcase -string",
         "body": ".swapcase()",
         "description": "Swaps cases, lower case becomes upper case and vice versa"
     },
@@ -914,7 +914,7 @@
         "description": "An example for using swapcase"
     },
     "title": {
-        "prefix": ".title -string",
+        "prefix": "title -string",
         "body": ".title()",
         "description": "Converts the first character of each word to upper case"
     },
@@ -942,7 +942,7 @@
         "description": "An example for using title"
     },
     "translate": {
-        "prefix": ".translate -string",
+        "prefix": "translate -string",
         "body": ".translate(${1:translation})",
         "description": "Return a translated string"
     },
@@ -959,7 +959,7 @@
         "description": "An example for using translate"
     },
     "upper": {
-        "prefix": ".upper -string",
+        "prefix": "upper -string",
         "body": ".upper()",
         "description": "Converts a string into upper case"
     },
@@ -969,7 +969,7 @@
         "description": "An example for using upper"
     },
     "zfill": {
-        "prefix": ".zfill -string",
+        "prefix": "zfill -string",
         "body": ".zfill(${1:number})",
         "description": "Fills the string with a specified number of 0 values at the beginning"
     },

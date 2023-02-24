@@ -1,6 +1,6 @@
 {
     "clear -dict": {
-        "prefix": ".clear -dict",
+        "prefix": "clear -dict",
         "body": ".clear()",
         "description": "Removes all the elements from the dictionary"
     },
@@ -18,7 +18,7 @@
         "description": "An example for using clear"
     },
     "copy -dict": {
-        "prefix": ".copy -dict",
+        "prefix": "copy -dict",
         "body": ".copy()",
         "description": "Return a copy of the dictionary"
     },
@@ -36,7 +36,7 @@
         "description": "An example for using copy"
     },
     "fromkeys": {
-        "prefix": ".fromkeys -dict",
+        "prefix": "fromkeys -dict",
         "body": ".fromkeys(${1:key}, ${2:value})",
         "description": "Return a dictionary with the specified keys and values"
     },
@@ -60,7 +60,7 @@
         "description": "An example for using fromkeys"
     },
     "get": {
-        "prefix": ".get -dict",
+        "prefix": "get -dict",
         "body": ".get(${1:key})",
         "description": "Return the value of the specified key"
     },
@@ -91,7 +91,7 @@
         "description": "An example for using get"
     },
     "items": {
-        "prefix": ".items -dict",
+        "prefix": "items -dict",
         "body": ".items()",
         "description": "Return a list containing the a tuple for each key value pair"
     },
@@ -123,7 +123,7 @@
         "description": "An example for using items"
     },
     "keys": {
-        "prefix": ".keys -dict",
+        "prefix": "keys -dict",
         "body": ".keys()",
         "description": "Return a list containing the dictionary's keys"
     },
@@ -155,7 +155,7 @@
         "description": "An example for using keys"
     },
     "pop -dict": {
-        "prefix": ".pop -dict",
+        "prefix": "pop -dict",
         "body": ".pop(${1:key})",
         "description": "Removes the element with the specified key"
     },
@@ -173,7 +173,7 @@
         "description": "An example for using pop"
     },
     "popitem": {
-        "prefix": ".popitem -dict",
+        "prefix": "popitem -dict",
         "body": ".popitem()",
         "description": "Removes the last inserted key-value pai"
     },
@@ -191,7 +191,7 @@
         "description": "An example for using popitem"
     },
     "setdefault": {
-        "prefix": ".setdefault -dict",
+        "prefix": "setdefault -dict",
         "body": ".setdefault(${1:key}, ${2:value})",
         "description": "Return the value of the specified key. If the key does not exist: insert the key, with the specified value"
     },
@@ -222,7 +222,7 @@
         "description": "An example for using setdefault"
     },
     "update -dict": {
-        "prefix": ".update -dict",
+        "prefix": "update -dict",
         "body": ".update(${1:key}, ${2:value})",
         "description": "Updates the dictionary with the specified key-value pairs"
     },
@@ -240,7 +240,7 @@
         "description": "An example for using update"
     },
     "values": {
-        "prefix": ".values -dict",
+        "prefix": "values -dict",
         "body": ".values()",
         "description": "Return a list of all the values in the dictionary"
     },

@@ -1,33 +1,34 @@
+[![pytest](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml/badge.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml)
 ### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
 [![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
-#### Please help to rate this extensions [5 stars](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3&ssr=false#review-details) and [share](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3) it, [feedback is welcome](CONTRIBUTING.md)
+#### Please help to rate this extensions [5 stars](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3&ssr=false#review-details) and [share](https://marketplace.visualstudio.com/items?itemName=EricSia.pythonsnippets3) it, [feedback is welcome](https://github.com/ericsia/vscode-python-snippet-pack-2.0/blob/master/CONTRIBUTING.md)
 #### Tips: uninstall similar python snippet extension first. Then install and Reopen
-### Thanks to [Christian Clauss's Python algorithms ](https://github.com/TheAlgorithms/Python) open source community for providing algorithms for our snippets
 * added with new [python](https://docs.python.org/3/library/stdtypes.html) function, update legacy code
 * fixes a few unintended typo left by previous developer
 * use `TAB` to rename field in every method / feature
-* added `def.function(main-)` as a main method
+* added `def.function.main-()` as a main method, type `main-`
+* added `def.function.class-(init)` for class, type `class-` or `init-`
 * added label to method belong to string/list/tuple/set/dict
 * added python `<datatype>` and snippet initialisation, try typing `str`
 * added `match` snippet - python 3.10
 * added `np-init` snippet for numpy array [pip3 install numpy]
-* added `import` snippet
-* added `documentation` snippet
+* added `import` snippet, `documentation` snippet
 * added `random` snippet try `random-TextGen`
-* added `for`-loop snippet
+* added `for-`loop snippet
 * added `print-` snippet
 * added matplotlib template `plt`
 * added algorithm template `algo-`
 * added PyMySQL template `PyMySQL`
-* added `dp` decimal place, `end`, `env`, `benchmark`, `timeit`, `self`, `sleep`, `swap` snippet
+* added Django template `django`
+* added `dp` decimal place, `swap`, `slice`, `sleep`, `end`, `benchmark`, `timeit`, `env`, `self` snippet
 * new format for easier selection, to see built in example type `apply-`, `random-`, `class` 
 * get example use `<datatype>-` while for available method use `-<datatype>` ex: `-string`
 * welcome to contribute through feedback to add more ideas, make it as complete as possible
 
 ### Extra
-* checkout my [site](https://www.medlexo.ml/)
+* checkout my [site](https://github.com/MedlexoNews/Update)
 
 <img src="https://github.com/ericsia/vscode-python-snippet-pack-2.0/raw/HEAD/python.gif" alt="screenshot" height="450" />
 
@@ -39,7 +40,7 @@
 * Contains a lot of other code snippets (like if:else, for, while, while:else, try:catch, fileIO and oop class snippets examples (polymorphism, encapsulation, inheritance)
 
 
-## Old gif from (2018) pay tribute to previous developer
+## Old gif from (2018) pay tribute to Ferhat Yalçın
 ![oldScreenshot](oldpython.gif)
 
 ## Snippets | Descriptions (from 2018, new one is at top)
@@ -47,11 +48,11 @@
 |------------------------------------------------------------|---------------|
 | To get `__main__` type `def` or `function` or `main-`      | `main-`       |
 | To see built-in method example type `apply-` scroll down   | `apply-`      |
-| Tips: to see specific method type `name=`                  | `count=`      |
+| Tips: to see specific method type example `name=`          | `count=`      |
 | To see datatype method example type `<datatype>-`          | `str-`        |
 | To see datatype method only type `-<datatype>` scroll down | `-string`     |
 | To see python `datatype`                                   | `dtype`       |
-| To initialise type `<datatype> initialise` snippet         | `bool`        |
+| To initialise type `<datatype> initialise` snippet         | `bool init`   |
 | To get fileIO type `file-` then scroll down                | `file-`       |
 | To get block comment type `documentation`                  | `doc`         |
 | To get algorithm snippet like `is_prime`                   | `algo-`       |
@@ -136,14 +137,16 @@
 
 <br />
 
-| file code examples          | Description                           |
-|-----------------------------|---------------------------------------|
-| file-openFile               | Open a file                           |
-| file-openFileReadLine       | Read file line by line                |
-| file-openFileReadSingleLine | Read one line of the file             |
-| file-appendFile             | Write to an Existing File             |
-| file-overwriteFile          | Open a file and overwrite the content |
-| file-deleteFile             | Delete a file                         |
+| file code examples `file-`      | Description                           |
+|---------------------------------|---------------------------------------|
+| withFile-listFile               | List files in that path               |
+| withFile-listFileWithPath       | List files with path                  |
+| withFile-openFile               | Open a file                           |
+| withFile-openFileReadLine       | Read file line by line                |
+| withFile-openFileReadSingleLine | Read one line of the file             |
+| withFile-appendFile             | Write to an Existing File             |
+| withFile-overwriteFile          | Open a file and overwrite the content |
+| withFile-deleteFile             | Delete a file                         |
 
 <br />
 
@@ -160,8 +163,7 @@
 
 | match aka switch code snippets | Description     |
 |--------------------------------|-----------------|
-| match                          | match Statement |
-| switch                         | match Statement |
+| switch or match                | match Statement |
 
 <br />
 
@@ -268,13 +270,14 @@ print(f'{woo.name} is {woo.age} years old')
 
 This extension aim to cover as many new Python3 method make it as complete as possible, please help to contribute from feedback link above.
 
-### For more information
+### For more information - Thanks to
 
 * [python documentation](https://docs.python.org/3/tutorial/index.html)
 * [w3schools](https://www.w3schools.com/python/default.asp)
 * [www.programiz](https://www.programiz.com/python-programming)
 * [python.swaroopch](https://python.swaroopch.com/oop.html)
 * [pythonforbeginners](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python)
+* [Christian Clauss's Python Algorithms ](https://github.com/TheAlgorithms/Python) - open source community for providing algorithms for our snippets
 
 
 **Enjoy! Type less do more**
@@ -295,7 +298,14 @@ Change .format into f-string and remove unnecessary files
 
 change . become - due to vscode clash ex `apply.` become `apply-`
 
-### 3.3.10
+### 3.3.11
 added PyMySQL, Algo, Random snippet by Lakshmikanth
+
+### 3.3.12
+remove dot in built-in methods for good, to see type `-<datatype>` then scroll down.
+Tips, tick in setting: Python › Analysis: Complete Function Parens
+
+### 3.3.13
+added Django snippet by Lakshmikanth
 
 -----------------------------------------------------------------------------------------------------------

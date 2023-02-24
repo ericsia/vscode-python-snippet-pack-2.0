@@ -1,32 +1,37 @@
 {
     "if": {
-        "prefix": "if.if-",
-        "body": "if (${1:}):\n\t# comment: $0\n# end if",
+        "prefix": "If.if-",
+        "body": "if ($1):\n\t# comment: $0\n# end if",
         "description": "if statement"
     },
     "if:elif": {
-        "prefix": "ifelif.if-elif",
-        "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: $0\n# end if",
+        "prefix": "IfElif.if-elif",
+        "body": "if ($1):\n\t# comment: $2\nelif ($3):\n\t# comment: $0\n# end if",
         "description": "if/elif statement"
     },
     "if:elif:else": {
-        "prefix": "ifelifelse.if-elif-else",
-        "body": "if (${1:}):\n\t# comment: ${2:}\nelif (${3:}):\n\t# comment: ${4:}\nelse:\n\t# comment: $0\n# end if",
+        "prefix": "IfElifElse.if-elif-else",
+        "body": "if ($1):\n\t# comment: $2\nelif ($3):\n\t# comment: $4\nelse:\n\t# comment: $0\n# end if",
         "description": "if/elif/else statement"
     },
     "if:else": {
-        "prefix": "ifelse.if-else",
-        "body": "if (${1:}):\n\t# comment: ${2:}\nelse:\n\t# comment: $0\n# end if",
+        "prefix": "IfElse.if-else",
+        "body": "if ($1):\n\t# comment: $2\nelse:\n\t# comment: $0\n# end if",
         "description": "if/else statement"
     },
     "ifshort": {
-        "prefix": "ifshort.if-short",
+        "prefix": "IfShort.if-short",
         "body": "print('A') if a > b else print('B')",
         "description": "ifshort statement"
     },
+    "if:Input": {
+        "prefix": "IfInput.if-Input-",
+        "body": "if (input(\"${1:Finished? y/n : }\") == \"${2:y}\"):\n\t# comment: $0\n# end if",
+        "description": "if input statement"
+    },
     "elif": {
         "prefix": "elif",
-        "body": "elif (${1:}):\n\t# comment: ",
+        "body": "elif ($1):\n\t# comment: ",
         "description": "else statement"
     },
     "else": {
@@ -36,32 +41,32 @@
     },
     "match.switch": {
         "prefix": "match.switch",
-        "body": "match (${1:object}):\n\tcase (${2:}):\n\t\t# comment: ${3:}\n\tcase (${4:}):\n\t\t# comment: $0\n# end match",
+        "body": "match (${1:object}):\n\tcase ($2):\n\t\t# comment: $3\n\tcase (${4:_}):\n\t\t# comment: $0\n# end match",
         "description": "match aka switch statement"
     },
     "case": {
         "prefix": "case",
-        "body": "case (${1:}):\n\t# comment: ",
+        "body": "case ($1):\n\t# comment: ",
         "description": "case is for match aka switch statement"
     },
     "try:except:": {
-        "prefix": "try.try-",
-        "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}$0\n# end try",
+        "prefix": "Try.try-",
+        "body": "try:\n\t# comment: $1\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}$0\n# end try",
         "description": "Code Snippet for a try and except blocks."
     },
     "try:except:else": {
-        "prefix": "trye.try-e",
-        "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t# comment: $0\n# end try",
+        "prefix": "TryE.try-e",
+        "body": "try:\n\t# comment: $1\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except with else statement."
     },
     "try:except:else:finally": {
-        "prefix": "tryef.try-e-f",
-        "body": "try:\n\t# comment: ${1:}\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: ${6:}\nfinally:\n\t# comment: $0\n# end try",
+        "prefix": "TryEF.try-e-f",
+        "body": "try:\n\t# comment: $1\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: $6\nfinally:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except/finally with else statement."
     },
     "try:except:finally": {
-        "prefix": "tryf.try-f",
-        "body": "try:\n\t# comment: ${1:}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t# comment: $0\n# end try",
+        "prefix": "TryF.try-f",
+        "body": "try:\n\t# comment: $1\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except/finally."
     },
     "for": {
@@ -157,22 +162,22 @@
     },
     "while": {
         "prefix": "while-",
-        "body": "while (${1:}):\n\t# comment: $0\n# end while",
+        "body": "while ($1):\n\t# comment: $0\n# end while",
         "description": "Code snippet to create a while loop structure."
     },
     "while-else": {
         "prefix": "while-else",
-        "body": "while (${1:}):\n\t# comment: ${2:}\nelse:\n\t# comment: $0\n# end while",
+        "body": "while ($1):\n\t# comment: $2\nelse:\n\t# comment: $0\n# end while",
         "description": "while statement"
     },
     "while(i < 6)": {
         "prefix": "while-(i < 6)",
-        "body": "${1:i} = ${2:1}\nwhile ${1:i} < ${3:6}:\n\t# comment: ${4:}\n\t${5:print(${1:i})}\n\t${1:i} += ${6:1}$0\n# end while",
+        "body": "${1:i} = ${2:1}\nwhile ${1:i} < ${3:6}:\n\t# comment: $4\n\t${5:print(${1:i})}\n\t${1:i} += ${6:1}$0\n# end while",
         "description": "while statement"
     },
     "while(notFinished)": {
         "prefix": "while-(notFinished)",
-        "body": "${1:notFinished} = ${2:True}\nwhile ${1:notFinished}:\n\t# comment: ${3:}\n\tif (${4:input(\"Finished? y/n : \") == \"y\"}):\n\t\t${1:notFinished} = ${5:False}$0\n\t# end if\n# end while",
+        "body": "${1:notFinished} = ${2:True}\nwhile ${1:notFinished}:\n\t# comment: $3\n\tif (${4:input(\"Finished? y/n : \") == \"y\"}):\n\t\t${1:notFinished} = ${5:False}$0\n\t# end if\n# end while",
         "description": "while statement"
     },
     "while=>break_statement": {

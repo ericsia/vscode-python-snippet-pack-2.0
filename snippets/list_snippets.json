@@ -1,6 +1,6 @@
 {
     "append": {
-        "prefix": ".append -list",
+        "prefix": "append -list",
         "body": ".append(${1:item})",
         "description": "Adds an element at the end of the list"
     },
@@ -24,7 +24,7 @@
         "description": "An example for using append"
     },
     "clear -list": {
-        "prefix": ".clear -list",
+        "prefix": "clear -list",
         "body": ".clear()",
         "description": "Removes all the elements from the list"
     },
@@ -38,7 +38,7 @@
         "description": "An example for using clear"
     },
     "copy -list": {
-        "prefix": ".copy -list",
+        "prefix": "copy -list",
         "body": ".copy()",
         "description": "Return a copy of the list"
     },
@@ -52,7 +52,7 @@
         "description": "An example for using copy"
     },
     "count -list": {
-        "prefix": ".count -list",
+        "prefix": "count -list",
         "body": ".count()",
         "description": "Return the number of elements with the specified value"
     },
@@ -75,7 +75,7 @@
         "description": "An example for using count"
     },
     "extend": {
-        "prefix": ".extend -list",
+        "prefix": "extend -list",
         "body": ".extend(${1:iterable})",
         "description": "Add the elements of a list (or any iterable), to the end of the current list"
     },
@@ -90,7 +90,7 @@
         "description": "An example for using extend"
     },
     "index -list": {
-        "prefix": ".index -list",
+        "prefix": "index -list",
         "body": ".index(${1:element})",
         "description": "Return the index of the first element with the specified value"
     },
@@ -113,7 +113,7 @@
         "description": "An example for using index"
     },
     "insert": {
-        "prefix": ".insert -list",
+        "prefix": "insert -list",
         "body": ".insert(${1:element})",
         "description": "Adds an element at the specified position"
     },
@@ -127,7 +127,7 @@
         "description": "An example for using insert"
     },
     "pop -list": {
-        "prefix": ".pop -list",
+        "prefix": "pop -list",
         "body": ".pop()",
         "description": "Removes the element at the specified position"
     },
@@ -141,7 +141,7 @@
         "description": "An example for using pop"
     },
     "remove -list": {
-        "prefix": ".remove -list",
+        "prefix": "remove -list",
         "body": ".remove(${1:element})",
         "description": "Removes the first item with the specified value"
     },
@@ -155,7 +155,7 @@
         "description": "An example for using remove"
     },
     "reverse": {
-        "prefix": ".reverse -list",
+        "prefix": "reverse -list",
         "body": ".reverse()",
         "description": "Reverses the order of the list"
     },
@@ -169,7 +169,7 @@
         "description": "An example for using reverse"
     },
     "sort": {
-        "prefix": ".sort -list",
+        "prefix": "sort -list",
         "body": ".sort()",
         "description": "Sorts the list"
     },

@@ -21,16 +21,16 @@ if __name__ == "__main__":
 
         Collect the body string from the stdout and past it to VS-Code snippet body
     """
-    default_file_path = "test.py"
+    file_path = "test.py"
     if len(sys.argv) > 1:
-        default_file_path = sys.argv[1]  # if argument is provided use the argument one
+        file_path = sys.argv[1]  # if argument is provided use the argument one
     # end if
 
     try:
-        with open(default_file_path, 'r') as code:
+        with open(file_path, 'r') as code:
             for line in code:
                 # assume using 4 spaces as tab
-                line = line.replace("    ", "\t")
+                line = line.rstrip().replace("    ", "\t")
                 line = json.dumps(line)
                 print(line, end=",\n")
     except FileNotFoundError:
