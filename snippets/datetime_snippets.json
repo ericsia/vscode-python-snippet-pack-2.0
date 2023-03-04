@@ -1,23 +1,18 @@
 {
-    "timeZoneConversion":{
-		"scope": "python",
-        "prefix":["timezoneconversion", "zoneconversion", "zonechange"],
-        "body":[
+    "timeZoneConversion": {
+        "prefix": "change-timezoneconversion",
+        "body": [
             "from datetime import datetime\n",
-            "from pytz import timezone\n",
-            "\n",
+            "from pytz import timezone\n\n",
             "def timezone_convertion(input_datetime: datetime, input_time_zone: str):\n",
             "\tinput_time_zone = timezone(input_time_zone)\n",
-            "\treturn input_datetime.astimezone(input_time_zone)\n",
-            "\n",
-            "\n",
+            "\treturn input_datetime.astimezone(input_time_zone)\n\n\n",
             "def get_date(date_str: str, time_str: str):\n",
             "\t# convert strings in format `date_str` = YYYY-MM-DD and `time_str` = HH:MM:SS into datetime\n",
             "\tdate = list(map(int, date_str.split(\"-\")))\n",
             "\ttime = list(map(int, time_str.split(\":\")))\n",
-            "\treturn datetime(*date, *time)\n",
-            "\n"
+            "\treturn datetime(*date, *time)\n\n"
         ],
-		"description": "datetime methods to change from one timezone to another"
+        "description": "datetime methods to change from one timezone to another"
     }
 }
