@@ -76,6 +76,10 @@
             },
             {
                 "language": "python",
+                "path": "./snippets/datetime_snippets.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/np_snippets.json"
             },
             {
