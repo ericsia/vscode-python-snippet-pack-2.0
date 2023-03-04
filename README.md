@@ -1,5 +1,5 @@
 [![pytest](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml/badge.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/actions/workflows/pytest.yml)
-### Best Python3 Snippets Pack (2022) for Visual Studio Code (python 3.x)
+### Best Python3 Snippets Pack (2023) for Visual Studio Code (python 3.x)
 [![status.svg](status.svg)](https://github.com/ericsia/vscode-python-snippet-pack-2.0/issues) ![light.svg](light.svg) ![easy.svg](easy.svg)
 
 #### A beginner friendly Python Snippets auto suggestion pack making you more productive
@@ -305,7 +305,7 @@ added PyMySQL, Algo, Random snippet by Lakshmikanth
 remove dot in built-in methods for good, to see type `-<datatype>` then scroll down.
 Tips, tick in setting: Python › Analysis: Complete Function Parens
 
-### 3.3.13
-added Django snippet by Lakshmikanth
+### 3.3.18
+added Django, timezoneconversion snippet by Lakshmikanth
 
 -----------------------------------------------------------------------------------------------------------
