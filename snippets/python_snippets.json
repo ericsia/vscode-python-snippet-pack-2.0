@@ -554,7 +554,7 @@
     },
     "import.seaborn": {
         "prefix": "import-seaborn",
-        "body": "import seaborn as sb\n",
+        "body": "import seaborn as sns\n",
         "description": "shortcut for import seaborn"
     },
     "import.statsmodels": {
