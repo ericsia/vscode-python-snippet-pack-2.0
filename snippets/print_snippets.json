@@ -36,7 +36,7 @@
     },
     "print(\"{ a = } { b = }\")": {
         "prefix": "print-(\"{ a = } { b = }\")",
-        "body": "print(f\"{${1:a} = } {${2:b = }}\")",
+        "body": "print(f\"{${1:a} = } {${2:b} = }\")",
         "description": "Formats a specified value"
     },
     "print(\"%d %d\")": {

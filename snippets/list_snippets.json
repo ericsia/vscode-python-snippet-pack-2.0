@@ -1,5 +1,5 @@
 {
-    "append": {
+    "append -list": {
         "prefix": ".append -list",
         "body": ".append(${1:item})",
         "description": "Adds an element at the end of the list"
@@ -74,7 +74,7 @@
         ],
         "description": "An example for using count"
     },
-    "extend": {
+    "extend -list": {
         "prefix": ".extend -list",
         "body": ".extend(${1:iterable})",
         "description": "Add the elements of a list (or any iterable), to the end of the current list"
@@ -112,7 +112,7 @@
         ],
         "description": "An example for using index"
     },
-    "insert": {
+    "insert -list": {
         "prefix": ".insert -list",
         "body": ".insert(${1:element})",
         "description": "Adds an element at the specified position"
@@ -154,7 +154,7 @@
         ],
         "description": "An example for using remove"
     },
-    "reverse": {
+    "reverse -list": {
         "prefix": ".reverse -list",
         "body": ".reverse()",
         "description": "Reverses the order of the list"
@@ -168,7 +168,7 @@
         ],
         "description": "An example for using reverse"
     },
-    "sort": {
+    "sort -list": {
         "prefix": ".sort -list",
         "body": ".sort()",
         "description": "Sorts the list"
@@ -216,8 +216,8 @@
         "description": "An example for using sort"
     },
     "comprehensions": {
-        "prefix": "comp=> -list",
-        "body": "[ expression for item in list if conditional ]",
+        "prefix": ".comprehensions -list",
+        "body": "[ {$1:expression} for {$2:item} in {$3:list} if {$4:conditional} ]",
         "description": "List Comprehensions"
     },
     "list.comp=>1": {

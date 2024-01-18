@@ -1,6 +1,6 @@
 {
     "count -tuple": {
-        "prefix": "count -tuple",
+        "prefix": ".count -tuple",
         "body": ".count(${1:value})",
         "description": "Return the number of times a specified value occurs in a tuple"
     },
@@ -14,7 +14,7 @@
         "description": "An example for using count"
     },
     "index -tuple": {
-        "prefix": "index -tuple",
+        "prefix": ".index -tuple",
         "body": ".index(${1:value})",
         "description": "Searches the tuple for a specified value and Return the position of where it was found"
     },

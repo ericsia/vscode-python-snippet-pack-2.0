@@ -36,7 +36,7 @@
     },
     "file.deleteFile": {
         "prefix": "withFile-deleteFile - need check exist",
-        "body": "if os.path.isfile('${1:pyfile.txt}'):\n\t# Comment: $0\n\tos.remove('${1:pyfile.txt}')  # import os\n# end if del-file",
+        "body": "if os.path.isfile('${1:pyfile.txt}'):\n\t# Comment: $0\n\tos.remove('${1:pyfile.txt}')  # import os\n# end del-file",
         "description": "delete a file"
     }
 }

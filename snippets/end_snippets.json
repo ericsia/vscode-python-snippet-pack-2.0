@@ -64,10 +64,10 @@
         "body": "# end while",
         "description": "readability shortcut comment for end"
     },
-    "end.region": 
+    "end.region":
     {
-        "prefix": "region",
-        "body": "# region ${1:name of region} \n\n# endregion",
+        "prefix": "end-region",
+        "body": "# region ${1:name} \n\t$0\n# endregion",
         "description": "Creates a region "
     }
 }
