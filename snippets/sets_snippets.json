@@ -1,6 +1,6 @@
 {
     "add": {
-        "prefix": "add -set",
+        "prefix": ".add -set",
         "body": ".add(${1:element})",
         "description": "Adds an element to the set"
     },
@@ -14,7 +14,7 @@
         "description": "An example for using add"
     },
     "clear -sets": {
-        "prefix": "clear -sets",
+        "prefix": ".clear -sets",
         "body": ".clear()",
         "description": "Removes all the elements from the set"
     },
@@ -28,7 +28,7 @@
         "description": "An example for using clear"
     },
     "copy -set": {
-        "prefix": "copy -set",
+        "prefix": ".copy -set",
         "body": ".copy()",
         "description": "Return a copy of the set"
     },
@@ -42,7 +42,7 @@
         "description": "An example for using copy"
     },
     "difference": {
-        "prefix": "difference -set",
+        "prefix": ".difference -set",
         "body": ".difference(${1:set})",
         "description": "Return a set containing the difference between two or more sets"
     },
@@ -67,7 +67,7 @@
         "description": "An example for using difference"
     },
     "difference_update": {
-        "prefix": "difference_update -set",
+        "prefix": ".difference_update -set",
         "body": ".difference_update(${1:set})",
         "description": "Removes the items in this set that are also included in another, specified set"
     },
@@ -82,7 +82,7 @@
         "description": "An example for using difference_update"
     },
     "discard": {
-        "prefix": "discard -set",
+        "prefix": ".discard -set",
         "body": ".discard(${1:item})",
         "description": "Remove the specified item"
     },
@@ -96,7 +96,7 @@
         "description": "An example for using discard"
     },
     "intersection": {
-        "prefix": "intersection -set",
+        "prefix": ".intersection -set",
         "body": ".intersection(${1:set})",
         "description": "Return a set, that is the intersection of two other sets"
     },
@@ -122,7 +122,7 @@
         "description": "An example for using intersection"
     },
     "intersection_update": {
-        "prefix": "intersection_update -set",
+        "prefix": ".intersection_update -set",
         "body": ".intersection_update(${1:set})",
         "description": "Removes the items in this set that are not present in other, specified set(s)"
     },
@@ -148,7 +148,7 @@
         "description": "An example for using intersection_update"
     },
     "isdisjoint": {
-        "prefix": "isdisjoint -set",
+        "prefix": ".isdisjoint -set",
         "body": ".isdisjoint(${1:set})",
         "description": "Return whether two sets have a intersection or not"
     },
@@ -173,7 +173,7 @@
         "description": "An example for using isdisjoint"
     },
     "issubset": {
-        "prefix": "issubset -set",
+        "prefix": ".issubset -set",
         "body": ".issubset(${1:set})",
         "description": "Return whether another set contains this set or not"
     },
@@ -198,7 +198,7 @@
         "description": "An example for using issubset"
     },
     "issuperset": {
-        "prefix": "issuperset -set",
+        "prefix": ".issuperset -set",
         "body": ".issuperset(${1:set})",
         "description": "Return whether this set contains another set or not"
     },
@@ -223,7 +223,7 @@
         "description": "An example for using issuperset"
     },
     "pop -set": {
-        "prefix": "pop -set",
+        "prefix": ".pop -set",
         "body": ".pop()",
         "description": "Removes the specified element"
     },
@@ -237,7 +237,7 @@
         "description": "An example for using pop"
     },
     "remove -set": {
-        "prefix": "remove -set",
+        "prefix": ".remove -set",
         "body": ".remove(${1:item})",
         "description": "Removes the specified element"
     },
@@ -251,7 +251,7 @@
         "description": "An example for using remove"
     },
     "symmetric_difference": {
-        "prefix": "symmetric_difference -set",
+        "prefix": ".symmetric_difference -set",
         "body": ".symmetric_difference(${1:set})",
         "description": "Return a set with the symmetric differences of two sets"
     },
@@ -266,7 +266,7 @@
         "description": "An example for using symmetric_difference"
     },
     "symmetric_difference_update": {
-        "prefix": "symmetric_difference_update -set",
+        "prefix": ".symmetric_difference_update -set",
         "body": ".symmetric_difference_update(${1:set})",
         "description": "inserts the symmetric differences from this set and another"
     },
@@ -281,7 +281,7 @@
         "description": "An example for using symmetric_difference_update"
     },
     "union": {
-        "prefix": "union -set",
+        "prefix": ".union -set",
         "body": ".union(${1:set})",
         "description": "Return a set containing the union of sets"
     },
@@ -307,7 +307,7 @@
         "description": "An example for using union"
     },
     "update -set": {
-        "prefix": "update -set",
+        "prefix": ".update -set",
         "body": ".update(${1:set})",
         "description": "Update the set with the union of this set and others"
     },
