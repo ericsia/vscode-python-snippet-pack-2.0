@@ -63,5 +63,11 @@
         "prefix": "end-while",
         "body": "# end while",
         "description": "readability shortcut comment for end"
+    },
+    "end.region": 
+    {
+        "prefix": "region",
+        "body": "# region ${1:name of region} \n\n# endregion",
+        "description": "Creates a region "
     }
 }
