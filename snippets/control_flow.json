@@ -61,7 +61,7 @@
     },
     "try:except:else:finally": {
         "prefix": "TryEF.try-e-f",
-        "body": "try:\n\t# comment: $1\nexcept${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: $6\nfinally:\n\t# comment: $0\n# end try",
+        "body": "try:\n\t# comment: $1\nexcept ${2:${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t# comment: $6\nfinally:\n\t# comment: $0\n# end try",
         "description": "Code Snippet for a try/except/finally with else statement."
     },
     "try:except:finally": {
